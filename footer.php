@@ -13,6 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="primary-footer">
+			<div class="logo"><img src="http://motius.local/wp-content/uploads/2020/09/logo-footer.png" alt=""></div>
 			<?php
 				wp_nav_menu(
 					array(
@@ -21,6 +22,7 @@
 					)
 				);
 			?>
+			<div class="newsletter"><h1>NEWSLETTER</h1></div>
 		</div><!-- .primary-footer -->
 		<div class="secondary-footer">
 			<?php
