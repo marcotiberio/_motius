@@ -52,6 +52,16 @@ get_header();
 
 	</section>
 	<section class="two-columns" id="two">
+	<?php
+		$section2 = get_field('section2');
+		if( $section2 ): ?>
+				<div class="text">
+					<?php echo $hero['text']; ?>
+				</div>
+				<img src="<?php echo esc_url( $hero['image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['image']['alt'] ); ?>" />
+			</div>
+		<?php endif; ?>
+
 		<div class="text"><?php the_field('section_2_text'); ?></div>
 		<?php 
 			$image = get_field('section_2_image');
