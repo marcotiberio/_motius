@@ -48,9 +48,9 @@ get_header();
 
 	</main><!-- #main -->
 
-	<section id="1"></section>
-	<section id="2"></section>
-	<section id="3"></section>
+	<section id="one"></section>
+	<section id="two"></section>
+	<section id="three"></section>
 	<section id="4"></section>
 	<section id="5"></section>
 	<section id="6"></section>
