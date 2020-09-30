@@ -48,15 +48,68 @@ get_header();
 
 	</main><!-- #main -->
 
-	<section id="one"></section>
-	<section id="two"></section>
-	<section id="three"></section>
-	<section id="4"></section>
-	<section id="5"></section>
-	<section id="6"></section>
-	<section id="7"></section>
-	<section id="8"></section>
-	<section id="9"></section>
+	<section id="one">
+
+	</section>
+	<section class="two-columns" id="two">
+		<div class="text"><?php the_field('section_2_text'); ?></div>
+		<div class="image">
+			<?php 
+			$image = get_field('section_2_image');
+			if( !empty( $image ) ): ?>
+				<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+			<?php endif; ?>
+		</div>
+	</section>
+	<section class="two-columns" id="three">
+		<div class="text"><?php the_field('section_3_text'); ?></div>
+		<div class="image">
+			<?php 
+			$image = get_field('section_3_image');
+			if( !empty( $image ) ): ?>
+				<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+			<?php endif; ?>
+		</div>
+	</section>
+	<section class="two-columns" id="four">
+		<div class="text"><?php the_field('section_4_text'); ?></div>
+		<div class="image">
+			<?php 
+			$image = get_field('section_4_image');
+			if( !empty( $image ) ): ?>
+				<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+			<?php endif; ?>
+		</div>
+	</section>
+	<section class="two-columns" id="five">
+		<div class="text"><?php the_field('section_5_text'); ?></div>
+		<div class="image">
+			<?php 
+			$image = get_field('section_5_image');
+			if( !empty( $image ) ): ?>
+				<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+			<?php endif; ?>
+		</div>
+	</section>
+	<section id="six">
+
+	</section>
+	<section id="seven">
+
+	</section>
+	<section class="two-columns" id="eight">
+		<div class="text"><?php the_field('section_8_text'); ?></div>
+		<div class="image">
+			<?php 
+			$image = get_field('section_8_image');
+			if( !empty( $image ) ): ?>
+				<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+			<?php endif; ?>
+		</div>
+	</section>
+	<section id="nine">
+
+	</section>
 
 <?php
 get_sidebar();
