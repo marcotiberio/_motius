@@ -59,7 +59,6 @@ get_header();
 					<?php echo $section2['text']; ?>
 				</div>
 				<div class="image" style="background-image:url('<?php echo esc_url($section2['image']['url']); ?>');"></div>
-			</div>
 		<?php endif; ?>
 	</section>
 	<section class="two-columns" id="three">
@@ -70,7 +69,6 @@ get_header();
 					<?php echo $section3['text']; ?>
 				</div>
 				<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
-			</div>
 		<?php endif; ?>
 	</section>
 	<section class="two-columns" id="four">
@@ -81,7 +79,6 @@ get_header();
 					<?php echo $section4['text']; ?>
 				</div>
 				<div class="image" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');"></div>
-			</div>
 		<?php endif; ?>
 	</section>
 	<section class="two-columns" id="five">
