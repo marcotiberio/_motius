@@ -53,13 +53,11 @@ get_header();
 	</section>
 	<section class="two-columns" id="two">
 		<div class="text"><?php the_field('section_2_text'); ?></div>
-		<div class="image">
-			<?php 
+		<?php 
 			$image = get_field('section_2_image');
 			if( !empty( $image ) ): ?>
-				<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-			<?php endif; ?>
-		</div>
+				<div class="image" style="background-image:url('<?php echo esc_url($image['url']); ?>');"></div>
+		<?php endif; ?>
 	</section>
 	<section class="two-columns" id="three">
 		<div class="text"><?php the_field('section_3_text'); ?></div>
