@@ -47,13 +47,31 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section class="two-columns" id="five">
-			
+			<?php
+				$section5 = get_field('section5');
+				if( $section5 ): ?>
+						<div class="text">
+							<?php echo $section5['text_left']; ?>
+						</div>
+						<div class="text">
+							<?php echo $section5['text_right']; ?>
+						</div>
+				<?php endif; ?>
 		</section>
 		<section id="six">
 
 		</section>
-		<section id="seven">
-
+		<section class="two-columns" id="seven">
+			<?php
+				$section7 = get_field('section7');
+				if( $section7 ): ?>
+						<div class="text">
+							<?php echo $section7['text_left']; ?>
+						</div>
+						<div class="text">
+							<?php echo $section7['text_right']; ?>
+						</div>
+				<?php endif; ?>
 		</section>
 		<section class="two-columns" id="eight">
 			
