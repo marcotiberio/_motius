@@ -61,33 +61,31 @@ get_header();
 				<div class="image" style="background-image:url('<?php echo esc_url($section2['image']['url']); ?>');"></div>
 			</div>
 		<?php endif; ?>
-
-		<div class="text"><?php the_field('section_2_text'); ?></div>
-		<?php 
-			$image = get_field('section_2_image');
-			if( !empty( $image ) ): ?>
-				<div class="image" style="background-image:url('<?php echo esc_url($image['url']); ?>');"></div>
-		<?php endif; ?>
 	</section>
 	<section class="two-columns" id="three">
-		<div class="text"><?php the_field('section_3_text'); ?></div>
-		<?php 
-			$image = get_field('section_3_image');
-			if( !empty( $image ) ): ?>
-				<div class="image" style="background-image:url('<?php echo esc_url($image['url']); ?>');"></div>
+	<?php
+		$section3 = get_field('section3');
+		if( $section3 ): ?>
+				<div class="text">
+					<?php echo $section3['text']; ?>
+				</div>
+				<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
+			</div>
 		<?php endif; ?>
 	</section>
 	<section class="two-columns" id="four">
-		<div class="text"><?php the_field('section_4_text'); ?></div>
-		<?php 
-			$image = get_field('section_4_image');
-			if( !empty( $image ) ): ?>
-				<div class="image" style="background-image:url('<?php echo esc_url($image['url']); ?>');"></div>
+	<?php
+		$section4 = get_field('section4');
+		if( $section4 ): ?>
+				<div class="text">
+					<?php echo $section4['text']; ?>
+				</div>
+				<div class="image" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');"></div>
+			</div>
 		<?php endif; ?>
 	</section>
 	<section class="two-columns" id="five">
-		<div class="text"><?php the_field('section_5_text'); ?></div>
-		<div class="text"><?php the_field('section_5_text'); ?></div>
+		
 	</section>
 	<section id="six">
 
@@ -96,8 +94,7 @@ get_header();
 
 	</section>
 	<section class="two-columns" id="eight">
-		<div class="text"><?php the_field('section_8_text'); ?></div>
-		<div class="text"><?php the_field('section_8_text'); ?></div>
+		
 	</section>
 	<section id="nine">
 
