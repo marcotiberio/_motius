@@ -56,9 +56,9 @@ get_header();
 		$section2 = get_field('section2');
 		if( $section2 ): ?>
 				<div class="text">
-					<?php echo $hero['text']; ?>
+					<?php echo $section2['text']; ?>
 				</div>
-				<div class="image" style="background-image:url('<?php echo esc_url($hero['image']['url']); ?>');"></div>
+				<div class="image" style="background-image:url('<?php echo esc_url($section2['image']['url']); ?>');"></div>
 			</div>
 		<?php endif; ?>
 
