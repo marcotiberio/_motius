@@ -58,7 +58,7 @@ get_header();
 				<div class="text">
 					<?php echo $hero['text']; ?>
 				</div>
-				<img src="<?php echo esc_url( $hero['image']['url'] ); ?>" alt="<?php echo esc_attr( $hero['image']['alt'] ); ?>" />
+				<div class="image" style="background-image:url('<?php echo esc_url($hero['image']['url']); ?>');"></div>
 			</div>
 		<?php endif; ?>
 
