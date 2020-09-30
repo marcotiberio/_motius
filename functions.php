@@ -149,6 +149,8 @@ function _motius_scripts() {
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
 
 	wp_enqueue_script( '_motius-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( '_motius-fullpage', get_template_directory_uri() . '/js/fullpage.js', array(), _S_VERSION, true );
+	wp_enqueue_script( '_motius-examples', get_template_directory_uri() . '/js/examples.js', array(), _S_VERSION, true );
 	wp_enqueue_script( '_motius-script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20151215', true );
 
 
