@@ -76,8 +76,21 @@ get_header();
 		<section class="two-columns" id="eight">
 			
 		</section>
-		<section id="nine">
-
+		<section class="color-blocks" id="nine">
+			<?php
+				$section9 = get_field('section9');
+				if( $section9 ): ?>
+						<div class="left">
+							<?php echo $section9['title_left']; ?>
+							<?php echo $section9['text_left']; ?>
+							<?php echo $section9['button_left']; ?>
+						</div>
+						<div class="right">
+						<?php echo $section9['title_right']; ?>
+							<?php echo $section9['text_right']; ?>
+							<?php echo $section9['button_right']; ?>
+						</div>
+				<?php endif; ?>
 		</section>
 
 	</main><!-- #main -->
