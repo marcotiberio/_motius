@@ -81,12 +81,12 @@ get_header();
 				$section9 = get_field('section9');
 				if( $section9 ): ?>
 						<div class="left">
-							<?php echo $section9['label_left']; ?>
-							<?php echo $section9['text_left']; ?>
+							<div class="label"><?php echo $section9['label_left']; ?></div>
+							<div class="info"><?php echo $section9['text_left']; ?></div>
 						</div>
 						<div class="right">
-							<?php echo $section9['label_right']; ?>
-							<?php echo $section9['text_right']; ?>
+							<div class="label"><?php echo $section9['label_right']; ?></div>
+							<div class="info"><?php echo $section9['text_right']; ?></div>
 						</div>
 				<?php endif; ?>
 		</section>
