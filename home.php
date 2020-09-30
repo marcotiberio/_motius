@@ -46,44 +46,9 @@ get_header();
 		endif;
 		?>
 
-		<div id="fullpage">
-			<div class="section " id="section0">
-				<div class="intro">
-					<h1>Responsive Height</h1>
-					<p>This example will turn to normal scroll when the window size gets smaller than 600px height</p>
-				</div>
-			</div>
-			<div class="section" id="section1">
-				<div class="slide" id="slide1">
-					<div class="intro">
-						<h1>Ideal for small screens</h1>
-					</div>
-				</div>
-
-				<div class="slide" id="slide2">
-					<h1>This example uses responsiveHeight: 600</h1>
-				</div>
-
-			</div>
-			<div class="section" id="section2">
-				<div class="intro">
-					<h1>Keep it simple!</h1>
-				</div>
-			</div>
-		</div>
+		
 
 	</main><!-- #main -->
-
-	<script type="text/javascript">
-		var myFullpage = new fullpage('#fullpage', {
-			anchors: ['firstPage', 'secondPage', '3rdPage'],
-			sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-			responsiveHeight: 600,
-			afterResponsive: function(isResponsive){
-
-			}
-		});
-	</script>
 
 <?php
 get_sidebar();
