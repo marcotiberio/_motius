@@ -149,8 +149,6 @@ function _motius_scripts() {
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
 
 	wp_enqueue_script( '_motius-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( '_motius-fullpage', get_template_directory_uri() . '/js/fullpage.js', array(), _S_VERSION, true );
-	wp_enqueue_script( '_motius-examples', get_template_directory_uri() . '/js/examples.js', array(), _S_VERSION, true );
 	wp_enqueue_script( '_motius-script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20151215', true );
 
 
@@ -159,6 +157,17 @@ function _motius_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', '_motius_scripts' );
+
+function register_fullpage() {
+    wp_register_style( 'fullPage-css', get_stylesheet_directory_uri() . '/css/fullpage.css' );
+    wp_register_script( 'fullPage-js', get_stylesheet_directory_uri() . '/js/fullpage.js' , array( 'jquery' ) );
+    if ( is_page('your-page') ){
+         wp_enqueue_style( 'fullPage-css' );
+         wp_enqueue_script( 'fullPage-js' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'register_fullpage' );
+
 
 /**
  * Implement the Custom Header feature.
