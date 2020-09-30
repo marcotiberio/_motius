@@ -1,8 +1,8 @@
 /*!
 Theme Name: _motius
 Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Author: Defrost
+Author URI: http://defrostudio.eu/
 Description: Description
 Version: 1.0.0
 Tested up to: 5.4
@@ -12,14 +12,6 @@ License URI: LICENSE
 Text Domain: _motius
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
-
-_motius is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 html,
@@ -54,10 +46,30 @@ a:active {
 }
 
 a:-webkit-any-link {
-    color: #000000;
-    cursor: pointer;
-    text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+	text-decoration: none;
 }
+
+/* Lists
+--------------------------------------------- */
+
+ul {
+	display: block;
+	list-style-type: none;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 0;
+}
+
+li:hover {
+	text-decoration: underline;
+}
+
+/* Header
+--------------------------------------------- */
 
 .site-header {
 	background-color: #ffffff;
@@ -91,7 +103,6 @@ a:-webkit-any-link {
 	margin-right: 2.8125rem;
 }
 
-/* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -103,6 +114,83 @@ a:-webkit-any-link {
 .entry-header {
 	display: none;
 }
+
+/* Footer
+--------------------------------------------- */
+
+.site-footer {
+	position: absolute;
+	bottom: 0;
+	background-color: #ffffff;
+	width: 100vw;
+	border-top: 1px solid rgba(24, 34, 28, .15);
+	margin-bottom: 100px;
+}
+
+.site-footer .primary-footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 100px;
+	padding: 0 4vw;
+}
+
+.site-footer .primary-footer a,
+.site-footer .secondary-footer a {
+	color: #383E4E;
+}
+
+.site-footer .logo img {
+	width: 124px;
+	height: auto;
+}
+
+#footer-menu {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+#footer-menu li {
+	margin-bottom: 30px;
+}
+
+.site-footer .secondary-footer {
+	margin-top: 100px;
+	padding: 0 4vw;
+}
+
+#secondary-footer-menu {
+	display: flex;
+	flex-direction: row
+}
+
+.site-footer .secondary-footer a {
+	color: #000000;
+	opacity: 0.5;
+}
+
+#secondary-footer-menu li:nth-child(1) {
+	margin-right: 7vw;
+}
+
+#secondary-footer-menu li:nth-child(2) {
+	margin-right: 3vw;
+}
+
+#secondary-footer-menu li:nth-child(3) {
+	margin-right: 7vw;
+}
+
+#secondary-footer-menu li:nth-child(4),
+#secondary-footer-menu li:nth-child(5),
+#secondary-footer-menu li:nth-child(6) {
+	margin-right: 20px;
+}
+
+
+
+
+
+
 
 /* MOBILE MOBILE MOBILE */
 /* MOBILE MOBILE MOBILE */
@@ -124,4 +212,3 @@ a:-webkit-any-link {
 		display: flex;
 	}
 }
-
