@@ -48,6 +48,16 @@ get_header();
 
 	</main><!-- #main -->
 
+	<section id="1"></section>
+	<section id="2"></section>
+	<section id="3"></section>
+	<section id="4"></section>
+	<section id="5"></section>
+	<section id="6"></section>
+	<section id="7"></section>
+	<section id="8"></section>
+	<section id="9"></section>
+
 <?php
 get_sidebar();
 get_footer();
