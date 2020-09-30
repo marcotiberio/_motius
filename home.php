@@ -74,9 +74,6 @@ get_header();
 
 	</main><!-- #main -->
 
-	<script type="text/javascript" src="../dist/fullpage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
-
 	<script type="text/javascript">
 		var myFullpage = new fullpage('#fullpage', {
 			anchors: ['firstPage', 'secondPage', '3rdPage'],
