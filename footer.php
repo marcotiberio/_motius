@@ -22,7 +22,7 @@
 					)
 				);
 			?>
-			<div class="newsletter"><h1>NEWSLETTER</h1></div>
+			<div class="newsletter"></div>
 		</div><!-- .primary-footer -->
 		<div class="secondary-footer">
 			<?php
