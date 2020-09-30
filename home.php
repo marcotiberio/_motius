@@ -46,8 +46,6 @@ get_header();
 		endif;
 		?>
 
-		
-
 	</main><!-- #main -->
 
 <?php
