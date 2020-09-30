@@ -49,3 +49,28 @@ a:hover,
 a:active {
 	outline: none;
 }
+
+.site-header {
+	background-color: #ffffff;
+  width: 100vw;
+  padding: 2vh 4vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+	font-family: 'Inter', sans-serif;
+	color: black;
+}
+
+.custom-logo-link {
+	width: 160px;
+  height: auto;
+}
+
+#primary-menu {
+	display: flex;
+  flex-direction: row;
+}
+
+#primary-menu li {
+	margin-right: 2.8125rem;
+}
