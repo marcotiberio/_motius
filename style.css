@@ -22,6 +22,15 @@ body {
 	padding: 0;
 }
 
+/* Typography
+--------------------------------------------- */
+
+h1,
+p {
+	margin: 0;
+	margin-block-start: 0;
+}
+
 /* Links
 --------------------------------------------- */
 a {
@@ -72,6 +81,7 @@ li:hover {
 --------------------------------------------- */
 
 .site-header {
+	position: fixed;
 	background-color: #ffffff;
 	width: 100vw;
 	padding: 2vh 4vw;
@@ -186,8 +196,74 @@ li:hover {
 	margin-right: 20px;
 }
 
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+
+.home section {
+	width: 100vw;
+	height: calc(100vh - 70px);
+}
+
+.home .two-columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.home .two-columns .text {
+	padding: 25% 10%;
+}
+
+.home .two-columns .text h1 {
+	font-size: 58px;
+	line-height: 63.8px;
+}
+
+.home .two-columns .text p {
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.home .two-columns .image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 
+.home section #one {
+	border: 5px solid blue !important;
+}
+
+.home .color-blocks {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 24px;
+}
+
+.home .color-blocks .left {
+	background-color: #B8E9F4;
+	border-radius: 50px;
+	padding: 2% 10%;
+	margin: 20% 10%;
+}
+
+.home .color-blocks .left .info {
+	margin-top: 30%;
+	margin-right: 10%;
+}
+
+.home .color-blocks .right {
+	background-color: #E4EAEB;
+	border-radius: 50px;
+	padding: 2% 10%;
+	margin: 20% 10%;
+}
+
+.home .color-blocks .right .info {
+	margin-top: 30%;
+	margin-right: 10%;
+}
 
 
 
