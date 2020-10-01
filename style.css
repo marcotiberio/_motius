@@ -225,6 +225,44 @@ li:hover {
 	height: calc(100vh - 70px);
 }
 
+.home #one {
+	padding-top: 70px;
+}
+
+#heroImage {
+	width: 50%;
+	margin-left: 35vw;
+}
+
+.home #one .color-blocks {
+	margin-left: 35vw;
+	margin-right: 25vw;
+}
+
+.home #one .color-blocks .left {
+	background-color: #B8E9F4;
+	border-radius: 50px;
+	padding: 10% 14% 40% 12% !important;
+	margin: 0 1% !important;
+}
+
+.home #one .color-blocks .left .info {
+	margin-top: 0 !important;
+	margin-left: 0 !important;
+}
+
+.home #one .color-blocks .right {
+	background-color: #E4EAEB;
+	border-radius: 50px;
+	padding: 10% 14% 40% 12% !important;
+	margin: 0 1% !important;
+}
+
+.home #one .color-blocks .right .info {
+	margin-top: 0 !important;
+	margin-right: 0 !important;
+}
+
 .home .two-columns {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -261,11 +299,18 @@ li:hover {
 	column-gap: 24px;
 }
 
+.home .color-blocks img {
+	width: 230px;
+	float: right;
+	margin-right: -30%;
+	margin-top: -25%;
+}
+
 .home .color-blocks .left {
 	background-color: #B8E9F4;
 	border-radius: 50px;
 	padding: 2% 20% 2% 10%;
-	margin: 10% 0 20% 10%;
+	margin: 10% 0 10% 15%;
 }
 
 .home .color-blocks .left .info {
@@ -277,7 +322,7 @@ li:hover {
 	background-color: #E4EAEB;
 	border-radius: 50px;
 	padding: 2% 20% 2% 10%;
-	margin: 10% 10% 20% 0;
+	margin: 10% 15% 10% 0;
 }
 
 .home .color-blocks .right .info {
