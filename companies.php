@@ -16,11 +16,11 @@ get_header();
 			$section1 = get_field('section1');
 			if( $section1 ): ?>
 				<section class="hero-text" id="one" style="background-color:<?php echo $section1['background-color']; ?>">
-					<div class="header"><?php echo $section1['header']; ?></div>
-					<div class="paragraph"><?php echo $section1['paragraph']; ?></div>
+					<h1 class="header"><?php echo $section1['header']; ?></h1>
+					<p class="paragraph"><?php echo $section1['paragraph']; ?></p>
 					<div class="block">
-						<div class="header-block"><?php echo $section1['header_block']; ?></div>
-						<div class="paragraph-block"><?php echo $section1['paragraph_block']; ?></div>
+						<h3 class="header-block"><?php echo $section1['header_block']; ?></h3>
+						<p class="paragraph-block"><?php echo $section1['paragraph_block']; ?></p>
 					</div>
 				</section>
 			<?php endif; ?>
