@@ -41,24 +41,26 @@ get_header();
 					</div>
 				</section>
 			<?php endif; ?>
-		<section class="two-columns" id="three">
-		<?php
+			<?php
 			$section3 = get_field('section3');
 			if( $section3 ): ?>
+				<section class="two-columns" id="three" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');">
 					<div class="text">
-						<?php echo $section3['text']; ?>
+						<h3 class="header"><?php echo $section3['header']; ?></h3>
+						<p class="paragraph"><?php echo $section3['paragraph']; ?></p>
 					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
+				</section>
 			<?php endif; ?>
-		</section>
 		<section class="two-columns" id="four">
 		<?php
 			$section4 = get_field('section4');
 			if( $section4 ): ?>
+				<section class="two-columns" id="four" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');">
 					<div class="text">
-						<?php echo $section4['text']; ?>
+						<h3 class="header"><?php echo $section4['header']; ?></h3>
+						<p class="paragraph"><?php echo $section4['paragraph']; ?></p>
 					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');"></div>
+				</section>
 			<?php endif; ?>
 		</section>
 		<section class="two-columns" id="five">
