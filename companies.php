@@ -2,7 +2,7 @@
 /**
  * Template Name: Companies
  *
- * This is the Home template
+ * This is the Companies template
  * and one of the two required files for a theme (the other being style.css).
  *
  * @package _motius
@@ -13,11 +13,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<section id="one">
-			<div id="heroText">
-				<?php if ( get_field('hero_text') ) : ?>
-				<?php echo get_field('hero_text'); ?>
-			<?php endif; ?>
-			</div>
+			<div id="heroText"><?php the_field('text_field'); ?></div>
 			<div class="color-blocks">
 				<?php
 					$section1 = get_field('section1');
