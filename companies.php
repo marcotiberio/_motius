@@ -12,19 +12,18 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<section id="one">
-			<div id="heroText"><?php the_field('hero_text'); ?></div>
-			<div class="color-blocks">
-				<?php
-					$section1 = get_field('section1');
-					if( $section1 ): ?>
-							<div class="left">
-								<div class="info"><?php echo $section1['text_left']; ?></div>
-							</div>
-							<div class="right">
-								<div class="info"><?php echo $section1['text_right']; ?></div>
-							</div>
-					<?php endif; ?>
+		<?php
+			$section1 = get_field('section1');
+			if( $section1 ): ?>
+				<section class="hero-text" id="one" style="background-color:<?php echo $section1['background-color']; ?>">
+					<div class="header"><?php echo $section1['header']; ?></div>
+					<div class="paragraph"><?php echo $section1['paragraph']; ?></div>
+					<div class="block">
+						<div class="header-block"><?php echo $section1['header_block']; ?></div>
+						<div class="paragraph-block"><?php echo $section1['paragraph_block']; ?></div>
+					</div>
+				</section>
+			<?php endif; ?>
 			</div>
 		</section>
 		<section class="two-columns" id="two">
