@@ -36,10 +36,8 @@ get_header();
 			if( $section2 ): ?>
 				<section class="two-columns" id="two" style="background-image:url('<?php echo esc_url($section2['image']['url']); ?>');">
 					<div class="text">
-						<div>
-							<h3><?php echo $section2['header']; ?></h3>
-							<p><?php echo $section2['paragraph']; ?></p>
-						</div>
+						<h3 class="header"><?php echo $section2['header']; ?></h3>
+						<p class="paragraph"><?php echo $section2['paragraph']; ?></p>
 					</div>
 				</section>
 			<?php endif; ?>
