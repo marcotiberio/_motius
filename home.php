@@ -54,12 +54,11 @@ get_header();
 		<?php
 			$section4 = get_field('section4');
 			if( $section4 ): ?>
-				<section class="two-columns" id="four">
-					<section class="two-columns" id="four" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');">
-						<div class="text">
-							<h3 class="header"><?php echo $section4['header']; ?></h3>
-							<p class="paragraph"><?php echo $section4['paragraph']; ?></p>
-						</div>
+				<section class="two-columns" id="four" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');">
+					<div class="text">
+						<h3 class="header"><?php echo $section4['header']; ?></h3>
+						<p class="paragraph"><?php echo $section4['paragraph']; ?></p>
+					</div>
 				</section>
 			<?php endif; ?>
 		</section>
