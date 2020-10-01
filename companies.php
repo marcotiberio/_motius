@@ -13,7 +13,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<section id="one">
-			<div id="heroText"><?php the_field('text_field'); ?></div>
+			<div id="heroText"><?php the_field('hero_text'); ?></div>
 			<div class="color-blocks">
 				<?php
 					$section1 = get_field('section1');
