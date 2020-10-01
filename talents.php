@@ -30,25 +30,27 @@ get_header();
 		<?php
 			$section2 = get_field('section2');
 			if( $section2 ): ?>
-				<section class="color-blocks" id="two">
+				<section id="two">
 					<div class="two-columns-text">
 						<h3 class="header"><?php echo $section2['header']; ?></h3>
 						<p class="paragraph"><?php echo $section2['paragraph']; ?></p>
 					</div>
-					<div class="left">
-					<img src="<?php echo esc_url( $section2['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image_left']['alt'] ); ?>" />
-						<div class="label"><?php echo $section2['label_left']; ?></div>
-						<div class="info">
-							<h3 class="header"><?php echo $section2['header_left']; ?></h3>
-							<p class="paragraph"><?php echo $section2['paragraph_left']; ?></p>
+					<div class="color-blocks">
+						<div class="left">
+						<img src="<?php echo esc_url( $section2['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image_left']['alt'] ); ?>" />
+							<div class="label"><?php echo $section2['label_left']; ?></div>
+							<div class="info">
+								<h3 class="header"><?php echo $section2['header_left']; ?></h3>
+								<p class="paragraph"><?php echo $section2['paragraph_left']; ?></p>
+							</div>
 						</div>
-					</div>
-					<div class="right">
-						<img src="<?php echo esc_url( $section2['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section2['imimage_rightage']['alt'] ); ?>" />
-						<div class="label"><?php echo $section2['label_right']; ?></div>
-						<div class="info">
-							<h3 class="header"><?php echo $section2['header_right']; ?></h3>
-							<p class="paragraph"><?php echo $section2['paragraph_right']; ?></p>
+						<div class="right">
+							<img src="<?php echo esc_url( $section2['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section2['imimage_rightage']['alt'] ); ?>" />
+							<div class="label"><?php echo $section2['label_right']; ?></div>
+							<div class="info">
+								<h3 class="header"><?php echo $section2['header_right']; ?></h3>
+								<p class="paragraph"><?php echo $section2['paragraph_right']; ?></p>
+							</div>
 						</div>
 					</div>
 				</section>
