@@ -15,7 +15,7 @@ get_header();
 		<section id="one">
 			<?php 
 				$heroimage = get_field('heroimage');
-				if( !empty( $image ) ): ?>
+				if( !empty( $heroimage ) ): ?>
 					<img src="<?php echo esc_url($heroimage['url']); ?>" alt="<?php echo esc_attr($heroimage['alt']); ?>" />
 				<?php endif; ?>
 			<div class="color-blocks">
