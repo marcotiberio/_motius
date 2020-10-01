@@ -45,7 +45,6 @@ get_header();
 					</ul>
 				</section>
 			<?php endif; ?>
-		<section id="five">
 			<?php
 				$section5 = get_field('section5');
 				if( $section5 ): ?>
@@ -54,7 +53,6 @@ get_header();
 						<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
 					</section>
 				<?php endif; ?>	
-		</section>
 		<section id="six">
 		</section>
 		<section id="seven">
