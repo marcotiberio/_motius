@@ -93,10 +93,10 @@ get_header();
 		<section class="two-columns" id="eight">
 			
 		</section>
-		<section class="color-blocks" id="nine">
 			<?php
 				$section9 = get_field('section9');
 				if( $section9 ): ?>
+					<section class="color-blocks" id="nine">
 						<div class="left">
 						<img src="<?php echo esc_url( $section9['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image_left']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_left']; ?></div>
@@ -113,8 +113,8 @@ get_header();
 								<p class="paragraph"><?php echo $section9['paragraph_right']; ?></p>
 							</div>
 						</div>
+					</section>
 				<?php endif; ?>
-		</section>
 
 	</main><!-- #main -->
 
