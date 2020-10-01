@@ -15,12 +15,14 @@ get_header();
 		<?php
 			$section1 = get_field('section1');
 			if( $section1 ): ?>
-				<section class="hero-text" id="one" style="background-color:<?php echo $section1['background_color']; ?>">
-					<h1 class="header"><?php echo $section1['header']; ?></h1>
-					<p class="paragraph"><?php echo $section1['paragraph']; ?></p>
-					<div class="block">
-						<h3 class="header-block"><?php echo $section1['header_block']; ?></h3>
-						<p class="paragraph-block"><?php echo $section1['paragraph_block']; ?></p>
+				<section id="one" style="background-color:<?php echo $section1['background_color']; ?>">
+					<div class="hero-text">
+						<h1 class="header"><?php echo $section1['header']; ?></h1>
+						<p class="paragraph"><?php echo $section1['paragraph']; ?></p>
+						<div class="block">
+							<h3 class="header-block"><?php echo $section1['header_block']; ?></h3>
+							<p class="paragraph-block"><?php echo $section1['paragraph_block']; ?></p>
+						</div>
 					</div>
 				</section>
 			<?php endif; ?>
