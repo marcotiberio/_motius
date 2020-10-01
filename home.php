@@ -98,12 +98,18 @@ get_header();
 						<div class="left">
 						<img src="<?php echo esc_url( $section9['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image_left']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_left']; ?></div>
-							<div class="info"><?php echo $section9['text_left']; ?></div>
+							<div class="info">
+								<h3><?php echo $section9['header_left']; ?></h3>
+								<p><?php echo $section9['paragraph_left']; ?></p>
+							</div>
 						</div>
 						<div class="right">
 							<img src="<?php echo esc_url( $section9['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section9['imimage_rightage']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_right']; ?></div>
-							<div class="info"><?php echo $section9['text_right']; ?></div>
+							<div class="info">
+								<h3><?php echo $section9['header_right']; ?></h3>
+								<p><?php echo $section9['paragraph_right']; ?></p>
+							</div>
 						</div>
 				<?php endif; ?>
 		</section>
