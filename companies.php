@@ -34,17 +34,15 @@ get_header();
 		<?php
 			$section4 = get_field('section4');
 			if( $section4 ): ?>
-				<section id="four">
-					<div class="two-columns-list">
-						<h3 class="header"><?php echo $section4['header']; ?></h3>
-						<ul>
-							<li>
-								<img class="icon-list"src="<?php echo esc_url( $section4['icon_list']['url'] ); ?>" alt="<?php echo esc_attr( $section4['icon_list']['alt'] ); ?>" />
-								<p class="header-list"><?php echo $section4['header_list']; ?></p>
-								<p class="paragraph-list"><?php echo $section4['paragraph_list']; ?></p>
-							</li>
-						</ul>
-					</div>
+				<section id="four" class="two-columns-list">
+					<h3 class="header"><?php echo $section4['header']; ?></h3>
+					<ul>
+						<li>
+							<img class="icon-list"src="<?php echo esc_url( $section4['icon_list']['url'] ); ?>" alt="<?php echo esc_attr( $section4['icon_list']['alt'] ); ?>" />
+							<p class="header-list"><?php echo $section4['header_list']; ?></p>
+							<p class="paragraph-list"><?php echo $section4['paragraph_list']; ?></p>
+						</li>
+					</ul>
 				</section>
 			<?php endif; ?>
 		<section id="five">
