@@ -106,7 +106,7 @@ li:hover {
 	position: fixed;
 	background-color: #ffffff;
 	width: 100vw;
-	padding: 2vh 4vw;
+	/* padding: 2vh 4vw; */
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	align-items: center;
@@ -117,11 +117,6 @@ li:hover {
 .custom-logo-link img {
 	width: 160px;
 	height: auto;
-}
-
-.main-navigation {
-	display: block;
-	width: 100%;
 }
 
 .main-navigation ul {
