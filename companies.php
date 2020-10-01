@@ -46,6 +46,16 @@ get_header();
 				</section>
 			<?php endif; ?>
 		<section id="five">
+			<?php
+				$section5 = get_field('section5');
+				if( $section5 ): ?>
+					<section id="two">
+						<div class="two-columns-text">
+							<h3 class="header"><?php echo $section5['header']; ?></h3>
+							<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
+						</div>
+					</section>
+				<?php endif; ?>	
 		</section>
 		<section id="six">
 		</section>
