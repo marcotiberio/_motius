@@ -23,7 +23,13 @@ get_header();
 				</section>
 			<?php endif; ?>
 		</section>
-		<section id="two">
+		<?php
+			$section2 = get_field('section2');
+			if( $section2 ): ?>
+				<section id="two">
+					<img src="<?php echo esc_url( $section2['image']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image']['alt'] ); ?>" />
+				</section>
+			<?php endif; ?>
 		</section>
 		<section id="three">
 		</section>
