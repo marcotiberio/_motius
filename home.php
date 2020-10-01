@@ -12,9 +12,24 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
 		<section id="one">
-
+			<?php 
+			$heroimage = get_field('heroimage');
+			if( !empty( $image ) ): ?>
+				<img src="<?php echo esc_url($heroimage['url']); ?>" alt="<?php echo esc_attr($heroimage['alt']); ?>" />
+			<?php endif; ?>
+			<?php
+				$section1 = get_field('section1');
+				if( $section1 ): ?>
+						<div class="left">
+							<div class="label"><?php echo $section1['label_left']; ?></div>
+							<div class="info"><?php echo $section1['text_left']; ?></div>
+						</div>
+						<div class="right">
+							<div class="label"><?php echo $section1['label_right']; ?></div>
+							<div class="info"><?php echo $section1['text_right']; ?></div>
+						</div>
+				<?php endif; ?>
 		</section>
 		<section class="two-columns" id="two">
 		<?php
