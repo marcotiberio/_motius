@@ -20,7 +20,7 @@ get_header();
 						<h1 class="header"><?php echo $section1['header']; ?></h1>
 						<p class="paragraph"><?php echo $section1['paragraph']; ?></p>
 						<div class="block" style="background-color:<?php echo $section1['background_color_block']; ?>">
-							<h3 class="header-block"><?php echo $section1['header_block']; ?></h3>
+							<p class="header-block"><?php echo $section1['header_block']; ?></p>
 							<p class="paragraph-block"><?php echo $section1['paragraph_block']; ?></p>
 						</div>
 					</div>
