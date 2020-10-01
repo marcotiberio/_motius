@@ -26,23 +26,22 @@ get_header();
 					</div>
 				</section>
 			<?php endif; ?>
-			</div>
 		</section>
-		<section class="two-columns" id="two">
+		<section id="two">
 		</section>
-		<section class="two-columns" id="three">
+		<section id="three">
 		</section>
-		<section class="two-columns" id="four">
+		<section id="four">
 		</section>
-		<section class="two-columns" id="five">
+		<section id="five">
 		</section>
 		<section id="six">
 		</section>
-		<section class="two-columns" id="seven">
+		<section id="seven">
 		</section>
-		<section class="two-columns" id="eight">
+		<section id="eight">
 		</section>
-		<section class="color-blocks" id="nine">
+		<section id="nine">
 		</section>
 
 	</main><!-- #main -->
