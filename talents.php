@@ -29,12 +29,12 @@ get_header();
 		</section>
 		<?php
 			$section2 = get_field('section2');
-			if( $section9 ): ?>
-				<div class="two-columns-text">
-					<h3 class="header"><?php echo $section2['header']; ?></h3>
-					<p class="paragraph"><?php echo $section2['paragraph']; ?></p>
-				</div>
+			if( $section2 ): ?>
 				<section class="color-blocks" id="two">
+					<div class="two-columns-text">
+						<h3 class="header"><?php echo $section2['header']; ?></h3>
+						<p class="paragraph"><?php echo $section2['paragraph']; ?></p>
+					</div>
 					<div class="left">
 					<img src="<?php echo esc_url( $section2['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image_left']['alt'] ); ?>" />
 						<div class="label"><?php echo $section2['label_left']; ?></div>
