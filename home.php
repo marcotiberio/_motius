@@ -31,16 +31,18 @@ get_header();
 					<?php endif; ?>
 			</div>
 		</section>
-		<section class="two-columns" id="two">
 		<?php
 			$section2 = get_field('section2');
 			if( $section2 ): ?>
+				<section class="two-columns" id="two" style="background-image:url('<?php echo esc_url($section2['image']['url']); ?>');">
 					<div class="text">
-						<?php echo $section2['text']; ?>
+						<div>
+							<h3><?php echo $section2['header']; ?></h3>
+							<p><?php echo $section2['paragraph']; ?></p>
+						</div>
 					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section2['image']['url']); ?>');"></div>
+				</section>
 			<?php endif; ?>
-		</section>
 		<section class="two-columns" id="three">
 		<?php
 			$section3 = get_field('section3');
