@@ -134,8 +134,6 @@ li:hover {
 .main-navigation.toggled ul {
 	display: block;
 	position: relative;
-	right: 0;
-	top: 6%;
 }
 
 .entry-header {
@@ -295,10 +293,10 @@ li:hover {
 /* MOBILE MOBILE MOBILE */
 
 
-@media screen and (min-width: 37.5em) {
+@media screen and (max-width: 37.5em) {
 
 	.menu-toggle {
-		display: none;
+		display: block;
 	}
 
 	.main-navigation ul {
