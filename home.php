@@ -81,14 +81,14 @@ get_header();
 				$section9 = get_field('section9');
 				if( $section9 ): ?>
 						<div class="left">
+						<img src="<?php echo esc_url( $section9['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image_left']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_left']; ?></div>
 							<div class="info"><?php echo $section9['text_left']; ?></div>
-							<img src="<?php echo esc_url( $section9['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image_left']['alt'] ); ?>" />
 						</div>
 						<div class="right">
+							<img src="<?php echo esc_url( $section9['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section9['imimage_rightage']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_right']; ?></div>
 							<div class="info"><?php echo $section9['text_right']; ?></div>
-							<img src="<?php echo esc_url( $section9['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section9['imimage_rightage']['alt'] ); ?>" />
 						</div>
 				<?php endif; ?>
 		</section>
