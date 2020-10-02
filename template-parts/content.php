@@ -24,6 +24,7 @@
 		<p class="intro"><?php the_field('intro'); ?></p>
 		<p class="tag"><?php the_tags(); ?></p>
 		<p class="date"><?php echo date('M Y'); ?></p>
+		<p class="client"><?php the_field('client'); ?></p>
 	</header><!-- .entry-header -->
 
 	<?php _motius_post_thumbnail(); ?>
