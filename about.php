@@ -42,7 +42,7 @@ get_header();
 					<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
 				</section>
 			<?php endif; ?>
-			<?php
+		<?php
 			$section4 = get_field('section4');
 			if( $section4 ): ?>
 				<section id="four">
@@ -53,8 +53,17 @@ get_header();
 					<div class="image" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');"></div>
 				</section>
 			<?php endif; ?>
-		<section id="five">
-		</section>
+		<?php
+			$section5 = get_field('section5');
+			if( $section5 ): ?>
+				<section class="two-columns" id="three">
+					<div class="text">
+						<h3 class="header"><?php echo $section5['header']; ?></h3>
+						<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
+					</div>
+					<div class="image" style="background-image:url('<?php echo esc_url($section5['image']['url']); ?>');"></div>
+				</section>
+			<?php endif; ?>
 		<section id="six">
 		</section>
 		<section id="seven">
