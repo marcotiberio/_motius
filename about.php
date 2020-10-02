@@ -29,7 +29,6 @@ get_header();
 					<img src="<?php echo esc_url( $section2['image']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>
-		</section>
 		<?php
 			$section3 = get_field('section3');
 			if( $section3 ): ?>
@@ -66,11 +65,8 @@ get_header();
 		<?php
 			$section6 = get_field('section6');
 			if( $section6 ): ?>
-				<section id="six" style="background-color:<?php echo $section6['background_color_section']; ?>">
-					<div class="hero-text">
-						<h1 class="header"><?php echo $section6['header']; ?></h1>
-						<p class="paragraph"><?php echo $section6['paragraph']; ?></p>
-					</div>
+				<section id="six">
+					<img src="<?php echo esc_url( $section6['image']['url'] ); ?>" alt="<?php echo esc_attr( $section6['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>
 		<section id="seven">
