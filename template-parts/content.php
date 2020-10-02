@@ -21,13 +21,17 @@
 		if ( 'post' === get_post_type() ) :
 			?>
 		<?php endif; ?>
-		<p class="intro"><?php the_field('intro'); ?></p>
-		<p class="tag"><?php the_tags(); ?></p>
-		<p class="date"><?php echo date('M Y'); ?></p>
-		<div class="client">
-			<span>Client</span> 
-			<span><?php the_field('client'); ?></span>
-		</div>
+		<?php
+			$header = get_field('header');
+			if( $header ): ?>
+				<p class="intro"><?php echo $header['intro']; ?></p>
+				<p class="tag"><?php the_tags(); ?></p>
+				<p class="date"><?php echo date('M Y'); ?></p>
+				<div class="client">
+					<span>Client</span> 
+					<span><?php echo $header['client']; ?></span>
+				</div>
+			<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<?php _motius_post_thumbnail(); ?>
@@ -56,6 +60,22 @@
 			)
 		);
 		?>
+		<?php
+			$main = get_field('main');
+			if( $main ): ?>
+				<div class="column">
+					<h3 class="header"><?php echo $main['header1']; ?></h3>
+					<p class="paragraph"><?php echo $main['paragraph1']; ?></p>
+				</div>
+				<div class="column">
+					<h3 class="header"><?php echo $main['header2']; ?></h3>
+					<p class="paragraph"><?php echo $main['paragraph2']; ?></p>
+				</div>
+				<div class="column">
+					<h3 class="header"><?php echo $main['header3']; ?></h3>
+					<p class="paragraph"><?php echo $main['paragraph3']; ?></p>
+				</div>
+			<?php endif; ?>
 	</div><!-- .entry-content -->
 
 
