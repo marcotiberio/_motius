@@ -115,10 +115,8 @@ get_header();
 			$section10 = get_field('section10');
 			if( $section10 ): ?>
 				<section id="ten">
-					<div class="two-columns-text">
-						<h3 class="header"><?php echo $section10['header']; ?></h3>
-						<p class="paragraph"><?php echo $section10['paragraph']; ?></p>
-					</div>
+					<h3 class="section-title"><?php echo $section10['header']; ?></h3>
+					<img src="<?php echo esc_url( $section10['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>
 
