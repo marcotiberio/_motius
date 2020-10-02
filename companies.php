@@ -45,9 +45,9 @@ get_header();
 					<h3 class="section-title"><?php the_sub_field('section_title'); ?></h3>
 					<ul>
 						<li>
-							<img class="icon-list" src="<?php echo esc_url( $photo['url'] ); ?>" alt="<?php echo esc_attr( $photo['alt'] ); ?>" />
-							<p class="header-list"><?php the_sub_field('title'); ?></p>
-							<p class="paragraph-list"><?php the_sub_field('subtitle'); ?></p>
+							<img class="icon-list" src="<?php echo esc_url( $iconlist['url'] ); ?>" alt="<?php echo esc_attr( $iconlist['alt'] ); ?>" />
+							<p class="header-list"><?php the_sub_field('header_list'); ?></p>
+							<p class="paragraph-list"><?php the_sub_field('paragraph_list'); ?></p>
 						</li>
 					</ul>
 				<?php endwhile; ?>
