@@ -45,7 +45,7 @@ get_header();
 							</div>
 						</div>
 						<div class="right">
-							<img src="<?php echo esc_url( $section2['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section2['imimage_rightage']['alt'] ); ?>" />
+							<img src="<?php echo esc_url( $section2['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image_right']['alt'] ); ?>" />
 							<div class="label"><?php echo $section2['label_right']; ?></div>
 							<div class="info">
 								<h3 class="header"><?php echo $section2['header_right']; ?></h3>
