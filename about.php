@@ -80,9 +80,10 @@ get_header();
 					</div>
 				</section>
 			<?php endif; ?>
-		<section class="grid-3" id="section8">
+		<section id="eight">
 			<h3 class="section-title">Our Founding Team</h3>
 			<?php if( have_rows('section8') ): ?>
+				<div class="grid-3">
 				<?php while( have_rows('section8') ): the_row(); 
 
 					// Load sub field value.
@@ -96,6 +97,7 @@ get_header();
 						<p class="position"><?php the_sub_field('position'); ?></p>
 					</div>
 				<?php endwhile; ?>
+				</div>
 			<?php endif; ?>
 		</section>
 		<section id="nine">
