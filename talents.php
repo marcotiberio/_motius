@@ -70,9 +70,16 @@ get_header();
 		<section id="seven">
 			<!-- job list -->
 		</section>
-		<section id="eight">
-			<!-- glassdoor -->
-		</section>
+		<?php
+			$section8 = get_field('section8');
+			if( $section8 ): ?>
+				<section id="eight">
+					<div class="two-columns-text">
+						<h3 class="header"><?php echo $section8['header']; ?></h3>
+						<p class="paragraph"><?php echo $section8['paragraph']; ?></p>
+					</div>
+				</section>
+			<?php endif; ?>
 		<?php
 			$section9 = get_field('section9');
 			if( $section9 ): ?>
