@@ -21,7 +21,7 @@
 		if ( 'post' === get_post_type() ) :
 			?>
 		<?php endif; ?>
-		<p><?php the_field('intro'); ?></p>
+		<p class="intro"><?php the_field('intro'); ?></p>
 	</header><!-- .entry-header -->
 
 	<?php _motius_post_thumbnail(); ?>
