@@ -78,6 +78,29 @@
 					</div>
 				</div>
 			<?php endif; ?>
+
+		<?php
+			$category = get_field('category');
+			if( $category ): ?>
+				<div class="column-4">
+					<div class="column">
+						<h5 class="header"><?php echo $category['header1']; ?></h5>
+						<p class="paragraph"><?php echo $category['paragraph1']; ?></p>
+					</div>
+					<div class="column">
+						<h5 class="header"><?php echo $category['header2']; ?></h5>
+						<p class="paragraph"><?php echo $category['paragraph2']; ?></p>
+					</div>
+					<div class="column">
+						<h5 class="header"><?php echo $category['header3']; ?></h5>
+						<p class="paragraph"><?php echo $category['paragraph3']; ?></p>
+					</div>
+					<div class="column">
+						<h5 class="header"><?php echo $category['header4']; ?></h5>
+						<p class="paragraph"><?php echo $category['paragraph4']; ?></p>
+					</div>
+				</div>
+			<?php endif; ?>
 	</div><!-- .entry-content -->
 
 
