@@ -31,8 +31,17 @@ get_header();
 				</section>
 			<?php endif; ?>
 		</section>
-		<section id="three">
-		</section>
+		<?php
+			$section3 = get_field('section3');
+			if( $section3 ): ?>
+				<section class="two-columns" id="three">
+					<div class="text">
+						<h3 class="header"><?php echo $section3['header']; ?></h3>
+						<p class="paragraph"><?php echo $section3['paragraph']; ?></p>
+					</div>
+					<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
+				</section>
+			<?php endif; ?>
 		<section id="four">
 		</section>
 		<section id="five">
