@@ -78,7 +78,7 @@ get_header();
 			if( $section9 ): ?>
 				<section id="nine">
 					<h3 class="header"><?php echo $section9['header']; ?></h3>
-					<div class="image" style="background-image:url('<?php echo esc_url($section9['image']['url']); ?>');"></div>
+					<img src="<?php echo esc_url( $section9['image']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>
 
