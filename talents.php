@@ -77,10 +77,7 @@ get_header();
 			$section9 = get_field('section9');
 			if( $section9 ): ?>
 				<section id="nine">
-					<div class="two-columns-text">
-						<h3 class="header"><?php echo $section9['header']; ?></h3>
-						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
-					</div>
+					<h3 class="header"><?php echo $section9['header']; ?></h3>
 					<div class="image" style="background-image:url('<?php echo esc_url($section9['image']['url']); ?>');"></div>
 				</section>
 			<?php endif; ?>
