@@ -28,8 +28,10 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="two">
+			<!-- grid categories + hover -->
 		</section>
 		<section id="three">
+			<!-- vertical timeline -->
 		</section>
 		<section id="four" class="two-columns-list">
 			<h3 class="section-title">Benefits in a sentence formatting</h3>
@@ -96,8 +98,10 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="seven">
+			<!-- slideshow experiences -->
 		</section>
 		<section id="eight">
+			<!-- slideshow success stories -->
 		</section>
 		<?php
 			$section9 = get_field('section9');
