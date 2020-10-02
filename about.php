@@ -100,8 +100,16 @@ get_header();
 				</div>
 			<?php endif; ?>
 		</section>
-		<section id="nine">
-		</section>
+		<?php
+			$section9 = get_field('section9');
+			if( $section9 ): ?>
+				<section id="nine">
+					<div class="two-columns-text">
+						<h3 class="header"><?php echo $section9['header']; ?></h3>
+						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
+					</div>
+				</section>
+			<?php endif; ?>
 
 	</main><!-- #main -->
 
