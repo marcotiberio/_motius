@@ -50,7 +50,7 @@ get_header();
 						<h3 class="header"><?php echo $section4['header']; ?></h3>
 						<p class="paragraph"><?php echo $section4['paragraph']; ?></p>
 					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
+					<div class="image" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');"></div>
 				</section>
 			<?php endif; ?>
 		<section id="five">
