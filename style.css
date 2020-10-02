@@ -82,7 +82,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
- html {
+html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 }
@@ -511,8 +511,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
@@ -689,8 +689,8 @@ textarea {
 	top: 0;
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li:hover>ul,
+.main-navigation ul ul li.focus>ul {
 	display: block;
 	left: auto;
 }
@@ -699,8 +699,8 @@ textarea {
 	width: 200px;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:hover>ul,
+.main-navigation ul li.focus>ul {
 	left: auto;
 }
 
@@ -731,10 +731,8 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
+.site-main .posts-navigation,
+.site-main .post-navigation {
 	margin: 0 0 1.5em;
 }
 
@@ -1075,7 +1073,7 @@ li:hover {
 
 .site-header {
 	position: fixed;
-	background-color: #ffffff;
+	background-color: transparent;
 	width: 100vw;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -1192,11 +1190,20 @@ li:hover {
 
 .home section {
 	width: 100vw;
-	height: calc(100vh - 70px);
+	height: auto;
+	padding: 2vh 8vw;
 }
 
 .home #one {
 	padding-top: 70px;
+}
+
+.home #two,
+.home #three,
+.home #four {
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
 }
 
 #heroImage {
@@ -1239,28 +1246,26 @@ li:hover {
 }
 
 .home .two-columns .text {
-	padding: 25% 10%;
+	padding: 25% 25% 25% 0;
 }
 
-.home .two-columns .text h1 {
+.home .two-columns .text .header {
 	font-size: 58px;
 	line-height: 63.8px;
 }
 
-.home .two-columns .text p {
+.home .two-columns .text .paragraph {
+	margin-top: 40px;
 	font-size: 20px;
 	line-height: 32px;
 }
 
-.home .two-columns .image {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+.home #five .text:nth-child(1) {
+	padding: 25% 25% 25% 0;
 }
 
-
-.home section #one {
-	border: 5px solid blue !important;
+.home #five .text:nth-child(2) {
+	padding: 25% 0 25% 25%;
 }
 
 .home .color-blocks {
@@ -1276,11 +1281,15 @@ li:hover {
 	margin-top: -25%;
 }
 
+.home .color-blocks .info .paragraph {
+	margin-top: 25px;
+}
+
 .home .color-blocks .left {
 	background-color: #B8E9F4;
 	border-radius: 50px;
-	padding: 2% 20% 2% 10%;
-	margin: 10% 0 10% 15%;
+	padding: 2% 20% 35% 10%;
+	margin: 10% 0;
 }
 
 .home .color-blocks .left .info {
@@ -1291,13 +1300,211 @@ li:hover {
 .home .color-blocks .right {
 	background-color: #E4EAEB;
 	border-radius: 50px;
-	padding: 2% 20% 2% 10%;
-	margin: 10% 15% 10% 0;
+	padding: 2% 20% 35% 10%;
+	margin: 10% 0;
 }
 
 .home .color-blocks .right .info {
 	margin-top: 30%;
 	margin-right: 10%;
+}
+
+.home .color-blocks .info .paragraph {
+	margin-top: 25px;
+}
+
+/*--------------------------------------------------------------
+# Companies
+--------------------------------------------------------------*/
+
+.page-template-companies .site-header {
+	background-color: transparent;
+}
+
+.page-template-companies section {
+	width: 100vw;
+	height: auto;
+	padding: 2vh 8vw;
+}
+
+.page-template-companies #one {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	padding-top: 20vh;
+}
+
+.page-template-companies .hero-text {
+	grid-column-start: 2;
+	padding-right: 20vw;
+}
+
+.page-template-companies #one .paragraph {
+	margin-top: 50px;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.page-template-companies .block {
+	margin: 50px 0;
+	width: 45%;
+	height: 300px;
+	border-radius: 50px;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+.page-template-companies .block .header-block,
+.page-template-companies .block .paragraph-block {
+	width: 65%;
+}
+
+.page-template-companies .block .header-block {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.page-template-companies #four {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 20vh;
+}
+
+.page-template-companies #four ul {
+	width: 50%;
+}
+
+.icon-list {
+	width: 50px;
+}
+
+.header-list {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.page-template-companies #five {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 20vh;
+}
+
+.page-template-companies #five .two-columns-text h3 {
+	font-size: 53px;
+	line-height: 63.8px;
+	margin-right: 25%;
+}
+
+
+/*--------------------------------------------------------------
+# Talents
+--------------------------------------------------------------*/
+
+.page-template-talents .site-header {
+	background-color: transparent;
+}
+
+.page-template-talents section {
+	width: 100vw;
+	height: auto;
+	padding: 2vh 8vw;
+}
+
+.page-template-talents #one {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	padding-top: 20vh;
+}
+
+.page-template-talents .hero-text {
+	grid-column-start: 2;
+	padding-right: 20vw;
+}
+
+.page-template-talents .paragraph {
+	margin-top: 50px;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.page-template-talents .block {
+	margin: 50px 0;
+	width: 45%;
+	height: 300px;
+	border-radius: 50px;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+.page-template-talents .block .header-block,
+.page-template-talents .block .paragraph-block {
+	width: 65%;
+	color: #ffffff;
+}
+
+.page-template-talents .block .header-block {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.page-template-talents .two-columns-text {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 10vh;
+}
+
+.page-template-talents .two-columns-text .header {
+	font-size: 100px;
+	line-height: 100px;
+	margin-right: 25%;
+}
+
+.page-template-talents .two-columns-text .paragraph {
+	margin-top: 0;
+}
+
+.page-template-talents .color-blocks {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 24px;
+}
+
+.page-template-talents .color-blocks img {
+	width: 230px;
+	float: right;
+	margin-right: -20%;
+	margin-top: -25%;
+}
+
+.page-template-talents .color-blocks .info .paragraph {
+	margin-top: 25px;
+}
+
+.page-template-talents .color-blocks .left {
+	background-color: #B8E9F4;
+	border-radius: 50px;
+	padding: 2% 20% 35% 10%;
+	margin: 10% 0 10% 0;
+}
+
+.page-template-talents .color-blocks .left .info {
+	margin-top: 30%;
+	margin-right: 10%;
+}
+
+.page-template-talents .color-blocks .right {
+	background-color: #E4EAEB;
+	border-radius: 50px;
+	padding: 2% 20% 35% 10%;
+	margin: 10% 0 10% 0;
+}
+
+.page-template-talents .color-blocks .right .info {
+	margin-top: 30%;
+	margin-right: 10%;
+}
+
+.page-template-talents .color-blocks .info .paragraph {
+	margin-top: 25px;
 }
 
 
