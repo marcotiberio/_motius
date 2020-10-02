@@ -1507,6 +1507,163 @@ li:hover {
 	margin-top: 25px;
 }
 
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.page-template-about .site-header {
+	background-color: transparent;
+}
+
+.page-template-about section {
+	width: 100vw;
+	height: auto;
+	padding: 2vh 8vw;
+}
+
+.page-template-about #one {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+.page-template-about .hero-text {
+	grid-column-start: 2;
+	padding-right: 20vw;
+}
+
+.page-template-about .paragraph {
+	margin-top: 50px;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.page-template-about #two {
+	padding: 2vh 2vw;
+}
+
+.page-template-about #two img {
+	border-radius: 50px;
+}
+
+.page-template-about #three,
+.page-template-about #five {
+	height: calc(100vh - 70px);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+.page-template-about #three .header,
+.page-template-about #five .header {
+	padding-right: 50%;
+}
+
+.page-template-about #three .paragraph,
+.page-template-about #five .paragraph {
+	padding-right: 25%;
+}
+
+.page-template-about #three .image,
+.page-template-about #five .image {
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.page-template-about #four {
+	height: calc(100vh - 70px);
+}
+
+.page-template-about #four .two-columns-text {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 20vh;
+	padding-bottom: 5vh;
+}
+
+.page-template-about #four .paragraph {
+	margin-top: 0;
+}
+
+.page-template-about #four .image {
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.page-template-about #six {
+	padding: 2vh 2vw;
+}
+
+.page-template-about #six img {
+	border-radius: 50px;
+}
+
+.page-template-about #seven {
+	height: calc(100vh - 70px);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 5%;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+.page-template-about #seven .text {
+	padding-right: 20%;
+}
+
+
+.page-template-about #seven .image {
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.grid-3 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.grid-3>div {
+	margin: 1%;
+}
+
+.page-template-about #eight {
+	padding-bottom: 20vh;
+}
+
+.page-template-about .section-title {
+	margin-bottom: 4.375rem;
+}
+
+.page-template-about .card .position {
+	color: #A6B7BD;
+}
+
+.page-template-about #nine {
+	height: calc(100vh - 70px);
+}
+
+.page-template-about #nine .two-columns-text {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 20vh;
+	padding-bottom: 5vh;
+}
+
+.page-template-about #nine .paragraph {
+	margin-top: 0;
+	width: 80%;
+}
+
+.page-template-about #eleven {
+	padding-bottom: 20vh;
+}
+
 
 
 
