@@ -63,17 +63,19 @@
 		<?php
 			$main = get_field('main');
 			if( $main ): ?>
-				<div class="column">
-					<h3 class="header"><?php echo $main['header1']; ?></h3>
-					<p class="paragraph"><?php echo $main['paragraph1']; ?></p>
-				</div>
-				<div class="column">
-					<h3 class="header"><?php echo $main['header2']; ?></h3>
-					<p class="paragraph"><?php echo $main['paragraph2']; ?></p>
-				</div>
-				<div class="column">
-					<h3 class="header"><?php echo $main['header3']; ?></h3>
-					<p class="paragraph"><?php echo $main['paragraph3']; ?></p>
+				<div class="column-3">
+					<div class="column">
+						<h3 class="header"><?php echo $main['header1']; ?></h3>
+						<p class="paragraph"><?php echo $main['paragraph1']; ?></p>
+					</div>
+					<div class="column">
+						<h3 class="header"><?php echo $main['header2']; ?></h3>
+						<p class="paragraph"><?php echo $main['paragraph2']; ?></p>
+					</div>
+					<div class="column">
+						<h3 class="header"><?php echo $main['header3']; ?></h3>
+						<p class="paragraph"><?php echo $main['paragraph3']; ?></p>
+					</div>
 				</div>
 			<?php endif; ?>
 	</div><!-- .entry-content -->
