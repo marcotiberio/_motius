@@ -1363,12 +1363,6 @@ li:hover {
 	margin-bottom: 20px;
 }
 
-.page-template-companies #four {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding-top: 20vh;
-}
-
 .icon-list {
 	width: 50px;
 }

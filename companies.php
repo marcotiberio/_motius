@@ -55,9 +55,12 @@ get_header();
 			<?php
 				$section5 = get_field('section5');
 				if( $section5 ): ?>
-					<section id="five" class="two-columns-text">
-						<h3 class="header"><?php echo $section5['header']; ?></h3>
-						<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
+					<section id="five">
+						<div class="two-columns-text">
+							<h3 class="header"><?php echo $section5['header']; ?></h3>
+							<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
+						</div>
+						<img src="<?php echo esc_url( $section5['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" />
 					</section>
 				<?php endif; ?>	
 		<section id="six">
