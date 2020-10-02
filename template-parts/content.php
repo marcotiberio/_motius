@@ -116,8 +116,9 @@
 			$outro = get_field('outro');
 			if( $outro ): ?>
 				<div class="outro">
-					<p class="paragraph"><?php echo $outro['paragraph']; ?></p>
+					<p class="paragraph"><?php echo $outro['paragraph1']; ?></p>
 					<img class="image" src="<?php echo esc_url($outro['url']); ?>" alt="<?php echo esc_attr($outro['alt']); ?>" />
+					<p class="paragraph"><?php echo $outro['paragraph2']; ?></p>
 				</div>
 			<?php endif; ?>
 	</div><!-- .entry-content -->
