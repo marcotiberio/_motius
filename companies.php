@@ -38,7 +38,6 @@ get_header();
 					<?php while( have_rows('section4') ): the_row(); 
 
 						// Load sub field value.
-						$sectiontitle = get_sub_field('section_title');
 						$iconlist = get_sub_field('icon_list');
 						$headerlist = get_sub_field('header_list');
 						$paragraphlist = get_sub_field('paragraph_list');
