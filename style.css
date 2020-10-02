@@ -1372,12 +1372,6 @@ li:hover {
 	margin-bottom: 20px;
 }
 
-.page-template-companies #five {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding-top: 20vh;
-}
-
 .page-template-companies #five .two-columns-text h3 {
 	font-size: 53px;
 	line-height: 63.8px;
