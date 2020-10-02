@@ -72,7 +72,7 @@ get_header();
 			<?php
 			$section7 = get_field('section7');
 			if( $section7 ): ?>
-				<section class="two-columns" id="three">
+				<section class="two-columns" id="seven">
 					<div class="image" style="background-image:url('<?php echo esc_url($section7['image']['url']); ?>');"></div>
 					<div class="seven">
 						<h3 class="header"><?php echo $section7['header']; ?></h3>
