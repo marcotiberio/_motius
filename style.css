@@ -1011,6 +1011,23 @@ p {
 	margin-block-start: 0;
 }
 
+h1 {
+	font-size: 4.375rem;
+	line-height: 4.375rem;
+}
+
+h3 {
+	font-size: 48px;
+	line-height: 52.8px;
+}
+
+h5 {
+	font-size: 28px;
+	line-height: 33.6px;
+	font-weight: normal;
+	color: #000000;
+}
+
 button,
 input,
 optgroup,
@@ -1076,15 +1093,27 @@ li:hover {
 	background-color: transparent;
 	width: 100vw;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
 	align-items: center;
 	font-family: 'Inter', sans-serif;
 	color: black;
+	padding: 6vh 8vw;
+}
+
+.site-branding {
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 .custom-logo-link img {
 	width: 160px;
 	height: auto;
+}
+
+.main-navigation {
+	grid-column-start: 3;
+	grid-column-end: 9;
 }
 
 .main-navigation ul {
@@ -1261,11 +1290,11 @@ li:hover {
 }
 
 .home #five .text:nth-child(1) {
-    padding: 25% 25% 25% 0;
+	padding: 25% 25% 25% 0;
 }
 
 .home #five .text:nth-child(2) {
-    padding: 25% 0 25% 25%;
+	padding: 25% 0 25% 25%;
 }
 
 .home .color-blocks {
@@ -1766,6 +1795,97 @@ li:hover {
 
 .page-template-about #eleven {
 	padding-bottom: 20vh;
+}
+
+/*--------------------------------------------------------------
+# Post
+--------------------------------------------------------------*/
+
+.single .entry-header {
+	display: block;
+}
+
+.single article {
+	padding: 20vh 8vw;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
+}
+
+.single article .entry-header {
+	grid-column-start: 3;
+	grid-column-end: 6;
+}
+
+.single article .entry-content {
+	grid-column-start: 1;
+	grid-column-end: 9;
+}
+
+.single .intro {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.single .tag,
+.single .date {
+	text-transform: capitalize;
+	margin-top: 25px;
+}
+
+.single .client {
+	text-transform: capitalize;
+	margin-top: 50px;
+}
+
+.single article .post-thumbnail {
+	grid-column-start: 1;
+	grid-column-end: 9;
+	margin: 10vh 0;
+}
+
+.column-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 5%;
+	margin: 20vh 0;
+}
+
+.column-3 .header {
+	width: 50%;
+	margin-bottom: 40px;
+}
+
+.column-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 5%;
+	margin-top: 5vh;
+	margin-bottom: 20vh;
+}
+
+.column-4 .header {
+	margin-bottom: 15px;
+}
+
+.single article .sublines {
+	margin: 10vh 20vh;
+}
+
+.single article .sublines .header {
+	margin-bottom: 15px;
+}
+
+.single article .outro {
+	margin: 10vh 0;
+}
+
+.single article .outro .paragraph {
+	margin: 0 20vh;
+}
+
+.single article .outro .image {
+	margin: 10vh 0;
 }
 
 
