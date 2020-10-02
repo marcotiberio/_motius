@@ -1363,6 +1363,28 @@ li:hover {
 	margin-bottom: 20px;
 }
 
+.two-columns-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20%;
+}
+
+.two-columns-list ul {
+	width: 75%;
+}
+
+.two-columns-list ul li {
+	margin-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid rgba(24, 34, 28, .15)
+}
+
+.two-columns-list ul li:nth-child(1) {
+	margin-top: 0;
+	padding-bottom: 50px;
+	border-bottom: 1px solid rgba(24, 34, 28, .15)
+}
+
 .icon-list {
 	width: 50px;
 }
@@ -1372,10 +1394,73 @@ li:hover {
 	margin-bottom: 20px;
 }
 
+.two-columns-text {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 10%;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
 .page-template-companies #five .two-columns-text h3 {
 	font-size: 53px;
 	line-height: 63.8px;
 	margin-right: 25%;
+}
+
+.page-template-companies #five .clients {
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+.page-template-companies #five .clients p {
+	text-align: center;
+	color: #B9BBC1;
+}
+
+.grid-6 {
+	margin: 5vh 0;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto;
+	column-gap: 5%;
+}
+
+.grid-6>img {
+	margin: 4%;
+}
+
+.page-template-companies #nine {
+	height: calc(100vh - 70px);
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+.two-columns {
+	height: calc(100vh - 70px);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+.two-columns .header {
+	padding-right: 50%;
+}
+
+.two-columns .paragraph {
+	margin-top: 50px;
+	padding-right: 25%;
+}
+
+.two-columns .image {
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.page-template-companies #ten {
+	padding-bottom: 20vh;
 }
 
 
