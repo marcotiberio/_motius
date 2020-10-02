@@ -102,6 +102,16 @@
 					</div>
 				</div>
 			<?php endif; ?>
+
+		<?php
+			$sublines = get_field('sublines');
+			if( $sublines ): ?>
+				<div class="sublines">
+					<h5 class="header"><?php echo $sublines['header1']; ?></h5>
+					<p class="paragraph"><?php echo $sublines['paragraph1']; ?></p>
+					</div>
+				</div>
+			<?php endif; ?>
 	</div><!-- .entry-content -->
 
 
