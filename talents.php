@@ -76,7 +76,9 @@ get_header();
 				<section id="eight">
 					<div class="two-columns-text-narrow">
 						<h1 class="header"><?php echo $section8['header']; ?></h1>
-						<p class="paragraph"><?php echo $section8['paragraph']; ?></p>
+						<div class="paragraph">
+							<?php echo $section8['paragraph']; ?>
+						</div>
 					</div>
 				</section>
 			<?php endif; ?>
