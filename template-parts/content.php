@@ -82,6 +82,7 @@
 		<?php
 			$category = get_field('category');
 			if( $category ): ?>
+			<h3><?php the_tags(); ?></h3>
 				<div class="column-4">
 					<div class="column">
 						<h5 class="header"><?php echo $category['header1']; ?></h5>
