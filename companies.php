@@ -74,7 +74,26 @@ get_header();
 						</div>
 					</section>
 				<?php endif; ?>	
-		<section id="six">
+		<section id="six" class="two-columns-list">
+			<h3 class="section-title">Benefits in a sentence formatting</h3>
+			<?php if( have_rows('section6') ): ?>
+				<ul>
+				<?php while( have_rows('section6') ): the_row(); 
+
+					// Load sub field value.
+					$iconlist = get_sub_field('icon_list');
+					$headerlist = get_sub_field('header_list');
+					$paragraphlist = get_sub_field('paragraph_list');
+					?>
+					
+						<li>
+							<img class="icon-list" src="<?php echo esc_url( $iconlist['url'] ); ?>" alt="<?php echo esc_attr( $iconlist['alt'] ); ?>" />
+							<p class="header-list"><?php the_sub_field('header_list'); ?></p>
+							<p class="paragraph-list"><?php the_sub_field('paragraph_list'); ?></p>
+						</li>
+				<?php endwhile; ?>
+				</ul>
+			<?php endif; ?>
 		</section>
 		<section id="seven">
 		</section>
