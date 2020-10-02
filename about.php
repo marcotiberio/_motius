@@ -108,6 +108,7 @@ get_header();
 						<h3 class="header"><?php echo $section9['header']; ?></h3>
 						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
 					</div>
+					<!-- timeline missing -->
 				</section>
 			<?php endif; ?>
 		<?php
