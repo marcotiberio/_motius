@@ -69,8 +69,17 @@ get_header();
 					<img src="<?php echo esc_url( $section6['image']['url'] ); ?>" alt="<?php echo esc_attr( $section6['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>
-		<section id="seven">
-		</section>
+			<?php
+			$section7 = get_field('section7');
+			if( $section7 ): ?>
+				<section class="two-columns" id="three">
+					<div class="image" style="background-image:url('<?php echo esc_url($section7['image']['url']); ?>');"></div>
+					<div class="seven">
+						<h3 class="header"><?php echo $section7['header']; ?></h3>
+						<p class="paragraph"><?php echo $section7['paragraph']; ?></p>
+					</div>
+				</section>
+			<?php endif; ?>
 		<section id="eight">
 		</section>
 		<section id="nine">
