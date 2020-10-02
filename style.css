@@ -1838,6 +1838,10 @@ li:hover {
 	margin-top: 50px;
 }
 
+.single .client span:nth-child(1) {
+	color: #c4c4c4;
+}
+
 .single article .post-thumbnail {
 	grid-column-start: 1;
 	grid-column-end: 9;
