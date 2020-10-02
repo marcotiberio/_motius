@@ -107,9 +107,17 @@
 			$sublines = get_field('sublines');
 			if( $sublines ): ?>
 				<div class="sublines">
-					<h5 class="header"><?php echo $sublines['header1']; ?></h5>
-					<p class="paragraph"><?php echo $sublines['paragraph1']; ?></p>
-					</div>
+					<h5 class="header"><?php echo $sublines['header']; ?></h5>
+					<p class="paragraph"><?php echo $sublines['paragraph']; ?></p>
+				</div>
+			<?php endif; ?>
+
+		<?php
+			$outro = get_field('outro');
+			if( $outro ): ?>
+				<div class="outro">
+					<p class="paragraph"><?php echo $outro['paragraph']; ?></p>
+					<img class="image" src="<?php echo esc_url($outro['url']); ?>" alt="<?php echo esc_attr($outro['alt']); ?>" />
 				</div>
 			<?php endif; ?>
 	</div><!-- .entry-content -->
