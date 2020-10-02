@@ -1191,7 +1191,7 @@ li:hover {
 .home section {
 	width: 100vw;
 	height: auto;
-	padding: 2vh 8vw;
+	padding: 10vh 8vw;
 }
 
 .home #one {
@@ -1261,11 +1261,11 @@ li:hover {
 }
 
 .home #five .text:nth-child(1) {
-	padding: 25% 25% 25% 0;
+    padding: 25% 25% 25% 0;
 }
 
 .home #five .text:nth-child(2) {
-	padding: 25% 0 25% 25%;
+    padding: 25% 0 25% 25%;
 }
 
 .home .color-blocks {
