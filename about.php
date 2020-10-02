@@ -80,8 +80,24 @@ get_header();
 					</div>
 				</section>
 			<?php endif; ?>
-		<section id="eight">
-		</section>
+		<?php if( have_rows('section8') ): ?>
+			<?php while( have_rows('section8') ): the_row(); 
+
+				// Get sub field values.
+				$image = get_sub_field('image');
+				$name = get_sub_field('name');
+				$position = get_sub_field('position');
+
+				?>
+				<section class="grid" id="section8">
+					<div class="card">
+						<img class="profile-photo" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+						<p class="name"><?php the_sub_field('name'); ?></p>
+						<p class="position"><?php the_sub_field('position'); ?></p>
+					</div>
+				</section>
+			<?php endwhile; ?>
+		<?php endif; ?>
 		<section id="nine">
 		</section>
 
