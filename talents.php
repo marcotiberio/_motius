@@ -62,7 +62,22 @@ get_header();
 			<!-- list how we work -->
 		</section>
 		<section id="five">
-			<!-- grid benefits -->
+			<h3 class="section-title">Benefits of Working with Motius</h3>
+			<?php if( have_rows('section5') ): ?>
+				<div class="grid-3">
+				<?php while( have_rows('section5') ): the_row(); 
+
+					// Load sub field value.
+					$photo = get_sub_field('photo');
+					$title = get_sub_field('title');
+					?>
+					<div class="card">
+						<img class="photo" src="<?php echo esc_url( $photo['url'] ); ?>" alt="<?php echo esc_attr( $photo['alt'] ); ?>" />
+						<p class="title"><?php the_sub_field('title'); ?></p>
+					</div>
+				<?php endwhile; ?>
+				</div>
+			<?php endif; ?>
 		</section>
 		<section id="six">
 			<!-- slideshow success stories -->
