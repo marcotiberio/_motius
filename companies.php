@@ -32,7 +32,7 @@ get_header();
 		<section id="three">
 		</section>
 		<section id="four">
-			<div class="two-column-list">
+			<div class="two-columns-list">
 				<h3 class="section-title">Benefits in a sentence formatting</h3>
 				<?php if( have_rows('section4') ): ?>
 					<ul>
