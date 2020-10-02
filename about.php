@@ -22,7 +22,6 @@ get_header();
 					</div>
 				</section>
 			<?php endif; ?>
-		</section>
 		<?php
 			$section2 = get_field('section2');
 			if( $section2 ): ?>
@@ -64,8 +63,16 @@ get_header();
 					<div class="image" style="background-image:url('<?php echo esc_url($section5['image']['url']); ?>');"></div>
 				</section>
 			<?php endif; ?>
-		<section id="six">
-		</section>
+		<?php
+			$section6 = get_field('section6');
+			if( $section6 ): ?>
+				<section id="six" style="background-color:<?php echo $section6['background_color_section']; ?>">
+					<div class="hero-text">
+						<h1 class="header"><?php echo $section6['header']; ?></h1>
+						<p class="paragraph"><?php echo $section6['paragraph']; ?></p>
+					</div>
+				</section>
+			<?php endif; ?>
 		<section id="seven">
 		</section>
 		<section id="eight">
