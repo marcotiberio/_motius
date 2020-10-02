@@ -31,20 +31,29 @@ get_header();
 		</section>
 		<section id="three">
 		</section>
-		<?php
-			$section4 = get_field('section4');
-			if( $section4 ): ?>
-				<section id="four" class="two-columns-list">
-					<h3 class="header"><?php echo $section4['header']; ?></h3>
+		<section id="four">
+			<?php if( have_rows('section4') ): ?>
+				<div class="two-column-list">
+				<?php while( have_rows('section4') ): the_row(); 
+
+					// Load sub field value.
+					$sectiontitle = get_sub_field('section_title');
+					$iconlist = get_sub_field('icon_list');
+					$headerlist = get_sub_field('header_list');
+					$paragraphlist = get_sub_field('paragraph_list');
+					?>
+					<h3 class="section-title"><?php the_sub_field('section_title'); ?></h3>
 					<ul>
 						<li>
-							<img class="icon-list"src="<?php echo esc_url( $section4['icon_list']['url'] ); ?>" alt="<?php echo esc_attr( $section4['icon_list']['alt'] ); ?>" />
-							<p class="header-list"><?php echo $section4['header_list']; ?></p>
-							<p class="paragraph-list"><?php echo $section4['paragraph_list']; ?></p>
+							<img class="icon-list" src="<?php echo esc_url( $photo['url'] ); ?>" alt="<?php echo esc_attr( $photo['alt'] ); ?>" />
+							<p class="header-list"><?php the_sub_field('title'); ?></p>
+							<p class="paragraph-list"><?php the_sub_field('subtitle'); ?></p>
 						</li>
 					</ul>
-				</section>
+				<?php endwhile; ?>
+				</div>
 			<?php endif; ?>
+		</section>
 			<?php
 				$section5 = get_field('section5');
 				if( $section5 ): ?>
