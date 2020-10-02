@@ -42,8 +42,17 @@ get_header();
 					<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
 				</section>
 			<?php endif; ?>
-		<section id="four">
-		</section>
+			<?php
+			$section4 = get_field('section4');
+			if( $section4 ): ?>
+				<section id="four">
+					<div class="two-columns-text">
+						<h3 class="header"><?php echo $section4['header']; ?></h3>
+						<p class="paragraph"><?php echo $section4['paragraph']; ?></p>
+					</div>
+					<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
+				</section>
+			<?php endif; ?>
 		<section id="five">
 		</section>
 		<section id="six">
