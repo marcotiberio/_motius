@@ -99,8 +99,17 @@ get_header();
 		</section>
 		<section id="eight">
 		</section>
-		<section id="nine">
-		</section>
+		<?php
+			$section9 = get_field('section9');
+			if( $section9 ): ?>
+				<section class="two-columns" id="nine">
+					<div class="text">
+						<h3 class="header"><?php echo $section9['header']; ?></h3>
+						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
+					</div>
+					<div class="image" style="background-image:url('<?php echo esc_url($section9['image']['url']); ?>');"></div>
+				</section>
+			<?php endif; ?>
 		<?php
 			$section10 = get_field('section10');
 			if( $section10 ): ?>
@@ -110,17 +119,6 @@ get_header();
 						<p class="paragraph"><?php echo $section10['paragraph']; ?></p>
 					</div>
 					<img src="<?php echo esc_url( $section10['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" />
-				</section>
-			<?php endif; ?>
-		<?php
-			$section11 = get_field('section11');
-			if( $section11 ): ?>
-				<section class="two-columns" id="eleven">
-					<div class="text">
-						<h3 class="header"><?php echo $section11['header']; ?></h3>
-						<p class="paragraph"><?php echo $section11['paragraph']; ?></p>
-					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section11['image']['url']); ?>');"></div>
 				</section>
 			<?php endif; ?>
 
