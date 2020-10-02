@@ -1475,13 +1475,11 @@ li:hover {
 .page-template-talents section {
 	width: 100vw;
 	height: auto;
-	padding: 10vh 8vw;
 }
 
 .page-template-talents #one {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	padding-top: 20vh;
 }
 
 .page-template-talents .hero-text {
@@ -1574,6 +1572,43 @@ li:hover {
 
 .page-template-talents .color-blocks .info .paragraph {
 	margin-top: 25px;
+}
+
+.two-columns-text-narrow {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 60px;
+	padding-bottom: 20vh;
+	padding: 2vh 16vw;
+}
+
+.two-columns-text-narrow .paragraph {
+	margin-top: 0;
+}
+
+.two-columns-text-narrow .paragraph p {
+	margin-block-end: 32px;
+}
+
+.page-template-talents .grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	row-gap: 10%;
+	text-align: center;
+}
+
+.page-template-talents .section-title {
+	margin-bottom: 4.375rem;
+	width: 35%;
+}
+
+.page-template-talents .grid-3 .title {
+	padding: 5% 25%;
+}
+
+.page-template-talents #five {
+	padding-bottom: 20vh;
 }
 
 /*--------------------------------------------------------------
