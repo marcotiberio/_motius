@@ -31,28 +31,26 @@ get_header();
 		</section>
 		<section id="three">
 		</section>
-		<section id="four">
-			<div class="two-columns-list">
-				<h3 class="section-title">Benefits in a sentence formatting</h3>
-				<?php if( have_rows('section4') ): ?>
-					<ul>
-					<?php while( have_rows('section4') ): the_row(); 
+		<section id="four" class="two-columns-list">
+			<h3 class="section-title">Benefits in a sentence formatting</h3>
+			<?php if( have_rows('section4') ): ?>
+				<ul>
+				<?php while( have_rows('section4') ): the_row(); 
 
-						// Load sub field value.
-						$iconlist = get_sub_field('icon_list');
-						$headerlist = get_sub_field('header_list');
-						$paragraphlist = get_sub_field('paragraph_list');
-						?>
-						
-							<li>
-								<img class="icon-list" src="<?php echo esc_url( $iconlist['url'] ); ?>" alt="<?php echo esc_attr( $iconlist['alt'] ); ?>" />
-								<p class="header-list"><?php the_sub_field('header_list'); ?></p>
-								<p class="paragraph-list"><?php the_sub_field('paragraph_list'); ?></p>
-							</li>
-					<?php endwhile; ?>
-					</ul>
-				<?php endif; ?>
-			</div>
+					// Load sub field value.
+					$iconlist = get_sub_field('icon_list');
+					$headerlist = get_sub_field('header_list');
+					$paragraphlist = get_sub_field('paragraph_list');
+					?>
+					
+						<li>
+							<img class="icon-list" src="<?php echo esc_url( $iconlist['url'] ); ?>" alt="<?php echo esc_attr( $iconlist['alt'] ); ?>" />
+							<p class="header-list"><?php the_sub_field('header_list'); ?></p>
+							<p class="paragraph-list"><?php the_sub_field('paragraph_list'); ?></p>
+						</li>
+				<?php endwhile; ?>
+				</ul>
+			<?php endif; ?>
 		</section>
 			<?php
 				$section5 = get_field('section5');
