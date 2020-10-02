@@ -22,6 +22,7 @@
 			?>
 		<?php endif; ?>
 		<p class="intro"><?php the_field('intro'); ?></p>
+		<?php the_tags() ?>
 	</header><!-- .entry-header -->
 
 	<?php _motius_post_thumbnail(); ?>
