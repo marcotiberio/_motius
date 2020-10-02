@@ -74,8 +74,8 @@ get_header();
 			$section8 = get_field('section8');
 			if( $section8 ): ?>
 				<section id="eight">
-					<div class="two-columns-text">
-						<h3 class="header"><?php echo $section8['header']; ?></h3>
+					<div class="two-columns-text-narrow">
+						<h1 class="header"><?php echo $section8['header']; ?></h1>
 						<p class="paragraph"><?php echo $section8['paragraph']; ?></p>
 					</div>
 				</section>
