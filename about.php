@@ -80,9 +80,9 @@ get_header();
 					</div>
 				</section>
 			<?php endif; ?>
-		<section class="grid" id="section8">
+		<section class="grid-3" id="section8">
 			<?php if( have_rows('section8') ): ?>
-				<div class="card">
+				<h3 class="section-title">Our Founding Team</h3>
 				<?php while( have_rows('section8') ): the_row(); 
 
 					// Load sub field value.
@@ -90,11 +90,12 @@ get_header();
 					$name = get_sub_field('name');
 					$position = get_sub_field('position');
 					?>
+					<div class="card">
 						<img class="profile-photo" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
 						<p class="name"><?php the_sub_field('name'); ?></p>
 						<p class="position"><?php the_sub_field('position'); ?></p>
+					</div>
 				<?php endwhile; ?>
-				</div>
 			<?php endif; ?>
 		</section>
 		<section id="nine">
