@@ -87,14 +87,14 @@ get_header();
 				<?php while( have_rows('section8') ): the_row(); 
 
 					// Load sub field value.
-					$image = get_sub_field('image');
-					$name = get_sub_field('name');
-					$position = get_sub_field('position');
+					$photo = get_sub_field('photo');
+					$title = get_sub_field('title');
+					$subtitle = get_sub_field('subtitle');
 					?>
 					<div class="card">
-						<img class="profile-photo" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
-						<p class="name"><?php the_sub_field('name'); ?></p>
-						<p class="position"><?php the_sub_field('position'); ?></p>
+						<img class="photo" src="<?php echo esc_url( $photo['url'] ); ?>" alt="<?php echo esc_attr( $photo['alt'] ); ?>" />
+						<p class="title"><?php the_sub_field('title'); ?></p>
+						<p class="subtitle"><?php the_sub_field('subtitle'); ?></p>
 					</div>
 				<?php endwhile; ?>
 				</div>
@@ -119,6 +119,26 @@ get_header();
 					<img src="<?php echo esc_url( $section10['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>
+		<section id="eleven">
+			<h3 class="section-title">Offices</h3>
+			<?php if( have_rows('section11') ): ?>
+				<div class="grid-3">
+				<?php while( have_rows('section11') ): the_row(); 
+
+					// Load sub field value.
+					$photo = get_sub_field('photo');
+					$title = get_sub_field('title');
+					$subtitle = get_sub_field('subtitle');
+					?>
+					<div class="card">
+						<img class="profile-photo" src="<?php echo esc_url( $photo['url'] ); ?>" alt="<?php echo esc_attr( $photo['alt'] ); ?>" />
+						<p class="title"><?php the_sub_field('title'); ?></p>
+						<p class="subtitle"><?php the_sub_field('subtitle'); ?></p>
+					</div>
+				<?php endwhile; ?>
+				</div>
+			<?php endif; ?>
+		</section>
 
 	</main><!-- #main -->
 
