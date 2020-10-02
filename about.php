@@ -81,8 +81,8 @@ get_header();
 				</section>
 			<?php endif; ?>
 		<section class="grid-3" id="section8">
+			<h3 class="section-title">Our Founding Team</h3>
 			<?php if( have_rows('section8') ): ?>
-				<h3 class="section-title">Our Founding Team</h3>
 				<?php while( have_rows('section8') ): the_row(); 
 
 					// Load sub field value.
