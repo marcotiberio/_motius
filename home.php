@@ -73,30 +73,10 @@ get_header();
 							<?php echo $section5['text_right']; ?>
 						</div>
 				<?php endif; ?>
+				<!-- category slideshow -->
 		</section>
 		<section id="six">
-		<?php
-			$args = array(
-				'numberposts'	=> 20,
-				'post_type'		=> 'post'
-			);
-			$my_posts = get_posts( $args );
-			foreach ($my_posts as $post) :  setup_postdata($post); 
-			?> 
-				<article class="latestpost--archive fade" style="background-color:<?php the_field('color'); ?>" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<div class="event-thumbnail" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>'); background-color:<?php the_field('color'); ?>" id="post-<?php the_ID(); ?>"></div>
-					<div class="event-details">
-					</div>
-				</article>
-
-				<div class="slider-nav">
-					<a class="prev" onclick="plusSlides(-1)"><</a>
-					<p><?php the_field('date'); ?></p>
-					<a class="next" onclick="plusSlides(1)">></a>
-				</div>
-
-			<?php endforeach; 
-		?>
+			<!-- success story slideshow -->
 		</section>
 		<section class="two-columns" id="seven">
 			<?php
