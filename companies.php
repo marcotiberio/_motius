@@ -33,7 +33,7 @@ get_header();
 		</section>
 		<section id="four">
 			<div class="two-column-list">
-				<h3 class="section-title"><?php the_sub_field('section_title'); ?></h3>
+				<h3 class="section-title">Benefits in a sentence formatting</h3>
 				<?php if( have_rows('section4') ): ?>
 					<div class="two-column-list">
 						<h3 class="section-title"><?php the_sub_field('section_title'); ?></h3>
