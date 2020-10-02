@@ -117,7 +117,7 @@
 			if( $outro ): ?>
 				<div class="outro">
 					<p class="paragraph"><?php echo $outro['paragraph1']; ?></p>
-					<img src="<?php echo esc_url( $outro['image']['url'] ); ?>" alt="<?php echo esc_attr( $outro['image']['alt'] ); ?>" />
+					<img class="image" src="<?php echo esc_url( $outro['image']['url'] ); ?>" alt="<?php echo esc_attr( $outro['image']['alt'] ); ?>" />
 					<p class="paragraph"><?php echo $outro['paragraph2']; ?></p>
 				</div>
 			<?php endif; ?>
