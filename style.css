@@ -1225,6 +1225,9 @@ li:hover {
 
 .home #one {
 	padding-top: 70px;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 1fr 1fr;
 }
 
 .home #two,
@@ -1236,13 +1239,18 @@ li:hover {
 }
 
 #heroImage {
-	width: 50%;
-	margin-left: 35vw;
+	grid-column-start: 3;
+	grid-column-end: 8;
+	width: 100%;
+	margin-left: 0;
 }
 
 .home #one .color-blocks {
-	margin-left: 35vw;
-	margin-right: 25vw;
+	margin-left: 0;
+	margin-right: 0;
+	grid-row-start: 2;
+	grid-column-start: 3;
+	grid-column-end: 8;
 }
 
 .home #one .color-blocks .left {
@@ -1271,22 +1279,36 @@ li:hover {
 
 .home .two-columns {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: auto;
+	height: calc(100vh - 70px);
 }
 
 .home .two-columns .text {
-	padding: 25% 25% 25% 0;
+	padding: 0;
+	grid-column-start: 1;
+	grid-column-end: 4;
 }
 
 .home .two-columns .text .header {
 	font-size: 58px;
 	line-height: 63.8px;
+	padding-right: 0;
 }
 
 .home .two-columns .text .paragraph {
 	margin-top: 40px;
 	font-size: 20px;
 	line-height: 32px;
+}
+
+.home .two-columns .image {
+	padding: 0;
+	grid-column-start: 5;
+	grid-column-end: 9;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .home #five .text:nth-child(1) {
@@ -1358,13 +1380,14 @@ li:hover {
 
 .page-template-companies #one {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
 	padding-top: 20vh;
 }
 
 .page-template-companies .hero-text {
-	grid-column-start: 2;
-	padding-right: 20vw;
+	grid-column-start: 3;
+	grid-column-end: 7;
 }
 
 .page-template-companies #one .paragraph {
