@@ -34,11 +34,12 @@ get_header();
 		<?php
 			$section2 = get_field('section2');
 			if( $section2 ): ?>
-				<section class="two-columns" id="two" style="background-image:url('<?php echo esc_url($section2['image']['url']); ?>');">
+				<section class="two-columns" id="three">
 					<div class="text">
 						<h3 class="header"><?php echo $section2['header']; ?></h3>
 						<p class="paragraph"><?php echo $section2['paragraph']; ?></p>
 					</div>
+					<div class="image" style="background-image:url('<?php echo esc_url($section2['image']['url']); ?>');"></div>
 				</section>
 			<?php endif; ?>
 		<?php
