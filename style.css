@@ -1504,16 +1504,20 @@ li:hover {
 .page-template-talents section {
 	width: 100vw;
 	height: auto;
+	padding: 10vh 8vw;
 }
 
 .page-template-talents #one {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
+	padding: 20vh 8vw;
 }
 
 .page-template-talents .hero-text {
-	grid-column-start: 2;
-	padding-right: 20vw;
+	grid-column-start: 3;
+	grid-column-end: 7;
+	padding-right: 0;
 }
 
 .page-template-talents .paragraph {
@@ -1603,6 +1607,8 @@ li:hover {
 	margin-top: 25px;
 }
 
+.page-template-talents #eight {}
+
 .two-columns-text-narrow {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -1618,6 +1624,8 @@ li:hover {
 .two-columns-text-narrow .paragraph p {
 	margin-block-end: 32px;
 }
+
+.page-template-talents #nine {}
 
 .page-template-talents .grid-3 {
 	display: grid;
@@ -1656,14 +1664,15 @@ li:hover {
 
 .page-template-about #one {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
 	padding-top: 20vh;
 	padding-bottom: 20vh;
 }
 
 .page-template-about .hero-text {
-	grid-column-start: 2;
-	padding-right: 20vw;
+	grid-column-start: 3;
+	grid-column-end: 7;
 }
 
 .page-template-about .paragraph {
