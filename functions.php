@@ -241,7 +241,7 @@ function custom_post_type() {
 		);
 		 
 		// Registering your Custom Post Type
-		register_post_type( 'movies', $args );
+		register_post_type( 'success-stories', $args );
 	 
 	}
 	 
