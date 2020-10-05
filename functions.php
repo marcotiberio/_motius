@@ -148,6 +148,11 @@ function _motius_scripts() {
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
 
+	wp_enqueue_script( 'flickityjs', get_template_directory_uri() . '/js/flickity.pkgd.min.js', array( 'jquery' ), '1.9.0', true );
+	wp_enqueue_script( 'flickityjs-init', get_template_directory_uri(). '/js/flickity-docs.min.js', array( 'flickityjs' ), '1.9.0', true );
+		
+	wp_enqueue_style( 'flickitycss', get_template_directory_uri() . '/css/flickity.min.css', 'all');
+
 	wp_enqueue_script( '_motius-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( '_motius-script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20151215', true );
 
@@ -217,9 +222,9 @@ function custom_post_type() {
 			'description'         => __( 'Success Story news and reviews', '_motius' ),
 			'labels'              => $labels,
 			// Features this CPT supports in Post Editor
-			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'custom-fields', ),
 			// You can associate this CPT with a taxonomy or custom taxonomy. 
-			'taxonomies'          => array( 'stories' ),
+			'taxonomies'  => array( 'category' ),
 			/* A hierarchical CPT is like Pages and can have
 			* Parent and child items. A non-hierarchical CPT
 			* is like Posts.

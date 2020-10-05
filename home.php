@@ -79,7 +79,37 @@ get_header();
 				<!-- category slideshow -->
 		</section>
 		<section id="six">
-			<!-- success story slideshow -->
+		<?php 
+			$args = array(
+				'post_type' => 'success-stories',
+				'post_status' => 'publish',
+				'posts_per_page' => 10,
+			);
+			$arr_posts = new WP_Query( $args );
+			 
+			if ( $arr_posts->have_posts() ) :
+				
+				while ( $arr_posts->have_posts() ) :
+					$arr_posts->the_post();
+					?>
+					<article class="latestpost--custom" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<a href="<?php the_permalink(); ?>">
+							<div class="event-cover">
+								<?php
+								if ( has_post_thumbnail() ) :
+									the_post_thumbnail( '' );
+								endif;
+								?>
+							</div>
+							<div class="event-header">
+								<p class="category"><?php the_category(); ?></p>
+								<h5 class="title"><?php print the_title(); ?></h5>
+							</div>
+						</a>
+					</article>	
+					<?php
+				endwhile;
+			endif; ?>
 		</section>
 		<section class="two-columns" id="seven">
 			<?php
