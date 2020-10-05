@@ -186,3 +186,68 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+/*
+* Creating a function to create our CPT
+*/
+ 
+function custom_post_type() {
+ 
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Success Stories', 'Post Type General Name', '_motius' ),
+			'singular_name'       => _x( 'Success Story', 'Post Type Singular Name', '_motius' ),
+			'menu_name'           => __( 'Success Stories', '_motius' ),
+			'parent_item_colon'   => __( 'Parent Success Story', '_motius' ),
+			'all_items'           => __( 'All Success Stories', '_motius' ),
+			'view_item'           => __( 'View Success Story', '_motius' ),
+			'add_new_item'        => __( 'Add New Success Story', '_motius' ),
+			'add_new'             => __( 'Add New', '_motius' ),
+			'edit_item'           => __( 'Edit Success Story', '_motius' ),
+			'update_item'         => __( 'Update Success Story', '_motius' ),
+			'search_items'        => __( 'Search Success Story', '_motius' ),
+			'not_found'           => __( 'Not Found', '_motius' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', '_motius' ),
+		);
+		 
+	// Set other options for Custom Post Type
+		 
+		$args = array(
+			'label'               => __( 'success-stories', '_motius' ),
+			'description'         => __( 'Success Story news and reviews', '_motius' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array( 'stories' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/ 
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+	 
+		);
+		 
+		// Registering your Custom Post Type
+		register_post_type( 'movies', $args );
+	 
+	}
+	 
+	/* Hook into the 'init' action so that the function
+	* Containing our post type registration is not 
+	* unnecessarily executed. 
+	*/
+	 
+	add_action( 'init', 'custom_post_type', 0 );
