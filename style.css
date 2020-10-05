@@ -1279,15 +1279,15 @@ li:hover {
 
 .home .two-columns {
 	display: grid;
-	grid-template-columns: repeat(8, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto;
 	height: calc(100vh - 70px);
 }
 
 .home .two-columns .text {
 	padding: 0;
-	grid-column-start: 1;
-	grid-column-end: 4;
+	/* grid-column-start: 1;
+	grid-column-end: 4; */
 }
 
 .home .two-columns .text .header {
@@ -1304,8 +1304,8 @@ li:hover {
 
 .home .two-columns .image {
 	padding: 0;
-	grid-column-start: 5;
-	grid-column-end: 9;
+	/* grid-column-start: 5;
+	grid-column-end: 9; */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
