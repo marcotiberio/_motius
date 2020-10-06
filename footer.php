@@ -11,6 +11,11 @@
 
 ?>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 	<footer id="colophon" class="site-footer">
 		<div class="primary-footer">
 			<div class="logo"><img src="http://motius.local/wp-content/uploads/2020/09/logo-footer.png" alt="" onclick="window.location.href='http://motius.local/'"></div>
