@@ -1016,6 +1016,11 @@ h1 {
 	line-height: 4.375rem;
 }
 
+h2 {
+	font-size: 58px;
+	line-height: 63.8px;
+}
+
 h3 {
 	font-size: 48px;
 	line-height: 52.8px;
@@ -1312,11 +1317,11 @@ li:hover {
 }
 
 .home #five .text:nth-child(1) {
-	padding: 25% 25% 25% 0;
+	padding: 25% 5% 25% 0;
 }
 
 .home #five .text:nth-child(2) {
-	padding: 25% 0 25% 25%;
+	padding: 25% 0 25% 5%;
 }
 
 .home .color-blocks {
@@ -1878,6 +1883,10 @@ li:hover {
 	grid-column-start: 1;
 	grid-column-end: 9;
 	margin: 10vh 0;
+}
+
+.single article .post-thumbnail img {
+	border-radius: 50px;
 }
 
 .column-3 {

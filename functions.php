@@ -152,7 +152,7 @@ function _motius_scripts() {
 	wp_enqueue_script( 'flickityjs-init', get_template_directory_uri(). '/js/flickity-docs.min.js', array( 'flickityjs' ), '1.9.0', true );
 		
 	wp_enqueue_style( 'flickitycss', get_template_directory_uri() . '/css/flickity.min.css', 'all');
-
+	
 	wp_enqueue_script( '_motius-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( '_motius-script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20151215', true );
 
@@ -191,12 +191,25 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+add_filter('body_class','add_category_to_single');
+  function add_category_to_single($classes) {
+    if (is_single() ) {
+      global $post;
+      foreach((get_the_category($post->ID)) as $category) {
+        // add category slug to the $classes array
+        $classes[] = $category->category_nicename;
+      }
+    }
+    // return the $classes array
+    return $classes;
+  }
+
 
 /*
-* Creating a function to create our CPT
+* Creating a function to create our Success Stories Posts
 */
  
-function custom_post_type() {
+function custom_post_type_successstories() {
  
 	// Set UI labels for Custom Post Type
 		$labels = array(
@@ -255,4 +268,69 @@ function custom_post_type() {
 	* unnecessarily executed. 
 	*/
 	 
-	add_action( 'init', 'custom_post_type', 0 );
+	add_action( 'init', 'custom_post_type_successstories', 0 );
+
+/*
+* Creating a function to create our Insights Posts
+*/
+ 
+function custom_post_type_insights() {
+ 
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Insights', 'Post Type General Name', '_motius' ),
+			'singular_name'       => _x( 'Insight', 'Post Type Singular Name', '_motius' ),
+			'menu_name'           => __( 'Insights', '_motius' ),
+			'parent_item_colon'   => __( 'Parent Insight', '_motius' ),
+			'all_items'           => __( 'All Insights', '_motius' ),
+			'view_item'           => __( 'View Insight', '_motius' ),
+			'add_new_item'        => __( 'Add New Insight', '_motius' ),
+			'add_new'             => __( 'Add New', '_motius' ),
+			'edit_item'           => __( 'Edit Insight', '_motius' ),
+			'update_item'         => __( 'Update Insight', '_motius' ),
+			'search_items'        => __( 'Search Insight', '_motius' ),
+			'not_found'           => __( 'Not Found', '_motius' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', '_motius' ),
+		);
+		 
+	// Set other options for Custom Post Type
+		 
+		$args = array(
+			'label'               => __( 'insights', '_motius' ),
+			'description'         => __( 'Insight news and reviews', '_motius' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array('topics', 'category' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/ 
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+	 
+		);
+		 
+		// Registering your Custom Post Type
+		register_post_type( 'insights', $args );
+	 
+	}
+	 
+	/* Hook into the 'init' action so that the function
+	* Containing our post type registration is not 
+	* unnecessarily executed. 
+	*/
+	 
+	add_action( 'init', 'custom_post_type_insights', 0 );

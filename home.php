@@ -34,9 +34,9 @@ get_header();
 		<?php
 			$section2 = get_field('section2');
 			if( $section2 ): ?>
-				<section class="two-columns" id="three">
+				<section class="two-columns" id="two">
 					<div class="text">
-						<h3 class="header"><?php echo $section2['header']; ?></h3>
+						<h2 class="header"><?php echo $section2['header']; ?></h2>
 						<p class="paragraph"><?php echo $section2['paragraph']; ?></p>
 					</div>
 					<div class="image" style="background-image:url('<?php echo esc_url($section2['image']['url']); ?>');"></div>
@@ -47,7 +47,7 @@ get_header();
 			if( $section3 ): ?>
 				<section class="two-columns" id="three">
 					<div class="text">
-						<h3 class="header"><?php echo $section3['header']; ?></h3>
+						<h2 class="header"><?php echo $section3['header']; ?></h2>
 						<p class="paragraph"><?php echo $section3['paragraph']; ?></p>
 					</div>
 					<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
@@ -56,9 +56,9 @@ get_header();
 		<?php
 			$section4 = get_field('section4');
 			if( $section4 ): ?>
-				<section class="two-columns" id="three">
+				<section class="two-columns" id="four">
 					<div class="text">
-						<h3 class="header"><?php echo $section4['header']; ?></h3>
+						<h2 class="header"><?php echo $section4['header']; ?></h2>
 						<p class="paragraph"><?php echo $section4['paragraph']; ?></p>
 					</div>
 					<div class="image" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');"></div>
@@ -79,75 +79,116 @@ get_header();
 				<!-- category slideshow -->
 		</section>
 		<section id="six">
-		<?php 
-			$args = array(
-				'post_type' => 'success-stories',
-				'post_status' => 'publish',
-				'posts_per_page' => 10,
-			);
-			$arr_posts = new WP_Query( $args );
-			 
-			if ( $arr_posts->have_posts() ) :
+			<div class="post-carousel-header">
+				<h2>Success Stories</h2>
+				<a href="http://motius.local/success-stories/">All Cases -></a>
+			</div>
+			<div class="post-carousel" data-flickity='{ "wrapAround": true }'>
+			<?php 
+				$args = array(
+					'post_type' => 'success-stories',
+					'post_status' => 'publish',
+					'orderby' => 'date',
+                    'order' => 'DESC',
+					'posts_per_page' => 10,
+				);
+				$arr_posts = new WP_Query( $args );
 				
-				while ( $arr_posts->have_posts() ) :
-					$arr_posts->the_post();
-					?>
-					<article class="latestpost--custom" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<a href="<?php the_permalink(); ?>">
-							<div class="event-cover">
-								<?php
-								if ( has_post_thumbnail() ) :
-									the_post_thumbnail( '' );
-								endif;
-								?>
-							</div>
-							<div class="event-header">
-								<p class="category"><?php the_category(); ?></p>
-								<h5 class="title"><?php print the_title(); ?></h5>
-							</div>
-						</a>
-					</article>	
-					<?php
-				endwhile;
-			endif; ?>
+				if ( $arr_posts->have_posts() ) :
+					
+					while ( $arr_posts->have_posts() ) :
+						$arr_posts->the_post();
+						?>
+						<article class="carousel-cell" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<a href="<?php the_permalink(); ?>">
+								<div class="event-cover">
+									<?php
+									if ( has_post_thumbnail() ) :
+										the_post_thumbnail( '' );
+									endif;
+									?>
+								</div>
+								<div class="event-header">
+									<p class="category"><?php the_category(); ?></p>
+									<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
+								</div>
+							</a>
+						</article>
+						<?php
+					endwhile;
+				endif; ?>
+			</div>
 		</section>
-		<section class="two-columns" id="seven">
-			<?php
-				$section7 = get_field('section7');
-				if( $section7 ): ?>
-						<div class="text">
-							<?php echo $section7['text_left']; ?>
-						</div>
-						<div class="text">
-							<?php echo $section7['text_right']; ?>
-						</div>
-				<?php endif; ?>
+		<section id="seven">
+				<!-- clients -->
 		</section>
-		<section class="two-columns" id="eight">
-			
+		<section id="eight">
+		<div class="post-carousel-header">
+			<h2>Insights</h2>
+			<a href="http://motius.local/insights/">All Insights -></a>
+		</div>
+		<div class="post-carousel" data-flickity='{ "wrapAround": true }'>
+			<?php 
+				$args = array(
+					'post_type' => 'insights',
+					'post_status' => 'publish',
+					'orderby' => 'date',
+                    'order' => 'DESC',
+					'posts_per_page' => 10,
+				);
+				$arr_posts = new WP_Query( $args );
+				
+				if ( $arr_posts->have_posts() ) :
+					
+					while ( $arr_posts->have_posts() ) :
+						$arr_posts->the_post();
+						?>
+						<article class="carousel-cell" id="post-<?php the_ID(); ?>" style="background-color:<?php the_field('background_color'); ?>" <?php post_class(); ?>>
+							<a href="<?php the_permalink(); ?>">
+								<div class="event-cover">
+									<?php
+									if ( has_post_thumbnail() ) :
+										the_post_thumbnail( '' );
+									endif;
+									?>
+								</div>
+								<div class="event-header">
+									<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
+									<p class="category"><?php the_category(); ?></p>
+									<p class="date"><?php echo date('M Y'); ?></p>
+									<p><?php the_field('author'); ?></p>
+								</div>
+							</a>
+						</article>	
+						<?php
+					endwhile;
+				endif; ?>
+			</div>
 		</section>
+		<section id="nine">
 			<?php
 				$section9 = get_field('section9');
 				if( $section9 ): ?>
-					<section class="color-blocks" id="nine">
+					<div class="color-blocks">
 						<div class="left">
 						<img src="<?php echo esc_url( $section9['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image_left']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_left']; ?></div>
 							<div class="info">
-								<h3 class="header"><?php echo $section9['header_left']; ?></h3>
+								<h2 class="header"><?php echo $section9['header_left']; ?></h2>
 								<p class="paragraph"><?php echo $section9['paragraph_left']; ?></p>
 							</div>
 						</div>
 						<div class="right">
-							<img src="<?php echo esc_url( $section9['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section9['imimage_rightage']['alt'] ); ?>" />
+							<img src="<?php echo esc_url( $section9['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image_right']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_right']; ?></div>
 							<div class="info">
-								<h3 class="header"><?php echo $section9['header_right']; ?></h3>
+								<h2 class="header"><?php echo $section9['header_right']; ?></h2>
 								<p class="paragraph"><?php echo $section9['paragraph_right']; ?></p>
 							</div>
 						</div>
-					</section>
+					</div>
 				<?php endif; ?>
+		</section>
 
 	</main><!-- #main -->
 

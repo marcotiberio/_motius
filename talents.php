@@ -32,7 +32,7 @@ get_header();
 			if( $section2 ): ?>
 				<section id="two">
 					<div class="two-columns-text">
-						<h3 class="header"><?php echo $section2['header']; ?></h3>
+						<h2 class="header"><?php echo $section2['header']; ?></h2>
 						<p class="paragraph"><?php echo $section2['paragraph']; ?></p>
 					</div>
 					<div class="color-blocks">
@@ -40,7 +40,7 @@ get_header();
 						<img src="<?php echo esc_url( $section2['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image_left']['alt'] ); ?>" />
 							<div class="label"><?php echo $section2['label_left']; ?></div>
 							<div class="info">
-								<h3 class="header"><?php echo $section2['header_left']; ?></h3>
+								<h2 class="header"><?php echo $section2['header_left']; ?></h2>
 								<p class="paragraph"><?php echo $section2['paragraph_left']; ?></p>
 							</div>
 						</div>
@@ -48,7 +48,7 @@ get_header();
 							<img src="<?php echo esc_url( $section2['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image_right']['alt'] ); ?>" />
 							<div class="label"><?php echo $section2['label_right']; ?></div>
 							<div class="info">
-								<h3 class="header"><?php echo $section2['header_right']; ?></h3>
+								<h2 class="header"><?php echo $section2['header_right']; ?></h2>
 								<p class="paragraph"><?php echo $section2['paragraph_right']; ?></p>
 							</div>
 						</div>
@@ -90,7 +90,7 @@ get_header();
 			if( $section8 ): ?>
 				<section id="eight">
 					<div class="two-columns-text-narrow">
-						<h1 class="header"><?php echo $section8['header']; ?></h1>
+						<h2 class="header"><?php echo $section8['header']; ?></h2>
 						<div class="paragraph">
 							<?php echo $section8['paragraph']; ?>
 						</div>
@@ -101,7 +101,7 @@ get_header();
 			$section9 = get_field('section9');
 			if( $section9 ): ?>
 				<section id="nine">
-					<h3 class="header"><?php echo $section9['header']; ?></h3>
+					<h2 class="header"><?php echo $section9['header']; ?></h2>
 					<img src="<?php echo esc_url( $section9['image']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>

@@ -34,7 +34,7 @@ get_header();
 			if( $section3 ): ?>
 				<section class="two-columns" id="three">
 					<div class="text">
-						<h3 class="header"><?php echo $section3['header']; ?></h3>
+						<h2 class="header"><?php echo $section3['header']; ?></h2>
 						<p class="paragraph"><?php echo $section3['paragraph']; ?></p>
 					</div>
 					<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
@@ -45,7 +45,7 @@ get_header();
 			if( $section4 ): ?>
 				<section id="four">
 					<div class="two-columns-text">
-						<h3 class="header"><?php echo $section4['header']; ?></h3>
+						<h2 class="header"><?php echo $section4['header']; ?></h2>
 						<p class="paragraph"><?php echo $section4['paragraph']; ?></p>
 					</div>
 					<div class="image" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');"></div>
@@ -56,7 +56,7 @@ get_header();
 			if( $section5 ): ?>
 				<section class="two-columns" id="five">
 					<div class="text">
-						<h3 class="header"><?php echo $section5['header']; ?></h3>
+						<h2 class="header"><?php echo $section5['header']; ?></h2>
 						<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
 					</div>
 					<div class="image" style="background-image:url('<?php echo esc_url($section5['image']['url']); ?>');"></div>
@@ -75,7 +75,7 @@ get_header();
 				<section class="two-columns" id="seven">
 					<div class="image" style="background-image:url('<?php echo esc_url($section7['image']['url']); ?>');"></div>
 					<div class="text">
-						<h3 class="header"><?php echo $section7['header']; ?></h3>
+						<h2 class="header"><?php echo $section7['header']; ?></h2>
 						<p class="paragraph"><?php echo $section7['paragraph']; ?></p>
 					</div>
 				</section>
@@ -105,7 +105,7 @@ get_header();
 			if( $section9 ): ?>
 				<section id="nine">
 					<div class="two-columns-text">
-						<h3 class="header"><?php echo $section9['header']; ?></h3>
+						<h2 class="header"><?php echo $section9['header']; ?></h2>
 						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
 					</div>
 					<!-- timeline missing -->
@@ -115,7 +115,7 @@ get_header();
 			$section10 = get_field('section10');
 			if( $section10 ): ?>
 				<section id="ten">
-					<h3 class="section-title"><?php echo $section10['header']; ?></h3>
+					<h2 class="section-title"><?php echo $section10['header']; ?></h2>
 					<img src="<?php echo esc_url( $section10['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>

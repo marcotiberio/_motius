@@ -34,7 +34,7 @@ get_header();
 			<!-- vertical timeline -->
 		</section>
 		<section id="four" class="two-columns-list">
-			<h3 class="section-title">Benefits in a sentence formatting</h3>
+			<h2 class="section-title">Benefits in a sentence formatting</h2>
 			<?php if( have_rows('section4') ): ?>
 				<ul>
 				<?php while( have_rows('section4') ): the_row(); 
@@ -59,7 +59,7 @@ get_header();
 				if( $section5 ): ?>
 					<section id="five">
 						<div class="two-columns-text">
-							<h3 class="header"><?php echo $section5['header']; ?></h3>
+							<h2 class="header"><?php echo $section5['header']; ?></h2>
 							<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
 						</div>
 						<img src="<?php echo esc_url( $section5['image']['url'] ); ?>" alt="<?php echo esc_attr( $section5['image']['alt'] ); ?>" />
@@ -77,7 +77,7 @@ get_header();
 					</section>
 				<?php endif; ?>	
 		<section id="six" class="two-columns-list">
-			<h3 class="section-title">Benefits in a sentence formatting</h3>
+			<h2 class="section-title">Benefits in a sentence formatting</h2>
 			<?php if( have_rows('section6') ): ?>
 				<ul>
 				<?php while( have_rows('section6') ): the_row(); 
@@ -108,7 +108,7 @@ get_header();
 			if( $section9 ): ?>
 				<section class="two-columns" id="nine">
 					<div class="text">
-						<h3 class="header"><?php echo $section9['header']; ?></h3>
+						<h2 class="header"><?php echo $section9['header']; ?></h2>
 						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
 					</div>
 					<div class="image" style="background-image:url('<?php echo esc_url($section9['image']['url']); ?>');"></div>
@@ -119,7 +119,7 @@ get_header();
 			if( $section10 ): ?>
 				<section id="ten">
 					<div class="two-columns-text">
-						<h3 class="header"><?php echo $section10['header']; ?></h3>
+						<h2 class="header"><?php echo $section10['header']; ?></h2>
 						<p class="paragraph"><?php echo $section10['paragraph']; ?></p>
 					</div>
 					<img src="<?php echo esc_url( $section10['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" />
