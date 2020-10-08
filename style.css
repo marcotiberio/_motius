@@ -1369,6 +1369,83 @@ li:hover {
 	margin-top: 25px;
 }
 
+.home #six,
+.home #eight {
+	padding: 10vh 0 10vh 8vw;
+}
+
+.home .post-carousel-header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-right: 8vw;
+}
+
+.home .post-carousel-header a {
+	display: grid;
+	place-items: center;
+	padding-left: 50%;
+}
+
+.home .post-carousel {
+	margin-top: 50px;
+}
+
+.home #six .carousel-cell {
+	background-color: #E8E9E9 !important;
+	border-radius: 50px;
+	width: 30%;
+	height: auto;
+	margin-right: 10px;
+	counter-increment: carousel-cell;
+}
+
+.home #eight .carousel-cell {
+	border-radius: 50px;
+	width: 30%;
+	height: 40vh;
+	margin-right: 10px;
+	counter-increment: carousel-cell;
+}
+
+.carousel-cell:before {
+	display: block;
+}
+
+.home article .event-cover img {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+.home article .event-header {
+	padding: 5% 20% 10% 10%;
+}
+
+.home article .event-header .category {
+	color: rgba(56, 62, 78, 0.6);
+}
+
+
+.flickity-page-dots {
+	display: none;
+}
+
+.flickity-button {
+	position: static;
+}
+
+.flickity-prev-next-button {
+	top: 100%;
+	border: 1px solid #C4C4C4;
+	margin-right: 10px;
+}
+
+.flickity-viewport {
+	margin-bottom: 50px;
+}
+
 /*--------------------------------------------------------------
 # Companies
 --------------------------------------------------------------*/
@@ -1933,7 +2010,60 @@ li:hover {
 	margin: 10vh 0;
 }
 
+/*--------------------------------------------------------------
+# Archive
+--------------------------------------------------------------*/
 
+.archive .page-header {
+	display: none;
+}
+
+.archive .cat-list {
+	padding: 20vh 8vw;
+}
+
+.archive .site-main {
+	padding: 20vh 8vw;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	row-gap: 20px;
+}
+
+.archive article {
+	background-color: #E8E9E9;
+	border-radius: 50px;
+	height: auto;
+}
+
+.archive article .event-cover img {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+.archive article .event-header {
+	padding: 5% 20% 10% 10%;
+}
+
+.archive .category-cheat-sheet {
+	background-color: #E4EAEB !important;
+}
+
+.archive .category-toolbox {
+	background-color: #F1FBFD;
+	 !important;
+}
+
+.archive .category-our-blog {
+	background-color: #B8E9F4 !important;
+}
+
+.post-type-archive-insights article {
+	height: 40vh;
+}
 
 
 /* MOBILE MOBILE MOBILE */
