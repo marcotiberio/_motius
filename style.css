@@ -2077,11 +2077,64 @@ li:hover {
 
 @media screen and (max-width: 37.5em) {
 
+	.site-header {
+		padding: 2vh 4vw;
+	}
+
 	.menu-toggle {
 		display: block;
+	}
+
+	#primary-menu {
+		display: none;
 	}
 
 	.main-navigation ul {
 		display: flex;
 	}
+
+	/* Home */
+
+	.home #one {
+		grid-template-rows: auto;
+	}
+
+	.home #heroImage {
+		grid-column-start: 1;
+		grid-column-end: 9;
+	}
+
+	.home .color-blocks {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		row-gap: 20px;
+	}
+
+	.home #one .color-blocks {
+		margin-left: 0;
+		margin-right: 0;
+		grid-row-start: 2;
+		grid-column-start: 1;
+		grid-column-end: 9;
+	}
+
+	.home .two-columns {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.two-columns .text {
+		padding: 0;
+		grid-column-start: 1;
+		grid-column-end: 9;
+	}
+
+	.two-columns .paragraph {
+		margin-top: 50px;
+		padding-right: 0;
+	}
+
 }
