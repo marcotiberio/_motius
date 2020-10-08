@@ -64,7 +64,8 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="three">
-			<!-- vertical timeline -->
+			<h2 class="section-title">How It Works?</h2>
+			
 		</section>
 		<section id="four" class="two-columns-list">
 			<h2 class="section-title">Benefits in a sentence formatting</h2>

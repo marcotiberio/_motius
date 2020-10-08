@@ -34,7 +34,7 @@ get_header();
 		<?php
 			$section2 = get_field('section2');
 			if( $section2 ): ?>
-				<section class="two-columns" id="two" data-aos="fade-up" data-aos-duration="1000">
+				<section class="two-columns" id="two">
 					<div class="text">
 						<h2 class="header"><?php echo $section2['header']; ?></h2>
 						<p class="paragraph"><?php echo $section2['paragraph']; ?></p>
@@ -45,7 +45,7 @@ get_header();
 		<?php
 			$section3 = get_field('section3');
 			if( $section3 ): ?>
-				<section class="two-columns" id="three" data-aos="fade-up" data-aos-duration="1000">
+				<section class="two-columns" id="three">
 					<div class="text">
 						<h2 class="header"><?php echo $section3['header']; ?></h2>
 						<p class="paragraph"><?php echo $section3['paragraph']; ?></p>
@@ -56,7 +56,7 @@ get_header();
 		<?php
 			$section4 = get_field('section4');
 			if( $section4 ): ?>
-				<section class="two-columns" id="four" data-aos="fade-up" data-aos-duration="1000">
+				<section class="two-columns" id="four">
 					<div class="text">
 						<h2 class="header"><?php echo $section4['header']; ?></h2>
 						<p class="paragraph"><?php echo $section4['paragraph']; ?></p>

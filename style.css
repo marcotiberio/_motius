@@ -1262,6 +1262,7 @@ li:hover {
 .home #two,
 .home #three,
 .home #four {
+	padding: 0 0 0 8vw;
 	background-size: contain;
 	background-position: right;
 	background-repeat: no-repeat;
@@ -1335,8 +1336,9 @@ li:hover {
 	padding: 0;
 	/* grid-column-start: 5;
 	grid-column-end: 9; */
-	background-size: cover;
-	background-position: center;
+	background-attachment: fixed;
+	background-size: contain;
+	background-position: right;
 	background-repeat: no-repeat;
 }
 
