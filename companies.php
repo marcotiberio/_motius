@@ -53,6 +53,9 @@ get_header();
 									<li><?php the_sub_field('bullet_point2'); ?></li>
 									<li><?php the_sub_field('bullet_point3'); ?></li>
 								</ul>
+								<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
+									<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#383E4E"/>
+								</svg>
 							</div>
 						</div>
 					</div>
