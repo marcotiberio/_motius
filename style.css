@@ -1369,6 +1369,43 @@ li:hover {
 	margin-top: 25px;
 }
 
+.home #five {
+	padding: 10vh 0 0 8vw;
+}
+
+.home #fiveB {
+	padding: 0 0 10vh 8vw;
+}
+
+.home #fiveB .flickity-viewport {
+	height: 30vh;
+}
+
+
+.home #fiveB .carousel-cell {
+	width: 20%;
+	height: 30vh;
+	margin-right: 10px;
+	border-radius: 5px;
+	counter-increment: carousel-cell;
+}
+
+.home #fiveB .flip-card:hover .flip-card-inner {
+	transform: none;
+	opacity: 0.8;
+}
+
+.home #fiveB .flip-card .title,
+.home #fiveB .flip-card .icon {
+	padding: 5% 0;
+}
+
+/* cell number */
+.home #fiveB .carousel-cell:before {
+	display: block;
+	text-align: center;
+}
+
 .home #six,
 .home #eight {
 	padding: 10vh 0 10vh 8vw;
@@ -1496,6 +1533,103 @@ li:hover {
 	font-weight: bold;
 	margin-bottom: 20px;
 }
+
+/* Flip Cards */
+
+.page-template-companies #two .section-title,
+.page-template-companies #two .paragraph {
+	width: 35%;
+}
+
+.page-template-companies .grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	column-gap: 2%;
+	row-gap: 5%;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.page-template-companies .grid-3 .flip-card {
+	height: 50vh;
+	background-color: transparent;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background-color: #F5F9FA;
+	border-radius: 50px;
+	display: grid;
+	place-items: center;
+	align-content: center;
+	perspective: 1000px;
+	cursor: pointer;
+}
+
+.page-template-companies .grid-3 .flip-card-front .title {
+	padding: 5% 0;
+}
+
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 50px;
+	perspective: 1000px;
+	background-color: #ffffff;
+	color: #2BBADB;
+	transform: rotateY(180deg);
+	text-align: left;
+	padding-left: 10%;
+	padding-right: 5%;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-template-companies .grid-3 .flip-card-back .title {
+	padding: 10% 0;
+}
+
+.flip-card-back ul {
+	color: #000000;
+	list-style: none;
+}
+
+.flip-card-back ul li {
+	padding-left: 0;
+	text-decoration: none !important;
+}
+
+.flip-card-back ul li::before {
+	content: "✓";
+	/* Insert content that looks like bullets */
+	padding-right: 8px;
+	color: #000000;
+}
+
+
+/* Flip Cards */
 
 .two-columns-list {
 	display: grid;
