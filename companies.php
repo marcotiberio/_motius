@@ -64,7 +64,6 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="three">
-			<h2 class="section-title">How It Works?</h2>
 			
 		</section>
 		<section id="four" class="two-columns-list">
