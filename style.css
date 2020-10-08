@@ -1219,6 +1219,30 @@ li:hover {
 }
 
 /*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+#blockButton {
+	margin: 5% 0;
+	color: #ffffff;
+	border: 0;
+	border-radius: 13px;
+	padding: 1rem;
+}
+
+.color-blocks .left #blockButton {
+	background-color: #28B9DA;
+}
+
+.color-blocks .right #blockButton {
+	background-color: #383E4E;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
 
@@ -1344,7 +1368,7 @@ li:hover {
 .home .color-blocks .left {
 	background-color: #B8E9F4;
 	border-radius: 50px;
-	padding: 2% 20% 35% 10%;
+	padding: 2% 20% 5% 10%;
 	margin: 10% 0;
 }
 
@@ -1356,7 +1380,7 @@ li:hover {
 .home .color-blocks .right {
 	background-color: #E4EAEB;
 	border-radius: 50px;
-	padding: 2% 20% 35% 10%;
+	padding: 2% 20% 5% 10%;
 	margin: 10% 0;
 }
 
@@ -1628,6 +1652,12 @@ li:hover {
 	color: #000000;
 }
 
+.flip-card-back #arrow {
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+}
+
 
 /* Flip Cards */
 
@@ -1670,6 +1700,14 @@ li:hover {
 	padding-bottom: 20vh;
 }
 
+.page-template-companies #five {
+	padding: 10vh 0;
+}
+
+.page-template-companies .two-columns-text {
+	padding: 0 8vw 10vh 8vw;
+}
+
 .page-template-companies #five .two-columns-text h3 {
 	font-size: 53px;
 	line-height: 63.8px;
@@ -1677,8 +1715,7 @@ li:hover {
 }
 
 .page-template-companies #five .clients {
-	padding-top: 20vh;
-	padding-bottom: 20vh;
+	padding: 10vh 8vw;
 }
 
 .page-template-companies #five .clients p {
@@ -1821,7 +1858,7 @@ li:hover {
 .page-template-talents .color-blocks .left {
 	background-color: #B8E9F4;
 	border-radius: 50px;
-	padding: 2% 20% 35% 10%;
+	padding: 2% 20% 5% 10%;
 	margin: 10% 0 10% 0;
 }
 
@@ -1833,7 +1870,7 @@ li:hover {
 .page-template-talents .color-blocks .right {
 	background-color: #E4EAEB;
 	border-radius: 50px;
-	padding: 2% 20% 35% 10%;
+	padding: 2% 20% 5% 10%;
 	margin: 10% 0 10% 0;
 }
 
@@ -1846,7 +1883,9 @@ li:hover {
 	margin-top: 25px;
 }
 
-.page-template-talents #eight {}
+.page-template-talents #five {
+	padding-bottom: 20vh;
+}
 
 .two-columns-text-narrow {
 	display: grid;
@@ -1863,8 +1902,6 @@ li:hover {
 .two-columns-text-narrow .paragraph p {
 	margin-block-end: 32px;
 }
-
-.page-template-talents #nine {}
 
 .page-template-talents .grid-3 {
 	display: grid;
@@ -1883,8 +1920,26 @@ li:hover {
 	padding: 5% 25%;
 }
 
-.page-template-talents #five {
-	padding-bottom: 20vh;
+.page-template-talents #four .section-title {
+	width: 100%;
+}
+
+.page-template-talents #four #blockButton {
+	background-color: #28B9DA;
+	padding: 1rem 3rem;
+}
+
+.page-template-talents .two-columns-list ul li:nth-child(5) {
+	border-bottom: 0 !important;
+}
+
+.page-template-talents #nine {
+	padding: 10vh 0;
+}
+
+.page-template-talents #nine h1,
+.page-template-talents #nine p {
+	padding: 0 8vw;
 }
 
 /*--------------------------------------------------------------
@@ -2150,6 +2205,24 @@ li:hover {
 
 .archive .page-header {
 	display: none;
+}
+
+.archive #hero {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
+	padding-top: 20vh;
+}
+
+.archive #hero .hero-text {
+	grid-column-start: 3;
+	grid-column-end: 7;
+}
+
+.archive #hero .paragraph {
+	margin-top: 50px;
+	font-size: 20px;
+	line-height: 32px;
 }
 
 .archive .cat-list {

@@ -187,24 +187,26 @@ get_header();
 		</section>
 		<section id="nine">
 			<?php
-				$section9 = get_field('section9');
+				$section9 = get_field('section9', 2);
 				if( $section9 ): ?>
 					<div class="color-blocks">
 						<div class="left">
 						<img src="<?php echo esc_url( $section9['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image_left']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_left']; ?></div>
 							<div class="info">
-								<h2 class="header"><?php echo $section9['header_left']; ?></h2>
+								<h3 class="header"><?php echo $section9['header_left']; ?></h3>
 								<p class="paragraph"><?php echo $section9['paragraph_left']; ?></p>
 							</div>
+							<button id="blockButton">Contact Us</button>
 						</div>
 						<div class="right">
 							<img src="<?php echo esc_url( $section9['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image_right']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_right']; ?></div>
 							<div class="info">
-								<h2 class="header"><?php echo $section9['header_right']; ?></h2>
+								<h3 class="header"><?php echo $section9['header_right']; ?></h3>
 								<p class="paragraph"><?php echo $section9['paragraph_right']; ?></p>
 							</div>
+							<button id="blockButton">Work with us</button>
 						</div>
 					</div>
 				<?php endif; ?>

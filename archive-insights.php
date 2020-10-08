@@ -10,6 +10,12 @@
 get_header();
 ?>
 
+	<section id="hero">
+		<div class="hero-text">
+			<h1 class="header">We create the tech products of the future.</h1>
+			<p class="paragraph">A selection of case studies and success stories to give you an insight into impactful tech solutions.</p>
+		</div>
+	</section>
 
 	<main id="primary" class="site-main">
 

@@ -40,17 +40,19 @@ get_header();
 						<img src="<?php echo esc_url( $section2['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image_left']['alt'] ); ?>" />
 							<div class="label"><?php echo $section2['label_left']; ?></div>
 							<div class="info">
-								<h2 class="header"><?php echo $section2['header_left']; ?></h2>
+								<h3 class="header"><?php echo $section2['header_left']; ?></h3>
 								<p class="paragraph"><?php echo $section2['paragraph_left']; ?></p>
 							</div>
+							<button id="blockButton">Apply Now</button>
 						</div>
 						<div class="right">
 							<img src="<?php echo esc_url( $section2['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image_right']['alt'] ); ?>" />
 							<div class="label"><?php echo $section2['label_right']; ?></div>
 							<div class="info">
-								<h2 class="header"><?php echo $section2['header_right']; ?></h2>
+								<h3 class="header"><?php echo $section2['header_right']; ?></h3>
 								<p class="paragraph"><?php echo $section2['paragraph_right']; ?></p>
 							</div>
+							<button id="blockButton">Apply Now</button>
 						</div>
 					</div>
 				</section>
@@ -58,8 +60,27 @@ get_header();
 		<section id="three">
 			<!-- tab switch timeline -->
 		</section>
-		<section id="four">
-			<!-- list how we work -->
+		<section id="four" class="two-columns-list">
+			<h3 class="section-title">How We Work</h3>
+			<?php if( have_rows('section4') ): ?>
+				<ul>
+				<?php while( have_rows('section4') ): the_row(); 
+
+					// Load sub field value.
+					$iconlist = get_sub_field('icon_list');
+					$headerlist = get_sub_field('header_list');
+					$paragraphlist = get_sub_field('paragraph_list');
+					?>
+					
+						<li>
+							<img class="icon-list" src="<?php echo esc_url( $iconlist['url'] ); ?>" alt="<?php echo esc_attr( $iconlist['alt'] ); ?>" />
+							<p class="header-list"><?php the_sub_field('header_list'); ?></p>
+							<p class="paragraph-list"><?php the_sub_field('paragraph_list'); ?></p>
+						</li>
+				<?php endwhile; ?>
+				<button id="blockButton">Contact Us -></button>
+				</ul>
+			<?php endif; ?>
 		</section>
 		<section id="five">
 			<h3 class="section-title">Benefits of Working with Motius</h3>
