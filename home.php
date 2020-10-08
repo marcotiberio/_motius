@@ -76,7 +76,27 @@ get_header();
 							<?php echo $section5['text_right']; ?>
 						</div>
 				<?php endif; ?>
-				<!-- category slideshow -->
+		</section>
+		<section id="fiveB">
+			<div class="carousel" data-flickity='{ "wrapAround": true }'>
+				<?php if( have_rows('fields_of_expertise', 11) ): ?>
+					<?php while( have_rows('fields_of_expertise', 11) ): the_row(); 
+
+						// Load sub field value.
+						$icon = get_sub_field('icon');
+						$title = get_sub_field('title');
+						?>
+						<div class="flip-card carousel-cell">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img class="icon" src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+									<p class="title"><?php the_sub_field('title'); ?></p>
+								</div>
+							</div>
+						</div>
+					<?php endwhile; ?>
+				<?php endif; ?>
+			</div>
 		</section>
 		<section id="six">
 			<div class="post-carousel-header">

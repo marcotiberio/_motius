@@ -28,7 +28,37 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="two">
-			<!-- grid categories + hover -->
+			<h3 class="section-title">Fields of Expertise</h3>
+			<p class="paragraph">To keep up with rapid technological change our fields of expertise are always evolving.  
+			Here’s an overview of the technologies we’re currently working with and respective use cases 
+			that we’ve brought to life.</p>
+			<?php if( have_rows('fields_of_expertise') ): ?>
+				<div class="grid-3">
+				<?php while( have_rows('fields_of_expertise') ): the_row(); 
+
+					// Load sub field value.
+					$icon = get_sub_field('icon');
+					$title = get_sub_field('title');
+					?>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img class="icon" src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+								<p class="title"><?php the_sub_field('title'); ?></p>
+							</div>
+							<div class="flip-card-back">
+								<p class="title"><?php the_sub_field('title'); ?></p>
+								<ul>
+									<li><?php the_sub_field('bullet_point1'); ?></li>
+									<li><?php the_sub_field('bullet_point2'); ?></li>
+									<li><?php the_sub_field('bullet_point3'); ?></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				<?php endwhile; ?>
+				</div>
+			<?php endif; ?>
 		</section>
 		<section id="three">
 			<!-- vertical timeline -->
