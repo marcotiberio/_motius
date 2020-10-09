@@ -11,9 +11,40 @@ get_header();
 ?>
 
 	<section id="hero">
-		<div class="hero-text">
-			<h1 class="header">We create the tech products of the future.</h1>
-			<p class="paragraph">A selection of case studies and success stories to give you an insight into impactful tech solutions.</p>
+	<div class="post-carousel" data-flickity='{ "wrapAround": true }'>
+		<?php 
+			$args = array(
+				'post_type' => 'insights',
+				'post_status' => 'publish',
+				'orderby' => 'date',
+				'order' => 'DESC',
+				'posts_per_page' => 10,
+			);
+			$arr_posts = new WP_Query( $args );
+			
+			if ( $arr_posts->have_posts() ) :
+				
+				while ( $arr_posts->have_posts() ) :
+					$arr_posts->the_post();
+					?>
+					<article class="carousel-cell" id="post-<?php the_ID(); ?>" style="background-color:<?php the_field('background_color'); ?>" <?php post_class(); ?>>
+						<div class="event-cover">
+							<?php
+							if ( has_post_thumbnail() ) :
+								the_post_thumbnail( '' );
+							endif;
+							?>
+						</div>
+						<div class="event-header">
+							<a href="<?php the_permalink(); ?>"><h2 class="title"><?php print the_title(); ?></h2></a>
+							<div class="excerpt"><?php the_excerpt(); ?></div>
+							<p class="date"><?php echo date('M Y'); ?></p>
+							<p><?php the_field('author'); ?></p>
+							</div>
+					</article>	
+					<?php
+				endwhile;
+			endif; ?>
 		</div>
 	</section>
 
