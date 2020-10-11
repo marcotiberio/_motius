@@ -25,8 +25,8 @@
 			$header = get_field('header');
 			if( $header ): ?>
 				<p class="intro"><?php echo $header['intro']; ?></p>
-				<p class="tag"><?php the_tags(); ?></p>
 				<p class="date"><?php echo date('M Y'); ?></p>
+				<p class="type"><?php the_field('type'); ?></p>
 				<div class="client">
 					<span>Client</span> 
 					<span><?php echo $header['client']; ?></span>

@@ -129,7 +129,7 @@ get_header();
 									?>
 								</div>
 								<div class="event-header">
-									<p class="category"><?php the_category(); ?></p>
+								<p class="type"><?php the_field('type'); ?></p>
 									<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
 								</div>
 							</a>
@@ -174,7 +174,7 @@ get_header();
 								</div>
 								<div class="event-header">
 									<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
-									<p class="category"><?php the_category(); ?></p>
+									<p class="type"><?php the_field('type'); ?></p>
 									<p class="date"><?php echo date('M Y'); ?></p>
 									<p><?php the_field('author'); ?></p>
 								</div>

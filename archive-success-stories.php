@@ -17,6 +17,32 @@ get_header();
 		</div>
 	</section>
 
+	<div class="section-header">
+		<div class="search-form">
+			<input type="button" id="search" value="🔍"/>
+			<input type="text" id="search-criteria" placeholder="xxx" onfocus="this.value=''"/>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="filter">
+		<nav class="filter-list">
+			<a href="#" class="clear">All</a>
+			<a href="#" class="type">Artificial Intelligence</a>
+			<a href="#" class="type">Augmented & Virtual Reality</a>
+			<a href="#" class="type">Internet of Things</a>
+			<a href="#" class="type">Chatbots</a>
+			<a href="#" class="type">Additive Manufacturing</a>
+			<a href="#" class="type">Robotics</a>
+			<a href="#" class="type">User Centric Design</a>
+			<a href="#" class="type">App and Web Development</a>
+			<a href="#" class="type">Data Science</a>
+			<a href="#" class="type">Blockchain</a>
+			<a href="#" class="type">Embedded Development</a>
+			
+		</nav>
+	</div>
+
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>

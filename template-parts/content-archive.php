@@ -22,7 +22,7 @@
 			</div>
 			<div class="event-header">
 				<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
-				<p class="category"><?php the_category(); ?></p>
+				<p class="type"><?php the_field('type'); ?></p>
 			</div>
 		</a>
 	</article><!-- #post-<?php the_ID(); ?> -->
