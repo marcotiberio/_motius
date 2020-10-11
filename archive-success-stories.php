@@ -17,15 +17,7 @@ get_header();
 		</div>
 	</section>
 
-	<!-- <div class="section-header">
-		<div class="search-form">
-			<input type="button" id="search" value="🔍"/>
-			<input type="text" id="search-criteria" placeholder="xxx" onfocus="this.value=''"/>
-			<div></div>
-		</div>
-	</div> -->
-
-	<div class="filter">
+	<!-- <div class="filter">
 		<nav class="filter-list">
 			<a href="#" class="clear">All</a>
 			<a href="#" class="type">Artificial Intelligence</a>
@@ -39,9 +31,8 @@ get_header();
 			<a href="#" class="type">Data Science</a>
 			<a href="#" class="type">Blockchain</a>
 			<a href="#" class="type">Embedded Development</a>
-			
 		</nav>
-	</div>
+	</div> -->
 
 	<main id="primary" class="site-main">
 

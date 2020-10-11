@@ -150,8 +150,13 @@ function _motius_scripts() {
 
 	wp_enqueue_script( 'flickityjs', get_template_directory_uri() . '/js/flickity.pkgd.min.js', array( 'jquery' ), '1.9.0', true );
 	wp_enqueue_script( 'flickityjs-init', get_template_directory_uri(). '/js/flickity-docs.min.js', array( 'flickityjs' ), '1.9.0', true );
-		
 	wp_enqueue_style( 'flickitycss', get_template_directory_uri() . '/css/flickity.min.css', 'all');
+
+	wp_register_script( 'isotope', get_template_directory_uri().'/js/isotope.pkgd.min.js', array('jquery'),  true );
+    wp_register_script( 'isotope-init', get_template_directory_uri().'/js/isotope-docs.min.js', array('jquery', 'isotope'),  true );
+	wp_register_style( 'isotope-css', get_stylesheet_directory_uri() . '/css/isotope-docs.css' );
+	wp_enqueue_script('isotope-init');
+    wp_enqueue_style('isotope-css');
 	
 	wp_enqueue_script( '_motius-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( '_motius-script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20151215', true );
