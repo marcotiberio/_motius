@@ -17,13 +17,13 @@ get_header();
 		</div>
 	</section>
 
-	<div class="section-header">
+	<!-- <div class="section-header">
 		<div class="search-form">
 			<input type="button" id="search" value="🔍"/>
 			<input type="text" id="search-criteria" placeholder="xxx" onfocus="this.value=''"/>
 			<div></div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="filter">
 		<nav class="filter-list">

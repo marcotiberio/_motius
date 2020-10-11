@@ -11,7 +11,7 @@
 
 <div class="archive-grid">
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article class="article-centrale" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<a href="<?php the_permalink(); ?>">
 			<div class="event-cover">
 				<?php
