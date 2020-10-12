@@ -9,9 +9,7 @@
 
 ?>
 
-<div class="archive-grid">
-
-	<article class="article-centrale" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article data-index="<?php the_field('type'); ?>" class="article-centrale" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<a href="<?php the_permalink(); ?>">
 			<div class="event-cover">
 				<?php
@@ -27,4 +25,3 @@
 		</a>
 	</article><!-- #post-<?php the_ID(); ?> -->
 
-</div>

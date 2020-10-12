@@ -17,22 +17,22 @@ get_header();
 		</div>
 	</section>
 
-	<!-- <div class="filter">
+	<div class="filter">
 		<nav class="filter-list">
-			<a href="#" class="clear">All</a>
-			<a href="#" class="type">Artificial Intelligence</a>
-			<a href="#" class="type">Augmented & Virtual Reality</a>
-			<a href="#" class="type">Internet of Things</a>
-			<a href="#" class="type">Chatbots</a>
-			<a href="#" class="type">Additive Manufacturing</a>
-			<a href="#" class="type">Robotics</a>
-			<a href="#" class="type">User Centric Design</a>
-			<a href="#" class="type">App and Web Development</a>
-			<a href="#" class="type">Data Science</a>
-			<a href="#" class="type">Blockchain</a>
-			<a href="#" class="type">Embedded Development</a>
+			<a class="clear">All</a>
+			<a class="type" data-index="Artificial Intelligence">Artificial Intelligence</a>
+			<a class="type" data-index="Augmented & Virtual Reality">Augmented & Virtual Reality</a>
+			<a class="type" data-index="Internet of Things">Internet of Things</a>
+			<a class="type" data-index="Chatbots">Chatbots</a>
+			<a class="type" data-index="Additive Manufacturing">Additive Manufacturing</a>
+			<a class="type" data-index="Robotics">Robotics</a>
+			<a class="type" data-index="User Centric Design">User Centric Design</a>
+			<a class="type" data-index="App and Web Development">App and Web Development</a>
+			<a class="type" data-index="Data Science">Data Science</a>
+			<a class="type" data-index="Blockchain">Blockchain</a>
+			<a class="type" data-index="Embedded Development">Embedded Development</a>
 		</nav>
-	</div> -->
+	</div>
 
 	<main id="primary" class="site-main">
 
