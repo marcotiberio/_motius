@@ -1763,6 +1763,44 @@ li:hover {
 	margin: 4%;
 }
 
+.page-template-companies #eight {
+	padding: 10vh 0 10vh 8vw;
+}
+
+.page-template-companies #eight .post-carousel-header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-right: 8vw;
+}
+
+.page-template-companies #eight .post-carousel-header a {
+	display: grid;
+	place-items: center;
+	padding-left: 50%;
+}
+
+.page-template-companies #eight .carousel-cell {
+	background-color: #E8E9E9 !important;
+	border-radius: 50px;
+	width: 30%;
+	height: auto;
+	margin-right: 10px;
+	counter-increment: carousel-cell;
+}
+
+.page-template-companies #eight article .event-cover img {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	display: block;
+}
+
+.page-template-companies article .event-header {
+	padding: 5% 20% 10% 10%;
+}
+
 .page-template-companies #nine {
 	height: calc(100vh - 70px);
 	padding-top: 20vh;
