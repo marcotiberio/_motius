@@ -1180,8 +1180,8 @@ li:hover {
 
 #footer-menu {
 	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 #footer-menu li {
@@ -2397,7 +2397,8 @@ li:hover {
 .post-type-archive-insights .archive-grid article .event-header {
 	grid-column-start: 4;
 	grid-column-end: 9;
-	padding: 10% 20% 10% 10%; padding: 5% 5% 10% 0;
+	padding: 10% 20% 10% 10%;
+	padding: 5% 5% 10% 0;
 }
 
 .post-type-archive-insights .ourblog-grid article .event-header {
@@ -2423,7 +2424,7 @@ li:hover {
 }
 
 .flickity-prev-next-button.next {
-    left: 90vw;
+	left: 90vw;
 }
 
 .post-type-archive-insights .flickity-prev-next-button {
@@ -2434,14 +2435,14 @@ li:hover {
 
 .single-post .column-3 {
 	display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    column-gap: 5%;
-    margin: 0 8vw 10vh 8vw;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	column-gap: 5%;
+	margin: 0 8vw 10vh 8vw;
 }
 
 .single-post .column-3 img {
-    margin: 5vh 0;
+	margin: 5vh 0;
 }
 
 .post-type-archive-insights .ourblog-grid .event-header .intro {
@@ -2450,15 +2451,31 @@ li:hover {
 	color: #141B27;
 }
 
-.single-insights #relatedInsights .column-3 {
-	display: flex;
-    flex-direction: column;
-    margin: 0 10vw 10vh 10vw;
+.single-insights #relatedInsights {
+	padding: 0 8vw 10vh 8vw;
 }
 
-.single-insights #relatedInsights .column-3 > .column img {
+.single-insights #relatedInsights .section-header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-right: 8vw;
+}
+
+.single-insights #relatedInsights .section-header a {
+	display: grid;
+	place-items: center;
+	padding-left: 50%;
+}
+
+.single-insights #relatedInsights .column-3 {
+	display: flex;
+	flex-direction: column;
+	margin: 0 10vw 10vh 10vw;
+}
+
+.single-insights #relatedInsights .column-3>.column img {
 	margin: 5vh 0;
-    border-radius: 50px;
+	border-radius: 50px;
 }
 
 .single-insights #relatedInsights article {
@@ -2466,9 +2483,87 @@ li:hover {
 	display: block;
 }
 
+#relatedInsights .grid-3 {
+	padding: 5vh 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 20px;
+}
+
+#relatedInsights .grid-3 article {
+	border-radius: 50px;
+}
+
+#relatedInsights .grid-3 article .event-cover {
+	display: none;
+}
+
+#relatedInsights .grid-3 .event-header {
+	padding: 5% 20% 10% 10%;
+}
 
 /* Insights */
 
+/*--------------------------------------------------------------
+# Simple Text
+--------------------------------------------------------------*/
+
+.page-template-simple-text section {
+    padding: 20vh 8vw 10vh 8vw;
+}
+
+.page-template-simple-text .entry-title {
+	margin-bottom: 73px;
+}
+
+.page-template-simple-text .hero-text {
+	margin-bottom: 73px;
+}
+
+.page-template-simple-text .hero-text h3 {
+}
+
+.page-template-simple-text .hero-text p {
+    margin-block-end: 30px;
+}
+
+/*--------------------------------------------------------------
+# Simple Text
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.page-template-contact #one {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+    padding: 20vh 8vw 10vh 8vw;
+}
+
+.page-template-contact #one .hero-text {
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+
+.page-template-contact #one .hero-text .paragraph {
+	margin-top: 50px;
+}
+
+.page-template-contact #eleven {
+    width: 100vw;
+    height: auto;
+    padding: 0 8vw 10vh 8vw;
+}
+
+.page-template-contact #eleven .grid-3 {
+    margin-top: 50px;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
 
 /* MOBILE MOBILE MOBILE */
 /* MOBILE MOBILE MOBILE */
