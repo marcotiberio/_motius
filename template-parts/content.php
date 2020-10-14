@@ -122,6 +122,71 @@
 					<p class="paragraph"><?php echo $outro['paragraph2']; ?></p>
 				</div>
 			<?php endif; ?>
+
+		<section id="relatedInsights">
+
+			<div class="section-header">
+				<h2>Related Insights</h2>
+				<a href="http://motius.local/insights/">All Insights -></a>
+			</div>
+
+			<div class="grid-3">
+				<?php 
+					$args = array(
+						'post_type' => 'insights',
+						'tax_query' => array(
+							'relation' => 'OR',
+							array(
+								'taxonomy' => 'category',
+								'field'    => 'slug',
+								'terms'    => array( 'toolbox' ),
+							),
+							array(
+								'taxonomy' => 'category',
+								'field'    => 'slug',
+								'terms'    => array( 'cheat-sheet' ),
+							),
+							array(
+								'taxonomy' => 'category',
+								'field'    => 'slug',
+								'terms'    => array( 'our-blog' ),
+							),
+						),
+						'post_status' => 'publish',
+						'orderby' => 'date',
+						'order' => 'DESC',
+						'posts_per_page' => 3,
+					);
+					$arr_posts = new WP_Query( $args );
+					
+					if ( $arr_posts->have_posts() ) :
+						
+						while ( $arr_posts->have_posts() ) :
+							$arr_posts->the_post();
+							?>
+							<article id="post-<?php the_ID(); ?>" style="background-color:<?php the_field('background_color'); ?>" <?php post_class(); ?>>
+								<a href="<?php the_permalink(); ?>">
+									<div class="event-cover">
+										<?php
+										if ( has_post_thumbnail() ) :
+											the_post_thumbnail( '' );
+										endif;
+										?>
+									</div>
+									<div class="event-header">
+										<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
+										<p class="type"><?php the_field('type'); ?></p>
+										<p class="date"><?php echo date('M Y'); ?></p>
+										<p><?php the_field('author'); ?></p>
+									</div>
+								</a>
+							</article>	
+							<?php
+						endwhile;
+					endif; 
+				?>
+			</div>
+		</section>
 	</div><!-- .entry-content -->
 
 
