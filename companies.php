@@ -219,7 +219,45 @@ get_header();
 			<!-- slideshow experiences -->
 		</section>
 		<section id="eight">
-			<!-- slideshow success stories -->
+			<div class="post-carousel-header">
+				<h2>Success Stories</h2>
+				<a href="http://motius.local/success-stories/">All Cases -></a>
+			</div>
+			<div class="post-carousel" data-flickity='{ "wrapAround": true }'>
+			<?php 
+				$args = array(
+					'post_type' => 'success-stories',
+					'post_status' => 'publish',
+					'orderby' => 'date',
+					'order' => 'DESC',
+					'posts_per_page' => 10,
+				);
+				$arr_posts = new WP_Query( $args );
+				
+				if ( $arr_posts->have_posts() ) :
+					
+					while ( $arr_posts->have_posts() ) :
+						$arr_posts->the_post();
+						?>
+						<article class="carousel-cell" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<a href="<?php the_permalink(); ?>">
+								<div class="event-cover">
+									<?php
+									if ( has_post_thumbnail() ) :
+										the_post_thumbnail( '' );
+									endif;
+									?>
+								</div>
+								<div class="event-header">
+								<p class="type"><?php the_field('type'); ?></p>
+									<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
+								</div>
+							</a>
+						</article>
+						<?php
+					endwhile;
+				endif; ?>
+			</div>
 		</section>
 		<?php
 			$section9 = get_field('section9');
