@@ -18,20 +18,18 @@ get_header();
 	</section>
 
 	<div class="filter">
-		<nav class="filter-list">
-			<a class="clear">All</a>
-			<a class="type" data-index="Artificial Intelligence">Artificial Intelligence</a>
-			<a class="type" data-index="Augmented & Virtual Reality">Augmented & Virtual Reality</a>
-			<a class="type" data-index="Internet of Things">Internet of Things</a>
-			<a class="type" data-index="Chatbots">Chatbots</a>
-			<a class="type" data-index="Additive Manufacturing">Additive Manufacturing</a>
-			<a class="type" data-index="Robotics">Robotics</a>
-			<a class="type" data-index="User Centric Design">User Centric Design</a>
-			<a class="type" data-index="App and Web Development">App and Web Development</a>
-			<a class="type" data-index="Data Science">Data Science</a>
-			<a class="type" data-index="Blockchain">Blockchain</a>
-			<a class="type" data-index="Embedded Development">Embedded Development</a>
-		</nav>
+		<a class="type all active">All</a>
+		<a class="type artificial_intelligence">Artificial Intelligence</a>
+		<a class="type augmented_and_virtual_reality">Augmented & Virtual Reality</a>
+		<a class="type internet_of_things">Internet of Things</a>
+		<a class="type chatbots">Chatbots</a>
+		<a class="type additive_manufacturing">Additive Manufacturing</a>
+		<a class="type robotics">Robotics</a>
+		<a class="type user_centric_design">User Centric Design</a>
+		<a class="type app_and_web_development">App and Web Development</a>
+		<a class="type data_science">Data Science</a>
+		<a class="type blockchain">Blockchain</a>
+		<a class="type embedded_development">Embedded Development</a>
 	</div>
 
 	<main id="primary" class="site-main">

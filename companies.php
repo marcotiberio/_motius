@@ -27,7 +27,7 @@ get_header();
 				</section>
 			<?php endif; ?>
 		</section>
-		<section id="two">
+		<section id="two" data-aos="fade-down" data-aos-duration="300">
 			<h3 class="section-title">Fields of Expertise</h3>
 			<p class="paragraph">To keep up with rapid technological change our fields of expertise are always evolving.  
 			Here’s an overview of the technologies we’re currently working with and respective use cases 
@@ -63,8 +63,93 @@ get_header();
 				</div>
 			<?php endif; ?>
 		</section>
-		<section id="three">
-			
+		<section id="three" data-aos="fade-right">
+			<h3 class="section-title">How it Works</h3>
+			<!-- Timeline How it Works -->
+				<div class="timeline">
+				<ul>
+					<li>
+						<div>
+							<h2>1</h2>
+							<h5>Kicking things off</h5>
+							<p>No matter how well defined your project idea is, we can work it out together. 
+								We can start with an existing problem, an existing product that you want to 
+								improve or just some rough ideas and requirements.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2>1</h2>
+							<h5>Kicking things off</h5>
+							<p>No matter how well defined your project idea is, we can work it out together. 
+								We can start with an existing problem, an existing product that you want to 
+								improve or just some rough ideas and requirements.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2>1</h2>
+							<h5>Kicking things off</h5>
+							<p>No matter how well defined your project idea is, we can work it out together. 
+								We can start with an existing problem, an existing product that you want to 
+								improve or just some rough ideas and requirements.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2>1</h2>
+							<h5>Kicking things off</h5>
+							<p>No matter how well defined your project idea is, we can work it out together. 
+								We can start with an existing problem, an existing product that you want to 
+								improve or just some rough ideas and requirements.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2>1</h2>
+							<h5>Kicking things off</h5>
+							<p>No matter how well defined your project idea is, we can work it out together. 
+								We can start with an existing problem, an existing product that you want to 
+								improve or just some rough ideas and requirements.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2>1</h2>
+							<h5>Kicking things off</h5>
+							<p>No matter how well defined your project idea is, we can work it out together. 
+								We can start with an existing problem, an existing product that you want to 
+								improve or just some rough ideas and requirements.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2>1</h2>
+							<h5>Kicking things off</h5>
+							<p>No matter how well defined your project idea is, we can work it out together. 
+								We can start with an existing problem, an existing product that you want to 
+								improve or just some rough ideas and requirements.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2>1</h2>
+							<h5>Kicking things off</h5>
+							<p>No matter how well defined your project idea is, we can work it out together. 
+								We can start with an existing problem, an existing product that you want to 
+								improve or just some rough ideas and requirements.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</section>
 		<section id="four" class="two-columns-list">
 			<h2 class="section-title">Benefits in a sentence formatting</h2>
@@ -160,6 +245,42 @@ get_header();
 			<?php endif; ?>
 
 	</main><!-- #main -->
+
+	<script>
+		(function() {
+
+		'use strict';
+
+		// define variables
+		var items = document.querySelectorAll(".timeline li");
+
+		// check if an element is in viewport
+		// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+		function isElementInViewport(el) {
+		var rect = el.getBoundingClientRect();
+		return (
+			rect.top >= 0 &&
+			rect.left >= 0 &&
+			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+			rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		);
+		}
+
+		function callbackFunc() {
+		for (var i = 0; i < items.length; i++) {
+			if (isElementInViewport(items[i])) {
+			items[i].classList.add("in-view");
+			}
+		}
+		}
+
+		// listen for events
+		window.addEventListener("load", callbackFunc);
+		window.addEventListener("resize", callbackFunc);
+		window.addEventListener("scroll", callbackFunc);
+
+		})();
+	</script>
 
 <?php
 get_sidebar();

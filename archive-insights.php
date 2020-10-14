@@ -28,13 +28,8 @@ get_header();
 					$arr_posts->the_post();
 					?>
 					<article class="carousel-cell" id="post-<?php the_ID(); ?>" style="background-color:<?php the_field('background_color'); ?>" <?php post_class(); ?>>
-						<div class="event-cover">
-							<?php
-							if ( has_post_thumbnail() ) :
-								the_post_thumbnail( '' );
-							endif;
-							?>
-						</div>
+						<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+						<div class="event-cover" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; background-position: center;"></div>
 						<div class="event-header">
 							<a href="<?php the_permalink(); ?>"><h2 class="title"><?php print the_title(); ?></h2></a>
 							<div class="excerpt"><?php the_excerpt(); ?></div>
@@ -47,6 +42,32 @@ get_header();
 			endif; ?>
 		</div>
 	</section>
+
+	<div class="section-title">
+		<h3>Our Blog</h3>
+	</div>
+	<div class="ourblog-grid">
+		<?php echo do_shortcode('[ajax_load_more id="ourblog" loading_style="white" post_type="insights" category="our-blog" category__not_in="16,14" posts_per_page="3" pause="false" scroll="false" button_label="Load more ->" button_loading_label="Loading more..." button_done_label="Nothing left"]'); ?>
+	</div>
+
+	<section class="medium">
+		<strong>Looking for more personal insights?</strong>
+		<p>Are you interested in our culture, team insights, and behind-the-scenes?
+		<br>
+		Discover why we are the best place for techies.
+		</p>
+		<a href="https://medium.com/motius-de" target="_blank">Read more -></a>
+	</section>
+
+	<div class="section-title">
+		<h3>Resources</h3>
+	</div>
+
+	<div class="filter">
+		<a class="type all active">All</a>
+		<a class="type cheat_sheet">Cheat Sheet</a>
+		<a class="type toolbox">Toolbox</a>
+	</div>
 
 	<main id="primary" class="site-main">
 

@@ -83,7 +83,7 @@ get_header();
 		<section id="eight">
 			<h3 class="section-title">Our Founding Team</h3>
 			<?php if( have_rows('section8') ): ?>
-				<div class="grid-3">
+				<div class="grid-5">
 				<?php while( have_rows('section8') ): the_row(); 
 
 					// Load sub field value.

@@ -69,6 +69,7 @@
 						<p class="paragraph"><?php echo $main['paragraph1']; ?></p>
 					</div>
 					<div class="column">
+						<img src="<?php echo esc_url( $main['image']['url'] ); ?>" alt="<?php echo esc_attr( $main['image']['alt'] ); ?>" />
 						<h3 class="header"><?php echo $main['header2']; ?></h3>
 						<p class="paragraph"><?php echo $main['paragraph2']; ?></p>
 					</div>

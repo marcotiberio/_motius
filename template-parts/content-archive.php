@@ -9,7 +9,7 @@
 
 ?>
 
-	<article data-index="<?php the_field('type'); ?>" class="article-centrale" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article class="article-centrale <?php the_field('value'); ?>" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<a href="<?php the_permalink(); ?>">
 			<div class="event-cover">
 				<?php
@@ -19,8 +19,10 @@
 				?>
 			</div>
 			<div class="event-header">
-				<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
+				<h5 class="title"><a href="<?php the_field('external_link'); ?>" target="_blank"><?php print the_title(); ?></a></h5>
 				<p class="type"><?php the_field('type'); ?></p>
+				<p class="date"><?php echo date('M Y'); ?></p>
+				<p><?php the_field('author'); ?></p>
 			</div>
 		</a>
 	</article><!-- #post-<?php the_ID(); ?> -->
