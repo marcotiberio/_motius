@@ -31,39 +31,52 @@ get_header();
 					<?php endif; ?>
 			</div>
 		</section>
-		<?php
-			$section2 = get_field('section2');
-			if( $section2 ): ?>
-				<section class="two-columns" id="two">
-					<div class="text">
-						<h2 class="header"><?php echo $section2['header']; ?></h2>
-						<p class="paragraph"><?php echo $section2['paragraph']; ?></p>
-					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section2['image']['url']); ?>');"></div>
-				</section>
-			<?php endif; ?>
-		<?php
-			$section3 = get_field('section3');
-			if( $section3 ): ?>
-				<section class="two-columns" id="three">
-					<div class="text">
-						<h2 class="header"><?php echo $section3['header']; ?></h2>
-						<p class="paragraph"><?php echo $section3['paragraph']; ?></p>
-					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
-				</section>
-			<?php endif; ?>
-		<?php
-			$section4 = get_field('section4');
-			if( $section4 ): ?>
-				<section class="two-columns" id="four">
-					<div class="text">
-						<h2 class="header"><?php echo $section4['header']; ?></h2>
-						<p class="paragraph"><?php echo $section4['paragraph']; ?></p>
-					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');"></div>
-				</section>
-			<?php endif; ?>
+		<section id="blockScroll">
+			<div class="wrapper">
+				<div class="indicators">
+					<div class="indicator"></div>
+					<div class="indicator"></div>
+					<div class="indicator"></div>
+					<div class="indicator"></div>
+					<div class="indicator"></div>
+				</div>
+				<div class="point">
+					<article>
+					<h3>Title 1</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</article>
+					<img src="http://motius.local/wp-content/uploads/2020/10/block1.png" alt="random" width="700" height="700" />
+				</div>
+				<div class="point">
+					<article>
+					<h3>Title 2</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</article>
+					<img src="http://motius.local/wp-content/uploads/2020/10/block2.png" alt="random" width="700" height="700" />
+				</div>
+				<div class="point">
+					<article>
+					<h3>Title 3</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</article>
+					<img src="http://motius.local/wp-content/uploads/2020/10/block3.png" alt="random" width="700" height="700" />
+				</div>
+			</div>
 		</section>
 		<section class="two-columns" id="five" data-aos="zoom-in">
 			<?php
@@ -213,6 +226,45 @@ get_header();
 		</section>
 
 	</main><!-- #main -->
+
+	<script>
+		(function(){
+			function hasClass(el, cls) {
+				if (el.className.match('(?:^|\\s)'+cls+'(?!\\S)')) { return true; } 
+				}
+			function addClass(el, cls) {
+				if (!el.className.match('(?:^|\\s)'+cls+'(?!\\S)')){ el.className += ' '+cls; } 
+				}
+			function delClass(el, cls) {
+				el.className = el.className.replace(new RegExp('(?:^|\\s)'+cls+'(?!\\S)'),'');
+				}
+
+			function elementFromTop(elem, classToAdd, distanceFromTop, unit) {
+				var winY = window.innerHeight || document.documentElement.clientHeight,
+					distTop = elem.getBoundingClientRect().top,
+					distPercent = Math.round((distTop / winY) * 100),
+					distPixels = Math.round(distTop),
+					distUnit;
+				distUnit = unit == 'percent' ? distPercent : distPixels;
+				if (distUnit <= distanceFromTop) {
+					if (!hasClass(elem, classToAdd)) { addClass(elem, classToAdd); }
+					} else {
+					delClass(elem, classToAdd);
+					}
+				}
+			// params: element id, class to add, distance from top, unit ('percent' or 'pixels')
+
+			window.addEventListener('scroll', function() {
+				elementFromTop(document.getElementById('oneone'), 'element-from-top', 500, 'pixels');
+				}, false);
+			window.addEventListener('scroll', function() {
+				elementFromTop(document.getElementById('second'), 'element-from-top', 500, 'pixels');
+				}, false);
+			window.addEventListener('scroll', function() {
+				elementFromTop(document.getElementById('third'), 'element-from-top', 500, 'pixels');
+				}, false);
+		})();
+		</script>
 
 <?php
 get_sidebar();

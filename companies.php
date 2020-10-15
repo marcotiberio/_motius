@@ -65,8 +65,7 @@ get_header();
 		</section>
 		<section id="three" data-aos="fade-right">
 			<h3 class="section-title">How it Works</h3>
-			<!-- Timeline How it Works -->
-				<div class="timeline">
+			<div class="timeline">
 				<ul>
 					<li>
 						<div>
