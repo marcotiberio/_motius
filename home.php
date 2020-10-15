@@ -65,7 +65,7 @@ get_header();
 				</section>
 			<?php endif; ?>
 		</section>
-		<section class="two-columns" id="five">
+		<section class="two-columns" id="five" data-aos="zoom-in">
 			<?php
 				$section5 = get_field('section5');
 				if( $section5 ): ?>
@@ -190,7 +190,7 @@ get_header();
 				$section9 = get_field('section9', 2);
 				if( $section9 ): ?>
 					<div class="color-blocks">
-						<div class="left">
+						<div class="left" data-aos="fade-right">
 						<img src="<?php echo esc_url( $section9['image_left']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image_left']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_left']; ?></div>
 							<div class="info">
@@ -199,7 +199,7 @@ get_header();
 							</div>
 							<button id="blockButton">Contact Us</button>
 						</div>
-						<div class="right">
+						<div class="right" data-aos="fade-left">
 							<img src="<?php echo esc_url( $section9['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image_right']['alt'] ); ?>" />
 							<div class="label"><?php echo $section9['label_right']; ?></div>
 							<div class="info">

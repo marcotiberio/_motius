@@ -152,7 +152,7 @@ get_header();
 			</div>
 		</section>
 		<section id="four" class="two-columns-list">
-			<h2 class="section-title">Benefits in a sentence formatting</h2>
+			<h2 class="section-title" data-aos="fade-right">Benefits in a sentence formatting</h2>
 			<?php if( have_rows('section4') ): ?>
 				<ul>
 				<?php while( have_rows('section4') ): the_row(); 
@@ -163,11 +163,12 @@ get_header();
 					$paragraphlist = get_sub_field('paragraph_list');
 					?>
 					
-						<li>
+						<li data-aos="fade-left">
 							<img class="icon-list" src="<?php echo esc_url( $iconlist['url'] ); ?>" alt="<?php echo esc_attr( $iconlist['alt'] ); ?>" />
 							<p class="header-list"><?php the_sub_field('header_list'); ?></p>
 							<p class="paragraph-list"><?php the_sub_field('paragraph_list'); ?></p>
 						</li>
+
 				<?php endwhile; ?>
 				</ul>
 			<?php endif; ?>
@@ -175,7 +176,7 @@ get_header();
 		<?php
 			$section5 = get_field('section5');
 			if( $section5 ): ?>
-				<section id="five">
+				<section id="five" data-aos="zoom-in">
 					<div class="two-columns-text">
 						<h2 class="header"><?php echo $section5['header']; ?></h2>
 						<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
@@ -195,7 +196,7 @@ get_header();
 				</section>
 			<?php endif; ?>	
 		<section id="six" class="two-columns-list">
-			<h2 class="section-title">Benefits in a sentence formatting</h2>
+			<h2 class="section-title" data-aos="fade-right">Benefits in a sentence formatting</h2>
 			<?php if( have_rows('section6') ): ?>
 				<ul>
 				<?php while( have_rows('section6') ): the_row(); 
@@ -206,7 +207,7 @@ get_header();
 					$paragraphlist = get_sub_field('paragraph_list');
 					?>
 					
-						<li>
+						<li data-aos="fade-left">
 							<img class="icon-list" src="<?php echo esc_url( $iconlist['url'] ); ?>" alt="<?php echo esc_attr( $iconlist['alt'] ); ?>" />
 							<p class="header-list"><?php the_sub_field('header_list'); ?></p>
 							<p class="paragraph-list"><?php the_sub_field('paragraph_list'); ?></p>
@@ -216,7 +217,37 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="seven">
-			<!-- slideshow experiences -->
+			<div class="carousel" data-flickity='{ "wrapAround": true }'>
+				<?php if( have_rows('testimonials') ): ?>
+					<?php while( have_rows('testimonials') ): the_row(); 
+
+						// Load sub field value.
+						$image = get_sub_field('image');
+						$quote = get_sub_field('quote');
+						$testimonial_name = get_sub_field('testimonial_name');
+						$testimonial_position = get_sub_field('testimonial_position');
+						$testimonial_company_logo = get_sub_field('testimonial_company_logo');
+						?>
+						<div class="testimonial-card carousel-cell">
+							<div class="inner">
+								<div class="image" style="background-image: url(<?php echo esc_url( $image['url'] ); ?>);"></div>
+								<div class="quote">
+									<?php the_sub_field('quote'); ?>
+									<div class="testimonial-info">
+										<div class="personal">
+											<p class="testimonial-name"><?php the_sub_field('testimonial_name'); ?></p>
+											<p class="testimonial_position"><?php the_sub_field('testimonial_position'); ?></p>
+										</div>
+										<div class="company">
+											<img src="<?php echo esc_url( $testimonial_company_logo['url'] ); ?>" alt="<?php echo esc_attr( $testimonial_company_logo['alt'] ); ?>" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<?php endwhile; ?>
+				<?php endif; ?>
+			</div>
 		</section>
 		<section id="eight">
 			<div class="post-carousel-header">

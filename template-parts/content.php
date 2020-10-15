@@ -11,6 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+		<p class="date"><?php echo date('M Y'); ?></p>
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -24,12 +25,14 @@
 		<?php
 			$header = get_field('header');
 			if( $header ): ?>
-				<p class="intro"><?php echo $header['intro']; ?></p>
-				<p class="date"><?php echo date('M Y'); ?></p>
-				<p class="type"><?php the_field('type'); ?></p>
 				<div class="client">
 					<span>Client</span> 
 					<span><?php echo $header['client']; ?></span>
+					<span class="type"><?php the_field('type'); ?></span>
+					<p><?php the_field('author'); ?></p>
+				</div>
+				<div class="intro">
+					<?php echo $header['intro']; ?>
 				</div>
 			<?php endif; ?>
 	</header><!-- .entry-header -->

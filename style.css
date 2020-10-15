@@ -2218,12 +2218,25 @@ li:hover {
 .single .tag,
 .single .date {
 	text-transform: capitalize;
-	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 .single .client {
 	text-transform: capitalize;
 	margin-top: 50px;
+}
+
+.single .client .type {
+	text-transform: capitalize;
+	margin-left: 50px;
+}
+
+.single .intro p:nth-child(1) {
+	margin-block-end: 30px;
+}
+
+.single .intro p:nth-child(3) {
+	color: #c4c4c4;
 }
 
 .single .client span:nth-child(1) {
@@ -2487,6 +2500,19 @@ li:hover {
 	margin-block-start: 24px;
 	margin-block-end: 38px;
 	color: #141B27;
+}
+
+.single-insights .client span:nth-child(1),
+.single-insights .client span:nth-child(2) {
+	display: none;
+}
+
+.single-insights .client .type {
+	margin-left: 0;
+}
+
+.single-insights .client p {
+	margin-block-start: 30px !important;
 }
 
 .single-insights #relatedInsights {
