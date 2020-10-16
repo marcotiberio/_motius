@@ -1024,6 +1024,7 @@ h2 {
 h3 {
 	font-size: 48px;
 	line-height: 52.8px;
+	font-weight: normal;
 }
 
 h5 {
@@ -2103,6 +2104,49 @@ li:hover {
 	border-bottom: 0 !important;
 }
 
+.page-template-talents #six {
+    padding: 10vh 0 10vh 8vw;
+}
+
+.page-template-talents #six .post-carousel-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 8vw;
+}
+
+.page-template-talents #six .post-carousel-header a {
+    display: grid;
+    place-items: center;
+    padding-left: 50%;
+}
+
+.page-template-talents #six .carousel-cell {
+    background-color: #E8E9E9 !important;
+    border-radius: 50px;
+    width: 30%;
+    height: auto;
+    margin-right: 10px;
+    counter-increment: carousel-cell;
+}
+
+.page-template-talents #six article .event-header {
+    padding: 5% 20% 10% 10%;
+}
+
+.page-template-talents #six article .event-cover img {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: block;
+}
+
+.page-template-talents #seven {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 .page-template-talents #nine {
 	padding: 10vh 0;
 }
@@ -2201,7 +2245,7 @@ li:hover {
 }
 
 .page-template-about #six {
-	padding: 2vh 2vw;
+	padding: 2vh 0;
 }
 
 .page-template-about #six img {

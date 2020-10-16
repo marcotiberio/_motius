@@ -29,55 +29,82 @@ get_header();
 					<img src="<?php echo esc_url( $section2['image']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>
-		<?php
-			$section3 = get_field('section3');
-			if( $section3 ): ?>
-				<section class="two-columns" id="three">
-					<div class="text">
-						<h2 class="header"><?php echo $section3['header']; ?></h2>
-						<p class="paragraph"><?php echo $section3['paragraph']; ?></p>
-					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section3['image']['url']); ?>');"></div>
-				</section>
-			<?php endif; ?>
-		<?php
-			$section4 = get_field('section4');
-			if( $section4 ): ?>
-				<section id="four">
-					<div class="two-columns-text">
-						<h2 class="header"><?php echo $section4['header']; ?></h2>
-						<p class="paragraph"><?php echo $section4['paragraph']; ?></p>
-					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section4['image']['url']); ?>');"></div>
-				</section>
-			<?php endif; ?>
-		<?php
-			$section5 = get_field('section5');
-			if( $section5 ): ?>
-				<section class="two-columns" id="five">
-					<div class="text">
-						<h2 class="header"><?php echo $section5['header']; ?></h2>
-						<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
-					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section5['image']['url']); ?>');"></div>
-				</section>
-			<?php endif; ?>
+			<section id="blockScroll">
+			<div class="wrapper">
+				<div class="indicators">
+					<div class="indicator"></div>
+					<div class="indicator"></div>
+					<div class="indicator"></div>
+					<div class="indicator"></div>
+					<div class="indicator"></div>
+				</div>
+				<div class="point">
+					<article>
+					<h3>Our Core Values</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</article>
+					<img src="http://motius.local/wp-content/uploads/2020/10/circle1.png" alt="random" width="700" height="700" />
+				</div>
+				<div class="point">
+					<article>
+					<h3>We Enable</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</article>
+					<img src="http://motius.local/wp-content/uploads/2020/10/circle2.png" alt="random" width="700" height="700" />
+				</div>
+				<div class="point">
+					<article>
+					<h3>We Create</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</article>
+					<img src="http://motius.local/wp-content/uploads/2020/10/circle3.png" alt="random" width="700" height="700" />
+				</div>
+				<div class="point">
+					<article>
+					<h3>We are Curious</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</article>
+					<img src="http://motius.local/wp-content/uploads/2020/10/circle4.png" alt="random" width="700" height="700" />
+				</div>
+				<div class="point">
+					<article>
+					<h3>We are Community-driven</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</article>
+					<img src="http://motius.local/wp-content/uploads/2020/10/circle5.png" alt="random" width="700" height="700" />
+				</div>
+			</div>
+		</section>
 		<?php
 			$section6 = get_field('section6');
 			if( $section6 ): ?>
 				<section id="six">
 					<img src="<?php echo esc_url( $section6['image']['url'] ); ?>" alt="<?php echo esc_attr( $section6['image']['alt'] ); ?>" />
-				</section>
-			<?php endif; ?>
-			<?php
-			$section7 = get_field('section7');
-			if( $section7 ): ?>
-				<section class="two-columns" id="seven">
-					<div class="image" style="background-image:url('<?php echo esc_url($section7['image']['url']); ?>');"></div>
-					<div class="text">
-						<h2 class="header"><?php echo $section7['header']; ?></h2>
-						<p class="paragraph"><?php echo $section7['paragraph']; ?></p>
-					</div>
 				</section>
 			<?php endif; ?>
 		<section id="eight">
