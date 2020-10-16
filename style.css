@@ -1311,6 +1311,54 @@ li:hover {
 	margin-right: 0 !important;
 }
 
+#blockScroll {
+	position: relative;
+	padding: 0vh 8vw;
+}
+
+.indicators {
+	left: 2rem;
+	top: 0;
+	margin: 10vh 0;
+	height: 80vh;
+	width: 3px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	display: none !important;
+}
+
+.indicator {
+	width: 100%;
+	background-color: #adadad;
+	flex-grow: 1;
+	margin: 2px 0;
+}
+
+#blockScroll .point {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#blockScroll .wrapper {
+	height: 100vh;
+	width: 100%;
+}
+
+.point article {
+	flex-basis: 60%;
+	margin-right: 10%;
+}
+
+.point img {
+	flex-basis: 50%;
+	max-width: 60vw;
+	height: auto;
+}
+
 .home .two-columns {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -1765,59 +1813,59 @@ li:hover {
 
 .page-template-companies #seven {
 	padding: 10vh 0 10vh 8vw;
-  }
-  
-  .page-template-companies #seven .carousel-cell {
-	  border-radius: 50px;
-	  width: 50%;
-	  height: 40vh;
-	  margin-right: 10px;
-	  counter-increment: carousel-cell;
-  }
-  
-  .page-template-companies #seven .testimonial-card .inner{
-	display: grid;
-	  grid-template-columns: 1fr 3fr;
-	  grid-template-rows: 1fr;
-	  column-gap: 20px;
-  }
-  
-  .page-template-companies #seven .testimonial-card .inner .image{
+}
+
+.page-template-companies #seven .carousel-cell {
+	border-radius: 50px;
+	width: 50%;
 	height: 40vh;
-	  background-size: cover;
-	  background-position: center top;
-	  background-repeat: no-repeat;
-	  border-radius: 50px;
-  }
-  
-  .page-template-companies #seven .testimonial-card .inner .quote {
+	margin-right: 10px;
+	counter-increment: carousel-cell;
+}
+
+.page-template-companies #seven .testimonial-card .inner {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 1fr;
+	column-gap: 20px;
+}
+
+.page-template-companies #seven .testimonial-card .inner .image {
+	height: 40vh;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	border-radius: 50px;
+}
+
+.page-template-companies #seven .testimonial-card .inner .quote {
 	background-color: #E8E9E9 !important;
-	  border-radius: 50px;
-	  padding: 5%;
-	  display: grid;
+	border-radius: 50px;
+	padding: 5%;
+	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
-  }
-  
-  .page-template-companies #seven .testimonial-card .inner .quote .testimonial-info {
-	  display: grid;
-	  grid-template-columns: 1fr 1fr;
-	  grid-template-rows: 1fr;
-	  column-gap: 20px;
-  }
-  
-  .page-template-companies #seven .testimonial-card .inner .quote .testimonial-info .company {
+}
+
+.page-template-companies #seven .testimonial-card .inner .quote .testimonial-info {
 	display: grid;
-	  place-items: flex-end;
-  }
-  
-  .page-template-companies #seven .testimonial-card .inner .quote .testimonial-info .company img {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	column-gap: 20px;
+}
+
+.page-template-companies #seven .testimonial-card .inner .quote .testimonial-info .company {
+	display: grid;
+	place-items: flex-end;
+}
+
+.page-template-companies #seven .testimonial-card .inner .quote .testimonial-info .company img {
 	width: 40%;
-  }
-  
-  .page-template-companies #seven .testimonial-card .inner .quote .testimonial-info .testimonial_position {
-	  color: #A6B7BD;
-  }
+}
+
+.page-template-companies #seven .testimonial-card .inner .quote .testimonial-info .testimonial_position {
+	color: #A6B7BD;
+}
 
 .page-template-companies #eight {
 	padding: 10vh 0 10vh 8vw;
