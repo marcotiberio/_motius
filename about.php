@@ -130,24 +130,134 @@ get_header();
 		<?php
 			$section9 = get_field('section9');
 			if( $section9 ): ?>
-				<section id="nine" data-aos="zoom-in">
-					<div class="two-columns-text">
+				<section id="nine">
+					<div class="two-columns-text" data-aos="zoom-in">
 						<h2 class="header"><?php echo $section9['header']; ?></h2>
 						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
 					</div>
-					<!-- timeline missing -->
+				</section>
+				<section id="nineB">
+					<div class="timeline">
+						<ul>
+							<li>
+								<div>
+									<h2>2013</h2>
+									<h5>Kicking things off</h5>
+									<p>No matter how well defined your project idea is, we can work it out together. 
+										We can start with an existing problem, an existing product that you want to 
+										improve or just some rough ideas and requirements.
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div>
+									<h2>2014</h2>
+									<h5>Kicking things off</h5>
+									<p>No matter how well defined your project idea is, we can work it out together. 
+										We can start with an existing problem, an existing product that you want to 
+										improve or just some rough ideas and requirements.
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div>
+									<h2>2016</h2>
+									<h5>Kicking things off</h5>
+									<p>No matter how well defined your project idea is, we can work it out together. 
+										We can start with an existing problem, an existing product that you want to 
+										improve or just some rough ideas and requirements.
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div>
+									<h2>2017</h2>
+									<h5>Kicking things off</h5>
+									<p>No matter how well defined your project idea is, we can work it out together. 
+										We can start with an existing problem, an existing product that you want to 
+										improve or just some rough ideas and requirements.
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div>
+									<h2>2018</h2>
+									<h5>Kicking things off</h5>
+									<p>No matter how well defined your project idea is, we can work it out together. 
+										We can start with an existing problem, an existing product that you want to 
+										improve or just some rough ideas and requirements.
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div>
+									<h2>2019</h2>
+									<h5>Kicking things off</h5>
+									<p>No matter how well defined your project idea is, we can work it out together. 
+										We can start with an existing problem, an existing product that you want to 
+										improve or just some rough ideas and requirements.
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div>
+									<h2>2020</h2>
+									<h5>Kicking things off</h5>
+									<p>No matter how well defined your project idea is, we can work it out together. 
+										We can start with an existing problem, an existing product that you want to 
+										improve or just some rough ideas and requirements.
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="image">
+									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+								</div>
+							</li>
+						</ul>
+					</div>
 				</section>
 			<?php endif; ?>
 		<?php
 			$section10 = get_field('section10');
 			if( $section10 ): ?>
 				<section id="ten">
-					<h2 class="section-title"><?php echo $section10['header']; ?></h2>
-					<img src="<?php echo esc_url( $section10['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" />
+					<h2 class="section-title" data-aos="fade-right"><?php echo $section10['header']; ?></h2>
+					<img src="<?php echo esc_url( $section10['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" data-aos="fade-left" />
 				</section>
 			<?php endif; ?>
 		<section id="eleven">
-			<h3 class="section-title">Offices</h3>
+			<h3 class="section-title" data-aos="fade-right">Offices</h3>
 			<?php if( have_rows('section11') ): ?>
 				<div class="grid-3">
 				<?php while( have_rows('section11') ): the_row(); 
@@ -157,7 +267,7 @@ get_header();
 					$title = get_sub_field('title');
 					$subtitle = get_sub_field('subtitle');
 					?>
-					<div class="card">
+					<div class="card" data-aos="flip-up">
 						<img class="profile-photo" src="<?php echo esc_url( $photo['url'] ); ?>" alt="<?php echo esc_attr( $photo['alt'] ); ?>" />
 						<p class="title"><?php the_sub_field('title'); ?></p>
 						<p class="subtitle"><?php the_sub_field('subtitle'); ?></p>
@@ -168,6 +278,42 @@ get_header();
 		</section>
 
 	</main><!-- #main -->
+
+	<script>
+		(function() {
+
+		'use strict';
+
+		// define variables
+		var items = document.querySelectorAll(".timeline li");
+
+		// check if an element is in viewport
+		// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+		function isElementInViewport(el) {
+		var rect = el.getBoundingClientRect();
+		return (
+			rect.top >= 0 &&
+			rect.left >= 0 &&
+			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+			rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		);
+		}
+
+		function callbackFunc() {
+		for (var i = 0; i < items.length; i++) {
+			if (isElementInViewport(items[i])) {
+			items[i].classList.add("in-view");
+			}
+		}
+		}
+
+		// listen for events
+		window.addEventListener("load", callbackFunc);
+		window.addEventListener("resize", callbackFunc);
+		window.addEventListener("scroll", callbackFunc);
+
+		})();
+	</script>
 
 <?php
 get_sidebar();

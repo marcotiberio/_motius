@@ -19,9 +19,14 @@ get_header();
 					<div class="hero-text">
 						<h1 class="header"><?php echo $section1['header']; ?></h1>
 						<p class="paragraph"><?php echo $section1['paragraph']; ?></p>
-						<div class="block" style="background-color:<?php echo $section1['background_color_block']; ?>">
+						<div class="block" onclick="window.location.href='<?php echo $section1['button_link']; ?>'" style="background-color:<?php echo $section1['background_color_block']; ?>">
 							<p class="header-block"><?php echo $section1['header_block']; ?></p>
 							<p class="paragraph-block"><?php echo $section1['paragraph_block']; ?></p>
+							<div class="arrow-icon">
+								<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
+									<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#ffffff"/>
+								</svg>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -43,7 +48,7 @@ get_header();
 								<h3 class="header"><?php echo $section2['header_left']; ?></h3>
 								<p class="paragraph"><?php echo $section2['paragraph_left']; ?></p>
 							</div>
-							<button id="blockButton">Apply Now</button>
+							<button id="blockButton" onclick="window.location.href='<?php echo $section2['button_left_link']; ?>'">Apply Now</button>
 						</div>
 						<div class="right" data-aos="fade-left" data-aos-anchor-placement="top-bottom">
 							<img src="<?php echo esc_url( $section2['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image_right']['alt'] ); ?>" />
@@ -52,13 +57,209 @@ get_header();
 								<h3 class="header"><?php echo $section2['header_right']; ?></h3>
 								<p class="paragraph"><?php echo $section2['paragraph_right']; ?></p>
 							</div>
-							<button id="blockButton">Apply Now</button>
+							<button id="blockButton" onclick="window.location.href='<?php echo $section2['button_right_link']; ?>'">Apply Now</button>
 						</div>
 					</div>
 				</section>
 			<?php endif; ?>
 		<section id="three">
-			<!-- tab switch timeline -->
+			<h3 class="section-title">How it Works</h3>
+			<div class="switch">
+				<button id="switchTimelineleft"><h5>The Talent Pool</h5></button>
+				<button id="switchTimelineright"><h5>The Core Team</h5></button>
+			</div>
+			<div id="timelineLeft">
+				<div class="timeline">
+					<ul>
+						<li>
+							<div>
+								<h2>2013</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline1.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>2014</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline2.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>2016</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline3.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>2017</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline4.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>2018</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline5.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>2019</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline6.png" alt="">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="timelineRight">
+				<div class="timeline">
+					<ul>
+						<li>
+							<div>
+								<h2>2020</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline1.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>2020</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline2.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>2020</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline3.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>2020</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline4.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>2020</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline5.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>2020</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="image">
+								<img src="http://motius.local/wp-content/uploads/2020/10/timeline6.png" alt="">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 		<section id="four" class="two-columns-list">
 			<h3 class="section-title" data-aos="fade-right">How We Work</h3>
@@ -70,6 +271,7 @@ get_header();
 					$iconlist = get_sub_field('icon_list');
 					$headerlist = get_sub_field('header_list');
 					$paragraphlist = get_sub_field('paragraph_list');
+					$buttonlink = get_sub_field('button_link');
 					?>
 					
 						<li data-aos="fade-left">
@@ -78,7 +280,7 @@ get_header();
 							<p class="paragraph-list"><?php the_sub_field('paragraph_list'); ?></p>
 						</li>
 				<?php endwhile; ?>
-				<button id="blockButton">Contact Us -></button>
+				<button id="blockButton" onclick="window.location.href='http://motiusrelaunch.flywheelstaging.com/contact/'">Contact Us -></button>
 				</ul>
 			<?php endif; ?>
 		</section>
@@ -169,6 +371,42 @@ get_header();
 			<?php endif; ?>
 
 	</main><!-- #main -->
+
+	<script>
+		(function() {
+
+		'use strict';
+
+		// define variables
+		var items = document.querySelectorAll(".timeline li");
+
+		// check if an element is in viewport
+		// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+		function isElementInViewport(el) {
+		var rect = el.getBoundingClientRect();
+		return (
+			rect.top >= 0 &&
+			rect.left >= 0 &&
+			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+			rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		);
+		}
+
+		function callbackFunc() {
+		for (var i = 0; i < items.length; i++) {
+			if (isElementInViewport(items[i])) {
+			items[i].classList.add("in-view");
+			}
+		}
+		}
+
+		// listen for events
+		window.addEventListener("load", callbackFunc);
+		window.addEventListener("resize", callbackFunc);
+		window.addEventListener("scroll", callbackFunc);
+
+		})();
+	</script>
 
 <?php
 get_sidebar();

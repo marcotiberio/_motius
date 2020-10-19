@@ -19,9 +19,14 @@ get_header();
 					<div class="hero-text">
 						<h1 class="header"><?php echo $section1['header']; ?></h1>
 						<p class="paragraph"><?php echo $section1['paragraph']; ?></p>
-						<div class="block" style="background-color:<?php echo $section1['background_color_block']; ?>">
+						<div class="block" onclick="window.location.href='<?php echo $section1['button_link']; ?>'" style="background-color:<?php echo $section1['background_color_block']; ?>">
 							<p class="header-block"><?php echo $section1['header_block']; ?></p>
 							<p class="paragraph-block"><?php echo $section1['paragraph_block']; ?></p>
+							<div class="arrow-icon">
+								<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
+									<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#ffffff"/>
+								</svg>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -63,13 +68,13 @@ get_header();
 				</div>
 			<?php endif; ?>
 		</section>
-		<section id="three" data-aos="fade-right">
+		<section id="three">
 			<h3 class="section-title">How it Works</h3>
 			<div class="timeline">
 				<ul>
 					<li>
 						<div>
-							<h2>1</h2>
+							<h2>2013</h2>
 							<h5>Kicking things off</h5>
 							<p>No matter how well defined your project idea is, we can work it out together. 
 								We can start with an existing problem, an existing product that you want to 
@@ -78,8 +83,13 @@ get_header();
 						</div>
 					</li>
 					<li>
+						<div class="image">
+							<img src="http://motius.local/wp-content/uploads/2020/10/timeline1.png" alt="">
+						</div>
+					</li>
+					<li>
 						<div>
-							<h2>1</h2>
+							<h2>2014</h2>
 							<h5>Kicking things off</h5>
 							<p>No matter how well defined your project idea is, we can work it out together. 
 								We can start with an existing problem, an existing product that you want to 
@@ -88,8 +98,13 @@ get_header();
 						</div>
 					</li>
 					<li>
+						<div class="image">
+							<img src="http://motius.local/wp-content/uploads/2020/10/timeline2.png" alt="">
+						</div>
+					</li>
+					<li>
 						<div>
-							<h2>1</h2>
+							<h2>2016</h2>
 							<h5>Kicking things off</h5>
 							<p>No matter how well defined your project idea is, we can work it out together. 
 								We can start with an existing problem, an existing product that you want to 
@@ -98,8 +113,13 @@ get_header();
 						</div>
 					</li>
 					<li>
+						<div class="image">
+							<img src="http://motius.local/wp-content/uploads/2020/10/timeline3.png" alt="">
+						</div>
+					</li>
+					<li>
 						<div>
-							<h2>1</h2>
+							<h2>2017</h2>
 							<h5>Kicking things off</h5>
 							<p>No matter how well defined your project idea is, we can work it out together. 
 								We can start with an existing problem, an existing product that you want to 
@@ -108,8 +128,13 @@ get_header();
 						</div>
 					</li>
 					<li>
+						<div class="image">
+							<img src="http://motius.local/wp-content/uploads/2020/10/timeline4.png" alt="">
+						</div>
+					</li>
+					<li>
 						<div>
-							<h2>1</h2>
+							<h2>2018</h2>
 							<h5>Kicking things off</h5>
 							<p>No matter how well defined your project idea is, we can work it out together. 
 								We can start with an existing problem, an existing product that you want to 
@@ -118,8 +143,13 @@ get_header();
 						</div>
 					</li>
 					<li>
+						<div class="image">
+							<img src="http://motius.local/wp-content/uploads/2020/10/timeline5.png" alt="">
+						</div>
+					</li>
+					<li>
 						<div>
-							<h2>1</h2>
+							<h2>2019</h2>
 							<h5>Kicking things off</h5>
 							<p>No matter how well defined your project idea is, we can work it out together. 
 								We can start with an existing problem, an existing product that you want to 
@@ -128,23 +158,8 @@ get_header();
 						</div>
 					</li>
 					<li>
-						<div>
-							<h2>1</h2>
-							<h5>Kicking things off</h5>
-							<p>No matter how well defined your project idea is, we can work it out together. 
-								We can start with an existing problem, an existing product that you want to 
-								improve or just some rough ideas and requirements.
-							</p>
-						</div>
-					</li>
-					<li>
-						<div>
-							<h2>1</h2>
-							<h5>Kicking things off</h5>
-							<p>No matter how well defined your project idea is, we can work it out together. 
-								We can start with an existing problem, an existing product that you want to 
-								improve or just some rough ideas and requirements.
-							</p>
+						<div class="image">
+							<img src="http://motius.local/wp-content/uploads/2020/10/timeline6.png" alt="">
 						</div>
 					</li>
 				</ul>
@@ -290,18 +305,26 @@ get_header();
 			</div>
 		</section>
 		<?php
-			$section9 = get_field('section9');
+			$section9 = get_field('section9', 11);
 			if( $section9 ): ?>
 				<section class="two-columns" id="nine">
 					<div class="text">
 						<h2 class="header"><?php echo $section9['header']; ?></h2>
 						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
+						<div class="info-note">
+							<svg width="19" height="19" viewBox="0 0 19 19" fill="none">
+								<path d="M9.5 0C6.98022 0 4.5638 1.00121 2.78255 2.78255C1.0013 4.56389 0 6.98041 0 9.5C0 12.0196 1.00121 14.4362 2.78255 16.2175C4.56389 17.9987 6.98041 19 9.5 19C12.0196 19 14.4362 17.9988 16.2175 16.2175C17.9987 14.4361 19 12.0196 19 9.5C19 6.98041 17.9988 4.5638 16.2175 2.78255C14.4361 1.0013 12.0196 0 9.5 0V0ZM10.6875 14.25H8.3125V8.70808H10.6875V14.25ZM10.6875 7.125H8.3125V4.75H10.6875V7.125Z" fill="#939393" />
+							</svg>
+							<p><?php echo $section9['info_note']; ?></p>
+						</div>
 					</div>
-					<div class="image" style="background-image:url('<?php echo esc_url($section9['image']['url']); ?>');"></div>
+					<div class="image" style="background-image:url('<?php echo esc_url($section9['image']['url']); ?>');">
+						<button id="blockButton">Contact Us -></button>
+					</div>
 				</section>
 			<?php endif; ?>
 		<?php
-			$section10 = get_field('section10');
+			$section10 = get_field('section10', 11);
 			if( $section10 ): ?>
 				<section id="ten">
 					<div class="two-columns-text">
