@@ -50,7 +50,7 @@ get_header();
 						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
 						Aldus PageMaker including versions of Lorem Ipsum.</p>
 					</article>
-					<img src="http://motius.local/wp-content/uploads/2020/10/block1.png" alt="random" width="700" height="700" />
+					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/block1.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
@@ -62,7 +62,7 @@ get_header();
 						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
 						Aldus PageMaker including versions of Lorem Ipsum.</p>
 					</article>
-					<img src="http://motius.local/wp-content/uploads/2020/10/block2.png" alt="random" width="700" height="700" />
+					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/block2.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
@@ -74,7 +74,7 @@ get_header();
 						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
 						Aldus PageMaker including versions of Lorem Ipsum.</p>
 					</article>
-					<img src="http://motius.local/wp-content/uploads/2020/10/block3.png" alt="random" width="700" height="700" />
+					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/block3.png" alt="random" width="700" height="700" />
 				</div>
 			</div>
 		</section>
