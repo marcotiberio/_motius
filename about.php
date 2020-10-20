@@ -131,7 +131,7 @@ get_header();
 			$section9 = get_field('section9');
 			if( $section9 ): ?>
 				<section id="nine">
-					<div class="two-columns-text" data-aos="zoom-in">
+					<div class="two-columns-text">
 						<h2 class="header"><?php echo $section9['header']; ?></h2>
 						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
 					</div>

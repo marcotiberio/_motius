@@ -195,7 +195,7 @@ get_header();
 						<h2 class="header"><?php echo $section5['header']; ?></h2>
 						<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
 					</div>
-					<img src="<?php echo esc_url( $section5['image']['url'] ); ?>" alt="<?php echo esc_attr( $section5['image']['alt'] ); ?>" />
+					<img class="bounce" src="<?php echo esc_url( $section5['image']['url'] ); ?>" alt="<?php echo esc_attr( $section5['image']['alt'] ); ?>" />
 					<div class="clients">
 						<p> Clients we work with</p>
 						<div class="grid-6">
