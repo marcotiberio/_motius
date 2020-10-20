@@ -44,8 +44,9 @@ get_header();
 					// Load sub field value.
 					$icon = get_sub_field('icon');
 					$title = get_sub_field('title');
+					$categorylink = get_sub_field('category_link');
 					?>
-					<div class="flip-card">
+					<div class="flip-card" onclick="window.location.href='<?php the_sub_field('category_link'); ?>'">
 						<div class="flip-card-inner">
 							<div class="flip-card-front">
 								<img class="icon" src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />

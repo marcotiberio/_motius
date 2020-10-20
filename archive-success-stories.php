@@ -18,18 +18,19 @@ get_header();
 	</section>
 
 	<div class="filter">
-		<a class="type all active" id="all">All</a>
-		<a class="type artificial_intelligence" id="artificial_intelligence">Artificial Intelligence</a>
-		<a class="type augmented_and_virtual_reality" id="augmented_and_virtual_reality">Augmented & Virtual Reality</a>
-		<a class="type internet_of_things" id="internet_of_things">Internet of Things</a>
-		<a class="type chatbots" id="chatbots">Chatbots</a>
-		<a class="type additive_manufacturing" id="additive_manufacturing">Additive Manufacturing</a>
-		<a class="type robotics" id="robotics">Robotics</a>
-		<a class="type user_centric_design" id="user_centric_design">User Centric Design</a>
-		<a class="type app_and_web_development" id="app_and_web_development">App and Web Development</a>
-		<a class="type data_science" id="data_science">Data Science</a>
-		<a class="type blockchain" id="blockchain">Blockchain</a>
-		<a class="type embedded_development" id="embedded_development">Embedded Development</a>
+		<a class="type all active">All</a>
+		<a class="type artificial_intelligence">Artificial Intelligence</a>
+		<a class="type augmented_and_virtual_reality">Augmented & Virtual Reality</a>
+		<a class="type internet_of_things">Internet of Things</a>
+		<a class="type chatbots">Chatbots</a>
+		<a class="type additive_manufacturing">Additive Manufacturing</a>
+		<a class="type autonomous_driving">Autonomous Driving</a>
+		<a class="type robotics">Robotics</a>
+		<a class="type user_centric_design">User Centric Design</a>
+		<a class="type app_and_web_development">App and Web Development</a>
+		<a class="type data_science">Data Science</a>
+		<a class="type blockchain">Blockchain</a>
+		<a class="type embedded_development">Embedded Development</a>
 	</div>
 
 	<main id="primary" class="site-main">
@@ -60,6 +61,10 @@ get_header();
 		?>
 
 	</main><!-- #main -->
+
+	<script>
+		
+	</script>
 
 
 <?php
