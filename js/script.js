@@ -369,3 +369,10 @@ $(document).ready(function(){
         }, 10);
     });
 });
+
+
+$(document).ready(function(){
+    $("#menuToggle").click(function(){
+        $("#primary-menu").toggle(100);
+    });
+});
