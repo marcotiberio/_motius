@@ -76,7 +76,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("artificial-intelligence") > -1) {
+    if (window.location.href.indexOf("#artificial-intelligence") > -1) {
         $(".filter .artificial_intelligence").siblings().removeClass('active');
         $(".filter .artificial_intelligence").addClass('active');
         $("#primary article:not([class*='artificial_intelligence'])").fadeOut();
@@ -94,7 +94,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("augmented-and-virtual-reality") > -1) {
+    if (window.location.href.indexOf("#augmented-and-virtual-reality") > -1) {
         $(".filter .augmented_and_virtual_reality").siblings().removeClass('active');
         $(".filter .augmented_and_virtual_reality").addClass('active');
         $("#primary article:not([class*='augmented_and_virtual_reality'])").fadeOut();
@@ -112,7 +112,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("internet-of-things") > -1) {
+    if (window.location.href.indexOf("#internet-of-things") > -1) {
         $(".filter .internet_of_things").siblings().removeClass('active');
         $(".filter .internet_of_things").addClass('active');
         $("#primary article:not([class*='internet_of_things'])").fadeOut();
@@ -130,7 +130,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("chatbots") > -1) {
+    if (window.location.href.indexOf("#chatbots") > -1) {
         $(".filter .chatbots").siblings().removeClass('active');
         $(".filter .chatbots").addClass('active');
         $("#primary article:not([class*='chatbots'])").fadeOut();
@@ -148,7 +148,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("additive-manufacturing") > -1) {
+    if (window.location.href.indexOf("#additive-manufacturing") > -1) {
         $(".filter .additive_manufacturing").siblings().removeClass('active');
         $(".filter .additive_manufacturing").addClass('active');
         $("#primary article:not([class*='additive_manufacturing'])").fadeOut();
@@ -166,7 +166,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("autonomous-driving") > -1) {
+    if (window.location.href.indexOf("#autonomous-driving") > -1) {
         $(".filter .autonomous_driving").siblings().removeClass('active');
         $(".filter .autonomous_driving").addClass('active');
         $("#primary article:not([class*='autonomous_driving'])").fadeOut();
@@ -184,7 +184,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("robotics") > -1) {
+    if (window.location.href.indexOf("#robotics") > -1) {
         $(".filter .robotics").siblings().removeClass('active');
         $(".filter .robotics").addClass('active');
         $("#primary article:not([class*='robotics'])").fadeOut();
@@ -202,7 +202,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("user-centric-design") > -1) {
+    if (window.location.href.indexOf("#user-centric-design") > -1) {
         $(".filter .user_centric_design").siblings().removeClass('active');
         $(".filter .user_centric_design").addClass('active');
         $("#primary article:not([class*='user_centric_design'])").fadeOut();
@@ -220,7 +220,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("app-and-web-development") > -1) {
+    if (window.location.href.indexOf("#app-and-web-development") > -1) {
         $(".filter .app_and_web_development").siblings().removeClass('active');
         $(".filter .app_and_web_development").addClass('active');
         $("#primary article:not([class*='app_and_web_development'])").fadeOut();
@@ -238,7 +238,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("data-science") > -1) {
+    if (window.location.href.indexOf("#data-science") > -1) {
         $(".filter .data_science").siblings().removeClass('active');
         $(".filter .data_science").addClass('active');
         $("#primary article:not([class*='data_science'])").fadeOut();
@@ -256,7 +256,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("blockchain") > -1) {
+    if (window.location.href.indexOf("#blockchain") > -1) {
         $(".filter .blockchain").siblings().removeClass('active');
         $(".filter .blockchain").addClass('active');
         $("#primary article:not([class*='blockchain'])").fadeOut();
@@ -274,7 +274,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("embedded-development") > -1) {
+    if (window.location.href.indexOf("#embedded-development") > -1) {
         $(".filter .embedded_development").siblings().removeClass('active');
         $(".filter .embedded_development").addClass('active');
         $("#primary article:not([class*='embedded_development'])").fadeOut();
@@ -304,7 +304,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("cheat-sheet") > -1) {
+    if (window.location.href.indexOf("#cheat-sheet") > -1) {
         $(".filter .cheat_sheet").siblings().removeClass('active');
         $(".filter .cheat_sheet").addClass('active');
         $("#primary article:not([class*='cheat_sheet'])").fadeOut();
@@ -322,7 +322,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {	
-    if (window.location.href.indexOf("toolbox") > -1) {
+    if (window.location.href.indexOf("#toolbox") > -1) {
         $(".filter .toolbox").siblings().removeClass('active');
         $(".filter .toolbox").addClass('active');
         $("#primary article:not([class*='toolbox'])").fadeOut();

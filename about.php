@@ -40,61 +40,46 @@ get_header();
 				</div>
 				<div class="point">
 					<article>
-					<h3>Our Core Values</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<h3>Our Core <br><span id="blueWord">Values</span></h3>
+					<p>The Motius core values are serving as a steering wheel for everything that we do. 
+						They shape our brand, our interaction in within the team, our decisions and our day-to-day life. 
+						They are deeply rooted at the core of our culture.</p>
 					</article>
 					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle1.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>We Enable</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<h3>We <br><span id="blueWord">Enable</span></h3>
+					<p>Life at Motius is about enabling others. All of our actions, projects, and activities have the 
+						main objective to enable people. We enable techies to have the biggest possible impact on the world. 
+						We enable companies to master new technologies.</p>
 					</article>
 					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle2.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>We Create</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<h3>We <br><span id="blueWord">Create</span></h3>
+					<p>We love to build impactful things and have a hands-on mindset towards everything we do. 
+						Good concepts are important, but as we want to create impact, developing products and 
+						implementing ideas is what we strive for.</p>
 					</article>
 					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle3.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>We are Curious</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<h3>We are <br><span id="blueWord">Curious</span></h3>
+					<p>That‘s why we are constantly exploring what happens around us. This curiosity doesn‘t stop at 
+						the immediate task. We often look outside of our daily tasks and don‘t shy away from learning 
+						new skills. We’re coloring outside of the box.</p>
 					</article>
 					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle4.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>We are Community-driven</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<h3>We are <br><span id="blueWord">Community-driven</span></h3>
+					<p>That‘s why we support each other – by collaboratively creating stuff, sharing our knowledge to 
+						help people explore new fields or just supporting people wherever we can. Our integrity and 
+						diverse community is an essential part of the Motius culture.</p>
 					</article>
 					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle5.png" alt="random" width="700" height="700" />
 				</div>
@@ -108,7 +93,7 @@ get_header();
 				</section>
 			<?php endif; ?>
 		<section id="eight">
-			<h3 class="section-title">Our Founding Team</h3>
+			<h3 class="section-title">Our <br><span id="blueWord">Founding Team</span></h3>
 			<?php if( have_rows('section8') ): ?>
 				<div class="grid-5">
 				<?php while( have_rows('section8') ): the_row(); 
@@ -132,7 +117,7 @@ get_header();
 			if( $section9 ): ?>
 				<section id="nine">
 					<div class="two-columns-text">
-						<h2 class="header"><?php echo $section9['header']; ?></h2>
+						<h2 class="header">The <span id="blueWord">Motius</span> <br>Story</h2>
 						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
 					</div>
 				</section>
@@ -252,7 +237,7 @@ get_header();
 			$section10 = get_field('section10');
 			if( $section10 ): ?>
 				<section id="ten">
-					<h2 class="section-title" data-aos="fade-right"><?php echo $section10['header']; ?></h2>
+					<h2 class="section-title" data-aos="fade-right"><span id="blueWord">Motius</span> <br>in Numbers</h2>
 					<img src="<?php echo esc_url( $section10['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" data-aos="fade-left" />
 				</section>
 			<?php endif; ?>

@@ -42,43 +42,34 @@ get_header();
 				</div>
 				<div class="point">
 					<article>
-					<h3>Title 1</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<h3>Re-inventing <span id="blueWord">R&D</span> to stay ahead</h3>
+					<p>We believe the rate of technological change is only increasing. Therefore we created our unique 
+					fluid structure to bring together the best tech talent and experienced leaders allowing us to 
+					focus on the newest technologies of any occurring tech cycle.
+					This way, we can always stay ahead.</p>
 					</article>
 					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/block1.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>Title 2</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<h3>Our <span id="blueWord">talent pool</span> brings the newest tech know-how</h3>
+					<p>Our fluid structure with a built-in turnover rate of 3-5 years is the key to keep up with rapid 
+					technological change. By constantly attracting the best tech talent we are able to develop 
+					cutting-edge products and innovative prototypes for companies that want to stay ahead.</p>
 					</article>
 					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/block2.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>Title 3</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-						electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-						Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<h3>The core team ensures high quality and <span id="blueWord">long term experience</span></h3>
+					<p>We created a core team around key technologies to assure long-term knowledge transfer. The team is responsible 
+					for project management, lead engineering and business impact. This way, we can take full care of all your needs.</p>
 					</article>
 					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/block3.png" alt="random" width="700" height="700" />
 				</div>
 			</div>
 		</section>
-		<section class="two-columns" id="five" data-aos="fade-down">
+		<section class="two-columns" id="five" data-aos="fade-right">
 			<?php
 				$section5 = get_field('section5');
 				if( $section5 ): ?>
@@ -152,9 +143,23 @@ get_header();
 				endif; ?>
 			</div>
 		</section>
-		<section id="seven">
-				<!-- clients -->
-		</section>
+		<?php
+			$section5 = get_field('section5', 11);
+			if( $section5 ): ?>
+				<section id="seven" data-aos="zoom-in">
+					<div class="clients">
+						<p> Clients we work with</p>
+						<div class="grid-6">
+							<img src="<?php echo esc_url( $section5['client1']['url'] ); ?>" alt="<?php echo esc_attr( $section5['client1']['alt'] ); ?>" />
+							<img src="<?php echo esc_url( $section5['client2']['url'] ); ?>" alt="<?php echo esc_attr( $section5['client2']['alt'] ); ?>" />
+							<img src="<?php echo esc_url( $section5['client3']['url'] ); ?>" alt="<?php echo esc_attr( $section5['client3']['alt'] ); ?>" />
+							<img src="<?php echo esc_url( $section5['client4']['url'] ); ?>" alt="<?php echo esc_attr( $section5['client4']['alt'] ); ?>" />
+							<img src="<?php echo esc_url( $section5['client5']['url'] ); ?>" alt="<?php echo esc_attr( $section5['client5']['alt'] ); ?>" />
+							<img src="<?php echo esc_url( $section5['client6']['url'] ); ?>" alt="<?php echo esc_attr( $section5['client6']['alt'] ); ?>" />
+						</div>
+					</div>
+				</section>
+			<?php endif; ?>
 		<section id="eight">
 		<div class="post-carousel-header">
 			<h2>Insights</h2>
@@ -203,7 +208,7 @@ get_header();
 				$section10 = get_field('section10', 2);
 				if( $section10 ): ?>
 						<div class="text">
-							<?php echo $section10['text_left']; ?>
+							<h2>Don’t miss any <span id="blueWord">Insights</span> and keep up with the tech trends<h2>
 						</div>
 						<div class="text">
 							<?php echo $section10['text_right']; ?>

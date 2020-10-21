@@ -37,7 +37,7 @@ get_header();
 			if( $section2 ): ?>
 				<section id="two">
 					<div class="two-columns-text">
-						<h2 class="header" data-aos="fade-right"><?php echo $section2['header']; ?></h2>
+						<h2 class="header" data-aos="fade-right">Working at <span id="blueWord">Motius</span></h2>
 						<p class="paragraph" data-aos="fade-left"><?php echo $section2['paragraph']; ?></p>
 					</div>
 					<div class="color-blocks">
@@ -285,7 +285,7 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="five">
-			<h3 class="section-title">Benefits of Working with Motius</h3>
+			<h3 class="section-title">Benefits of Working with <span id="blueWord">Motius</span></h3>
 			<?php if( have_rows('section5') ): ?>
 				<div class="grid-3">
 				<?php while( have_rows('section5') ): the_row(); 
@@ -344,7 +344,7 @@ get_header();
 			</div>
 		</section>
 		<section id="seven">
-			<h3 class="section-title">Jobs at Motius</h3>
+			<h3 class="section-title">Jobs at <span id="blueWord">Motius</span></h3>
 			<!-- job list -->
 			<div id='bzOpeningsContainer'></div>
 			<script src='https://motius.breezy.hr/embed/js?inline=true&group_by=dept'></script>
@@ -354,7 +354,7 @@ get_header();
 			if( $section8 ): ?>
 				<section id="eight">
 					<div class="two-columns-text-narrow">
-						<h2 class="header" data-aos="fade-right"><?php echo $section8['header']; ?></h2>
+						<h2 class="header" data-aos="fade-right">The <span id="blueWord">best place</span> for techies</h2>
 						<div class="paragraph" data-aos="fade-left">
 							<?php echo $section8['paragraph']; ?>
 						</div>
@@ -365,7 +365,8 @@ get_header();
 			$section9 = get_field('section9', 13);
 			if( $section9 ): ?>
 				<section id="nine">
-					<h2 class="header"><?php echo $section9['header']; ?></h2>
+					<h2 class="header">Life at <span id="blueWord">Motius</span></h2>
+					<a href="https://www.instagram.com/team_motius/" target="_blank"><span id="blueWord">@team_motius</span></p>
 					<img src="<?php echo esc_url( $section9['image']['url'] ); ?>" alt="<?php echo esc_attr( $section9['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>

@@ -1055,6 +1055,10 @@ textarea {
 	opacity: 0.5 !important;
 }
 
+#blueWord {
+	color: #28B9DA;
+}
+
 /* Links
 --------------------------------------------- */
 a {
@@ -1337,9 +1341,9 @@ li:hover {
 	margin-right: 0 !important;
 }
 
-#blockScroll {
+.home #blockScroll {
 	position: relative;
-	padding: 0vh 8vw;
+	padding: 0 0 0 8vw;
 }
 
 .indicators {
@@ -1374,9 +1378,22 @@ li:hover {
 	width: 100%;
 }
 
-.point article {
+.home .point article {
+	flex-basis: 50%;
+	margin-right: 20%;
+}
+
+.home .point article p {
+	margin-top: 2.5rem;
+}
+
+.page-template-about .point article {
 	flex-basis: 60%;
 	margin-right: 10%;
+}
+
+.page-template-about .point article p {
+	margin-top: 2.5rem;
 }
 
 .point img {
@@ -1422,6 +1439,7 @@ li:hover {
 
 .home #five {
 	padding: 0 8vw;
+	height: auto;
 }
 
 .home #five .text:nth-child(1) {
@@ -1477,10 +1495,6 @@ li:hover {
 	margin-top: 25px;
 }
 
-.home #five {
-	padding: 10vh 0 0 8vw;
-}
-
 .home #fiveB {
 	padding: 0 0 10vh 8vw;
 }
@@ -1529,6 +1543,7 @@ li:hover {
 	display: grid;
 	place-items: center;
 	padding-left: 50%;
+	color: #28B9DA;
 }
 
 .home .post-carousel {
@@ -1563,6 +1578,15 @@ li:hover {
 	border-top-left-radius: 50px;
 	border-top-right-radius: 50px;
 	display: block;
+}
+
+.home #seven .clients {
+    padding: 10vh 8vw;
+}
+
+.home #seven .clients p {
+    text-align: center;
+    color: #B9BBC1;
 }
 
 .home #eight article .event-cover img {
@@ -1978,6 +2002,7 @@ li:hover {
 	display: grid;
 	place-items: center;
 	padding-left: 50%;
+	color: #28B9DA;
 }
 
 .page-template-companies #eight .carousel-cell {
@@ -2252,6 +2277,7 @@ li:hover {
 	display: grid;
 	place-items: center;
 	padding-left: 50%;
+	color: #28B9DA;
 }
 
 .page-template-talents #six .carousel-cell {
@@ -2318,6 +2344,16 @@ li:hover {
 	padding: 0 8vw;
 }
 
+.page-template-talents #nine .header,
+.page-template-talents #nine a {
+	padding: 0 8vw;
+	transition: 0.5s;
+}
+
+.page-template-talents #nine a #blueWord:hover {
+	opacity: 0.5;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -2349,6 +2385,11 @@ li:hover {
 	margin-top: 50px;
 	font-size: 20px;
 	line-height: 32px;
+}
+
+.page-template-about #blockScroll {
+	position: relative;
+	padding: 0 8vw;
 }
 
 .page-template-about #two {
@@ -2915,6 +2956,16 @@ li:hover {
 
 #relatedInsights .grid-3 .event-header {
 	padding: 5% 20% 10% 10%;
+}
+
+.post-type-archive-insights #ten {
+	column-gap: 5%;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+.post-type-archive-insights #ten form {
+    margin-top: 5vh;
 }
 
 /* Insights */

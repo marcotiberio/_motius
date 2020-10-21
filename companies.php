@@ -33,7 +33,7 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="two" data-aos="fade-down" data-aos-duration="300">
-			<h3 class="section-title">Fields of Expertise</h3>
+			<h3 class="section-title">Fields of <span id="blueWord">Expertise</span></h3>
 			<p class="paragraph">To keep up with rapid technological change our fields of expertise are always evolving.  
 			Here’s an overview of the technologies we’re currently working with and respective use cases 
 			that we’ve brought to life.</p>
@@ -70,7 +70,7 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="three">
-			<h3 class="section-title">How it Works</h3>
+			<h3 class="section-title">How it <span id="blueWord">Works?</span></h3>
 			<div class="timeline">
 				<ul>
 					<li>
@@ -193,7 +193,7 @@ get_header();
 			if( $section5 ): ?>
 				<section id="five" data-aos="zoom-in">
 					<div class="two-columns-text">
-						<h2 class="header"><?php echo $section5['header']; ?></h2>
+						<h2 class="header">Matching the best fitting experts from <span id="blueWord">our Talent Pool</span></h2>
 						<p class="paragraph"><?php echo $section5['paragraph']; ?></p>
 					</div>
 					<img class="bounce" src="<?php echo esc_url( $section5['image']['url'] ); ?>" alt="<?php echo esc_attr( $section5['image']['alt'] ); ?>" />
@@ -209,9 +209,9 @@ get_header();
 						</div>
 					</div>
 				</section>
-			<?php endif; ?>	
+			<?php endif; ?>
 		<section id="six" class="two-columns-list">
-			<h2 class="section-title" data-aos="fade-right">Benefits in a sentence formatting</h2>
+			<h2 class="section-title" data-aos="fade-right">Bringing your idea to a final product</h2>
 			<?php if( have_rows('section6') ): ?>
 				<ul>
 				<?php while( have_rows('section6') ): the_row(); 
@@ -310,7 +310,7 @@ get_header();
 			if( $section9 ): ?>
 				<section class="two-columns" id="nine">
 					<div class="text">
-						<h2 class="header"><?php echo $section9['header']; ?></h2>
+						<h2 class="header">Agile Pricing for <span id="blueWord">better innovations</span></h2>
 						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
 						<div class="info-note">
 							<svg width="19" height="19" viewBox="0 0 19 19" fill="none">
@@ -320,7 +320,7 @@ get_header();
 						</div>
 					</div>
 					<div class="image" style="background-image:url('<?php echo esc_url($section9['image']['url']); ?>');">
-						<button id="blockButton">Contact Us -></button>
+						<button id="blockButton" onclick="window.location.href='http://motiusrelaunch.flywheelstaging.com/contact/'">Contact Us -></button>
 					</div>
 				</section>
 			<?php endif; ?>

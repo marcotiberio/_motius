@@ -96,6 +96,31 @@ get_header();
 		endif;
 		?>
 
+		<section class="two-columns" id="ten" data-aos="fade-up">
+			<?php
+				$section10 = get_field('section10', 2);
+				if( $section10 ): ?>
+						<div class="text">
+							<h2>Don’t miss any <span id="blueWord">Insights</span> and keep up with the tech trends<h2>
+						</div>
+						<div class="text">
+							<?php echo $section10['text_right']; ?>
+							<div class="contact-form">
+								<!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+								<form action='https://forms.zohopublic.eu/louismappes/form/TestDev/formperma/2RFkPD8OjDVpVWGbyRT1P_odwyIg8BsUWVSnDt8Nc18/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+									<input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+									<input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+									<input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+									<p></p>
+									<!--Email-->
+									<input type="text" maxlength="255" name="Email" value="" placeholder="Your Email" fieldType=9 style="color: #666; border: 1px solid #ccc; border-radius: 15px; padding: 1rem; width: 50%;" />
+									<button type="submit" style="color: #ffffff; background-color: #28B9DA; border: 1px solid #ccc; border-radius: 10px; padding: 0.6rem; margin-left: -13%; cursor: pointer;"><em>Submit</em></button>
+								</form>
+							</div>
+						</div>
+				<?php endif; ?>
+		</section>
+
 	</main><!-- #main -->
 
 <?php
