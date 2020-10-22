@@ -70,100 +70,105 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="three">
-			<h3 class="section-title">How it <span id="blueWord">Works?</span></h3>
-			<div class="timeline">
-				<ul>
-					<li>
-						<div>
-							<h2>2013</h2>
-							<h5>Kicking things off</h5>
-							<p>No matter how well defined your project idea is, we can work it out together. 
-								We can start with an existing problem, an existing product that you want to 
-								improve or just some rough ideas and requirements.
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="image">
-							<img src="http://motius.local/wp-content/uploads/2020/10/timeline1.png" alt="">
-						</div>
-					</li>
-					<li>
-						<div>
-							<h2>2014</h2>
-							<h5>Kicking things off</h5>
-							<p>No matter how well defined your project idea is, we can work it out together. 
-								We can start with an existing problem, an existing product that you want to 
-								improve or just some rough ideas and requirements.
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="image">
-							<img src="http://motius.local/wp-content/uploads/2020/10/timeline2.png" alt="">
-						</div>
-					</li>
-					<li>
-						<div>
-							<h2>2016</h2>
-							<h5>Kicking things off</h5>
-							<p>No matter how well defined your project idea is, we can work it out together. 
-								We can start with an existing problem, an existing product that you want to 
-								improve or just some rough ideas and requirements.
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="image">
-							<img src="http://motius.local/wp-content/uploads/2020/10/timeline3.png" alt="">
-						</div>
-					</li>
-					<li>
-						<div>
-							<h2>2017</h2>
-							<h5>Kicking things off</h5>
-							<p>No matter how well defined your project idea is, we can work it out together. 
-								We can start with an existing problem, an existing product that you want to 
-								improve or just some rough ideas and requirements.
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="image">
-							<img src="http://motius.local/wp-content/uploads/2020/10/timeline4.png" alt="">
-						</div>
-					</li>
-					<li>
-						<div>
-							<h2>2018</h2>
-							<h5>Kicking things off</h5>
-							<p>No matter how well defined your project idea is, we can work it out together. 
-								We can start with an existing problem, an existing product that you want to 
-								improve or just some rough ideas and requirements.
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="image">
-							<img src="http://motius.local/wp-content/uploads/2020/10/timeline5.png" alt="">
-						</div>
-					</li>
-					<li>
-						<div>
-							<h2>2019</h2>
-							<h5>Kicking things off</h5>
-							<p>No matter how well defined your project idea is, we can work it out together. 
-								We can start with an existing problem, an existing product that you want to 
-								improve or just some rough ideas and requirements.
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="image">
-							<img src="http://motius.local/wp-content/uploads/2020/10/timeline6.png" alt="">
-						</div>
-					</li>
-				</ul>
+			<h2 class="section-title">How it <span id="blueWord">Works?</span></h2>
+			<div id="scrollLine">
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/cube.png');">
+					</div>
+					<div class="right" data-aos="fade-left">
+						<h2>1</h2>
+						<h5>Kicking things off</h5>
+						<p>No matter how well defined your project idea is, we can work it out together. 
+							We can start with an existing problem, an existing product that you want to 
+							improve or just some rough ideas and requirements.
+						</p>
+					</div>
+				</div>
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/cube.png');">
+					</div>
+					<div class="right" data-aos="fade-left">
+						<h2>2</h2>
+						<h5>Thinking Together</h5>
+						<p>No matter how well defined your project idea is, we can work it out together. 
+							We can start with an existing problem, an existing product that you want to 
+							improve or just some rough ideas and requirements.
+						</p>
+					</div>
+				</div>
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/cube.png');">
+					</div>
+					<div class="right" data-aos="fade-left">
+						<h2>3</h2>
+						<h5>Team Matching</h5>
+						<p>No matter how well defined your project idea is, we can work it out together. 
+							We can start with an existing problem, an existing product that you want to 
+							improve or just some rough ideas and requirements.
+						</p>
+					</div>
+				</div>
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/cube.png');">
+					</div>
+					<div class="right" data-aos="fade-left">
+						<h2>4</h2>
+						<h5>Innovation &Agile Development</h5>
+						<p>No matter how well defined your project idea is, we can work it out together. 
+							We can start with an existing problem, an existing product that you want to 
+							improve or just some rough ideas and requirements.
+						</p>
+					</div>
+				</div>
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/cube.png');">
+					</div>
+					<div class="right" data-aos="fade-left">
+						<h2>5</h2>
+						<h5>Implementation & Support</h5>
+						<p>No matter how well defined your project idea is, we can work it out together. 
+							We can start with an existing problem, an existing product that you want to 
+							improve or just some rough ideas and requirements.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<h2 class="section-title-mobile">How it <span id="blueWord">Works?</span></h2>
+		<section id="threeMobile" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/scrollline.png');">
+			<div id="scrollLine">
+				<div class="element" data-aos="fade-right">
+					<h2>2013</h2>
+					<h5>Kicking things off</h5>
+					<p>No matter how well defined your project idea is, we can work it out together. 
+						We can start with an existing problem, an existing product that you want to 
+						improve or just some rough ideas and requirements.
+					</p>
+				</div>
+				<div class="element" data-aos="fade-right">
+					<h2>2013</h2>
+					<h5>Kicking things off</h5>
+					<p>No matter how well defined your project idea is, we can work it out together. 
+						We can start with an existing problem, an existing product that you want to 
+						improve or just some rough ideas and requirements.
+					</p>
+				</div>
+				<div class="element" data-aos="fade-right">
+					<h2>2013</h2>
+					<h5>Kicking things off</h5>
+					<p>No matter how well defined your project idea is, we can work it out together. 
+						We can start with an existing problem, an existing product that you want to 
+						improve or just some rough ideas and requirements.
+					</p>
+				</div>
+				<div class="element" data-aos="fade-right">
+					<h2>2013</h2>
+					<h5>Kicking things off</h5>
+					<p>No matter how well defined your project idea is, we can work it out together. 
+						We can start with an existing problem, an existing product that you want to 
+						improve or just some rough ideas and requirements.
+					</p>
+				</div>
 			</div>
 		</section>
 		<section id="four" class="two-columns-list">

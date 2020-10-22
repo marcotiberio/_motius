@@ -68,196 +68,123 @@ get_header();
 				<button id="switchTimelineleft"><h5>The Talent Pool</h5></button>
 				<button id="switchTimelineright"><h5>The Core Team</h5></button>
 			</div>
-			<div id="timelineLeft">
-				<div class="timeline">
-					<ul>
-						<li>
-							<div>
-								<h2>2013</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline1.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>2014</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline2.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>2016</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline3.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>2017</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline4.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>2018</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline5.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>2019</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline6.png" alt="">
-							</div>
-						</li>
-					</ul>
+			<div id="scrollLine">
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline1.png');">
+					</div>
+					<div class="right" data-aos="zoom-in">
+						<h2>1</h2>
+						<h5>Application</h5>
+						<p>Tell us about your passion, your motivation but also about your skills, 
+						tools, frameworks and projects that you have previously worked on.</p>
+					</div>
+				</div>
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline2.png');">
+					</div>
+					<div class="right" data-aos="zoom-in">
+						<h2>2</h2>
+						<h5>First Interview</h5>
+						<p>Tell us about your passion, your motivation but also about your skills, 
+						tools, frameworks and projects that you have previously worked on.</p>
+					</div>
+				</div>
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline3.png');">
+					</div>
+					<div class="right" data-aos="zoom-in">
+						<h2>3</h2>
+						<h5>Become a Motee</h5>
+						<p>If it’s a match for both sides, you will become part of the Motius tech community. 
+						You now have full access to our internal platform where you can see all of our 
+						projects and are proactively considered for fitting projects.</p>
+					</div>
+				</div>
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline4.png');">
+					</div>
+					<div class="right" data-aos="zoom-in">
+						<h2>4</h2>
+						<h5>Technical Interview</h5>
+						<p>Tell us about your passion, your motivation but also about your skills, 
+						tools, frameworks and projects that you have previously worked on.</p>
+					</div>
+				</div>
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline5.png');">
+					</div>
+					<div class="right" data-aos="zoom-in">
+						<h2>5</h2>
+						<h5>Become an Active Motee</h5>
+						<p>Welcome the the active part of the Talent Pool. You will now be working 
+						in a project team and create the tech products of the future. Now, you’re 
+						talent journey is really kicking off - it’s just the beginning.</p>
+					</div>
+				</div>
+				<div class="element">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline6.png');">
+					</div>
+					<div class="right" data-aos="zoom-in">
+						<h2>6</h2>
+						<h5>Choose your career path</h5>
+						<p>Depending on your strengths and interests you can now develop your skills 
+						and grow into the core team with different career paths:
+						<ul>
+							<li>Project Manager / Product Owner</li>
+							<li>Technical Specialist</li>
+							<li>Technical Executive</li>
+						</ul>
+						</p>
+					</div>
 				</div>
 			</div>
-			<div id="timelineRight">
-				<div class="timeline">
+		</section>
+		<h2 class="section-title-mobile">How it <span id="blueWord">Works?</span></h2>
+		<section id="threeMobile" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/scrollline.png');">
+			<div id="scrollLine">
+				<div class="element" data-aos="fade-right">
+					<h2>1</h2>
+					<h5>Application</h5>
+					<p>Tell us about your passion, your motivation but also about your skills, 
+					tools, frameworks and projects that you have previously worked on.</p>
+				</div>
+				<div class="element" data-aos="fade-right">
+					<h2>2</h2>
+					<h5>First Interview</h5>
+					<p>Tell us about your passion, your motivation but also about your skills, 
+					tools, frameworks and projects that you have previously worked on.</p>
+				</div>
+				<div class="element" data-aos="fade-right">
+					<h2>3</h2>
+					<h5>Become a Motee</h5>
+					<p>If it’s a match for both sides, you will become part of the Motius tech community. 
+					You now have full access to our internal platform where you can see all of our 
+					projects and are proactively considered for fitting projects.</p>
+				</div>
+				<div class="element" data-aos="fade-right">
+					<h2>4</h2>
+					<h5>Technical Interview</h5>
+					<p>Tell us about your passion, your motivation but also about your skills, 
+					tools, frameworks and projects that you have previously worked on.</p>
+				</div>
+				<div class="element" data-aos="fade-right">
+					<h2>5</h2>
+					<h5>Become an Active Motee</h5>
+					<p>Welcome the the active part of the Talent Pool. You will now be working 
+					in a project team and create the tech products of the future. Now, you’re 
+					talent journey is really kicking off - it’s just the beginning.</p>
+				</div>
+				<div class="element" data-aos="fade-right">
+					<h2>6</h2>
+					<h5>Choose your career path</h5>
+					<p>Depending on your strengths and interests you can now develop your skills 
+					and grow into the core team with different career paths:
 					<ul>
-						<li>
-							<div>
-								<h2>2020</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline1.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>2020</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline2.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>2020</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline3.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>2020</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline4.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>2020</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline5.png" alt="">
-							</div>
-						</li>
-						<li>
-							<div>
-								<h2>2020</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="image">
-								<img src="http://motius.local/wp-content/uploads/2020/10/timeline6.png" alt="">
-							</div>
-						</li>
+						<li>Project Manager / Product Owner</li>
+						<li>Technical Specialist</li>
+						<li>Technical Executive</li>
 					</ul>
+					</p>
 				</div>
 			</div>
 		</section>

@@ -69,7 +69,7 @@ get_header();
 				</div>
 			</div>
 		</section>
-		<section class="two-columns" id="five" data-aos="fade-right">
+		<section class="two-columns" id="five">
 			<?php
 				$section5 = get_field('section5');
 				if( $section5 ): ?>

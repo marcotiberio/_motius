@@ -60,7 +60,7 @@ get_header();
 					<article>
 					<h3>We <br><span id="blueWord">Create</span></h3>
 					<p>We love to build impactful things and have a hands-on mindset towards everything we do. 
-						Good concepts are important, but as we want to create impact, developing products and 
+						Good concepts are important, but as we wantto create impact, developing products and 
 						implementing ideas is what we strive for.</p>
 					</article>
 					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle3.png" alt="random" width="700" height="700" />
@@ -122,6 +122,70 @@ get_header();
 					</div>
 				</section>
 				<section id="nineB">
+					<div id="scrollLine">
+						<div class="element">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							</div>
+							<div class="right" data-aos="fade-left">
+								<h2>2013</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</div>
+						<div class="element">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							</div>
+							<div class="right" data-aos="fade-left">
+								<h2>2013</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</div>
+						<div class="element">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							</div>
+							<div class="right" data-aos="fade-left">
+								<h2>2013</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</div>
+						<div class="element">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							</div>
+							<div class="right" data-aos="fade-left">
+								<h2>2013</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</div>
+						<div class="element">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							</div>
+							<div class="right" data-aos="fade-left">
+								<h2>2013</h2>
+								<h5>Kicking things off</h5>
+								<p>No matter how well defined your project idea is, we can work it out together. 
+									We can start with an existing problem, an existing product that you want to 
+									improve or just some rough ideas and requirements.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- <section id="nineB">
 					<div class="timeline">
 						<ul>
 							<li>
@@ -231,7 +295,7 @@ get_header();
 							</li>
 						</ul>
 					</div>
-				</section>
+				</section> -->
 			<?php endif; ?>
 		<?php
 			$section10 = get_field('section10');
