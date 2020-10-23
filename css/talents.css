@@ -1,0 +1,311 @@
+/*--------------------------------------------------------------
+# Talents
+--------------------------------------------------------------*/
+
+.page-template-talents .site-header {
+	background-color: transparent;
+}
+
+.page-template-talents section {
+	width: 100vw;
+	height: auto;
+	padding: 10vh 8vw;
+}
+
+.page-template-talents #one {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
+	padding: 20vh 8vw;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(241, 251, 253, 1) 30%);
+}
+
+.page-template-talents .hero-text {
+	grid-column-start: 3;
+	grid-column-end: 7;
+	padding-right: 0;
+}
+
+.page-template-talents .paragraph {
+	margin-top: 50px;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.page-template-talents .block {
+	margin: 50px 0;
+	width: 45%;
+	height: 300px;
+	border-radius: 3rem;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+.page-template-talents .block .header-block,
+.page-template-talents .block .paragraph-block {
+	width: 65%;
+	color: #ffffff;
+}
+
+.page-template-talents .block .header-block {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.page-template-talents .two-columns-text {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 10vh;
+}
+
+.page-template-talents .two-columns-text .header {
+	font-size: 100px;
+	line-height: 100px;
+	margin-right: 25%;
+}
+
+.page-template-talents .two-columns-text .paragraph {
+	margin-top: 0;
+}
+
+.page-template-talents .color-blocks {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 24px;
+}
+
+.page-template-talents .color-blocks img {
+	width: 230px;
+	float: right;
+	margin-right: -20%;
+	margin-top: -25%;
+}
+
+.page-template-talents .color-blocks .info .paragraph {
+	margin-top: 25px;
+}
+
+.page-template-talents .color-blocks .left {
+	background-color: #B8E9F4;
+	border-radius: 3rem;
+	padding: 2% 20% 5% 10%;
+	margin: 10% 0 10% 0;
+}
+
+.page-template-talents .color-blocks .left .info {
+	margin-top: 30%;
+	margin-right: 10%;
+}
+
+.page-template-talents .color-blocks .right {
+	background-color: #E4EAEB;
+	border-radius: 3rem;
+	padding: 2% 20% 5% 10%;
+	margin: 10% 0 10% 0;
+}
+
+.page-template-talents .color-blocks .right .info {
+	margin-top: 30%;
+	margin-right: 10%;
+}
+
+.page-template-talents .color-blocks .info .paragraph {
+	margin-top: 25px;
+}
+
+.page-template-talents #three {
+	display: block;
+	padding: 30vh 8vw 10vh 8vw;
+}
+
+.page-template-talents #threeMobile {
+	display: none;
+}
+
+.page-template-talents .section-title-mobile {
+	display: none;
+}
+
+.page-template-talents #three #scrollLine {
+	margin-top: 10vh;
+}
+
+.page-template-talents #three #scrollLine .element {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 5%;
+}
+
+.page-template-talents #three #scrollLine .element .left {
+	border-radius: 3rem;
+	height: 30vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.page-template-talents #three #scrollLine .element .right {
+	border-left: 10px solid #D7DFEB;
+	padding-left: 5%;
+}
+
+.page-template-talents #three .element .aos-animate:nth-child(2) {
+	border-left: 10px solid #2BBADB;
+}
+
+.page-template-talents #three #scrollLine .element .right {
+	border-left: 10px solid grey;
+	padding-left: 5%;
+}
+
+.page-template-talents #three #scrollLine .element .right h2,
+.page-template-talents #threeMobile #scrollLine .element .right h2 {
+	color: #D7DFEB;
+}
+
+.page-template-talents #three #scrollLine .element .right h5,
+.page-template-talents #threeMobile #scrollLine .element .right h5 {
+	color: #383E4E;
+	margin: 1.5rem 0;
+}
+
+.page-template-talents #five {
+	padding-bottom: 20vh;
+}
+
+.two-columns-text-narrow {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 60px;
+	padding-bottom: 20vh;
+	padding: 2vh 16vw;
+}
+
+.two-columns-text-narrow .paragraph {
+	margin-top: 0;
+}
+
+.two-columns-text-narrow .paragraph p {
+	margin-block-end: 32px;
+}
+
+.page-template-talents .grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	row-gap: 10%;
+	text-align: center;
+}
+
+.page-template-talents .section-title {
+	margin-bottom: 4.375rem;
+	width: 35%;
+}
+
+.page-template-talents .grid-3 .title {
+	padding: 5% 25%;
+}
+
+.page-template-talents #four .section-title {
+	width: 100%;
+}
+
+.page-template-talents #four #blockButton {
+	background-color: #28B9DA;
+	padding: 1rem 3rem;
+}
+
+.page-template-talents .two-columns-list ul li:nth-child(5) {
+	border-bottom: 0 !important;
+}
+
+.page-template-talents #six {
+	padding: 10vh 0 10vh 8vw;
+}
+
+.page-template-talents #six .post-carousel-header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-right: 8vw;
+}
+
+.page-template-talents #six .post-carousel-header a {
+	display: grid;
+	place-items: center;
+	padding-left: 50%;
+	color: #28B9DA;
+}
+
+.page-template-talents #six .carousel-cell {
+	background-color: #E8E9E9 !important;
+	border-radius: 3rem;
+	width: 30%;
+	height: auto;
+	margin-right: 10px;
+	counter-increment: carousel-cell;
+}
+
+.page-template-talents #six article .event-header {
+	padding: 5% 20% 10% 10%;
+}
+
+.page-template-talents #six article .event-cover img {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	display: block;
+}
+
+.page-template-talents #seven {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	scroll-margin-top: 10vh;
+}
+
+.page-template-talents .block {
+	margin: 50px 0;
+	width: 45%;
+	height: 300px;
+	border-radius: 3rem;
+	padding-top: 5%;
+	padding-left: 5%;
+	color: #ffffff;
+	transition: 0.5s;
+}
+
+.page-template-talents .block:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.page-template-talents .block .arrow-icon {
+	position: absolute;
+	margin-top: 5%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.page-template-talents .block #arrow {
+	grid-column-start: 4;
+}
+
+.page-template-talents #nine {
+	padding: 10vh 0;
+}
+
+.page-template-talents #nine h1,
+.page-template-talents #nine p {
+	padding: 0 8vw;
+}
+
+.page-template-talents #nine .header,
+.page-template-talents #nine a {
+	padding: 0 8vw;
+	transition: 0.5s;
+}
+
+.page-template-talents #nine a #blueWord:hover {
+	opacity: 0.5;
+}

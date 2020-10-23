@@ -22,11 +22,21 @@ get_header();
 				<?php
 					$section1 = get_field('section1');
 					if( $section1 ): ?>
-							<div class="left">
+							<div class="left" onclick="window.location.href='http://motiusrelaunch.flywheelstaging.com/companies/'">
 								<div class="info"><?php echo $section1['text_left']; ?></div>
+								<div class="arrow-icon">
+								<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
+									<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#000000"/>
+								</svg>
 							</div>
-							<div class="right">
+							</div>
+							<div class="right" onclick="window.location.href='http://motiusrelaunch.flywheelstaging.com/talent/'">
 								<div class="info"><?php echo $section1['text_right']; ?></div>
+								<div class="arrow-icon">
+								<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
+									<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#000000"/>
+								</svg>
+							</div>
 							</div>
 					<?php endif; ?>
 			</div>
@@ -94,7 +104,7 @@ get_header();
 							<div class="flip-card-inner">
 								<div class="flip-card-front">
 									<img class="icon" src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
-									<p class="title"><?php the_sub_field('title'); ?></p>
+									<p class="title"><span id="bullet">&#8226;</span><?php the_sub_field('title'); ?></p>
 								</div>
 							</div>
 						</div>
@@ -133,7 +143,7 @@ get_header();
 									?>
 								</div>
 								<div class="event-header">
-								<p class="type"><?php the_field('type'); ?></p>
+								<p class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></p>
 									<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
 								</div>
 							</a>
@@ -191,10 +201,10 @@ get_header();
 									?>
 								</div>
 								<div class="event-header">
-									<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
-									<p class="type"><?php the_field('type'); ?></p>
+									<h5 class="title"><?php print the_title(); ?></h5>
+									<p class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></p>
 									<p class="date"><?php echo date('M Y'); ?></p>
-									<p><?php the_field('author'); ?></p>
+									<p class="author"><?php the_field('author'); ?></p>
 								</div>
 							</a>
 						</article>	
@@ -221,7 +231,7 @@ get_header();
 									<p></p>
 									<!--Email-->
 									<input type="text" maxlength="255" name="Email" value="" placeholder="Your Email" fieldType=9 style="color: #666; border: 1px solid #ccc; border-radius: 15px; padding: 1rem; width: 100%; margin-top: 20px;" />
-									<button type="submit" style="color: #ffffff; background-color: #28B9DA; border: 1px solid #ccc; border-radius: 10px; padding: 0.6rem; width: 100%; cursor: pointer; margin-top: 10px;"><em>Submit</em></button>
+									<button type="submit" style="color: #ffffff; background-color: #28B9DA; border: 1px solid #ccc; border-radius: 10px; padding: 0.6rem; width: 100%; cursor: pointer; margin-top: 10px;"><em>Subscribe</em></button>
 								</form>
 							</div>
 						</div>

@@ -1,0 +1,119 @@
+/*--------------------------------------------------------------
+# Post
+--------------------------------------------------------------*/
+
+.single .entry-header {
+	display: block;
+}
+
+.single article {
+	padding: 20vh 8vw;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
+}
+
+.single #relatedInsights article {
+	padding: 1vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	column-gap: 20px;
+}
+
+.single article .entry-header {
+	grid-column-start: 3;
+	grid-column-end: 7;
+}
+
+.single article .entry-content {
+	grid-column-start: 1;
+	grid-column-end: 9;
+}
+
+.single .intro {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.single .tag,
+.single .date {
+	text-transform: capitalize;
+	margin-bottom: 25px;
+}
+
+.single .client {
+	text-transform: capitalize;
+	margin-top: 50px;
+}
+
+.single .client .type {
+	text-transform: capitalize;
+	margin-left: 50px;
+}
+
+.single .intro p:nth-child(1) {
+	margin-block-end: 30px;
+}
+
+.single .intro p:nth-child(3) {
+	color: #c4c4c4;
+}
+
+.single .client span:nth-child(1) {
+	color: #c4c4c4;
+}
+
+.single article .post-thumbnail {
+	grid-column-start: 1;
+	grid-column-end: 9;
+	margin: 10vh 0;
+}
+
+.single article .post-thumbnail img {
+	border-radius: 3rem;
+}
+
+.column-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 5%;
+	margin: 20vh 0;
+}
+
+.column-3 .header {
+	width: 50%;
+	margin-bottom: 40px;
+}
+
+.column-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 5%;
+	margin-top: 5vh;
+	margin-bottom: 20vh;
+}
+
+.column-4 .header {
+	margin-bottom: 15px;
+}
+
+.single article .sublines {
+	margin: 10vh 20vh;
+}
+
+.single article .sublines .header {
+	margin-bottom: 15px;
+}
+
+.single article .outro {
+	margin: 10vh 0;
+}
+
+.single article .outro .paragraph {
+	margin: 0 20vh;
+}
+
+.single article .outro .image {
+	margin: 10vh 0;
+}
+

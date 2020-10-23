@@ -143,6 +143,17 @@ add_action( 'widgets_init', '_motius_widgets_init' );
  */
 function _motius_scripts() {
 	wp_enqueue_style( '_motius-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'header-css', get_template_directory_uri() . '/css/header.css', 'all');
+	wp_enqueue_style( 'footer-css', get_template_directory_uri() . '/css/footer.css', 'all');
+	wp_enqueue_style( 'theme-css', get_template_directory_uri() . '/css/theme.css', 'all');
+	wp_enqueue_style( 'home-css', get_template_directory_uri() . '/css/home.css', 'all');
+	wp_enqueue_style( 'companies-css', get_template_directory_uri() . '/css/companies.css', 'all');
+	wp_enqueue_style( 'talents-css', get_template_directory_uri() . '/css/talents.css', 'all');
+	wp_enqueue_style( 'about-css', get_template_directory_uri() . '/css/about.css', 'all');
+	wp_enqueue_style( 'post-css', get_template_directory_uri() . '/css/post.css', 'all');
+	wp_enqueue_style( 'archive-css', get_template_directory_uri() . '/css/archive.css', 'all');
+	wp_enqueue_style( 'simple-text-css', get_template_directory_uri() . '/css/simple-text.css', 'all');
+	wp_enqueue_style( 'mobile-css', get_template_directory_uri() . '/css/mobile.css', 'all');
 	wp_style_add_data( '_motius-style', 'rtl', 'replace' );
 
 	wp_deregister_script( 'jquery' );

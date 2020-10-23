@@ -1,0 +1,59 @@
+/*--------------------------------------------------------------
+# Simple Text
+--------------------------------------------------------------*/
+
+.page-template-simple-text section {
+	padding: 20vh 8vw 10vh 8vw;
+}
+
+.page-template-simple-text .entry-title {
+	margin-bottom: 73px;
+}
+
+.page-template-simple-text .hero-text {
+	margin-bottom: 73px;
+}
+
+.page-template-simple-text .hero-text h3 {}
+
+.page-template-simple-text .hero-text p {
+	margin-block-end: 30px;
+}
+
+/*--------------------------------------------------------------
+# Simple Text
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.page-template-contact #one {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
+	padding: 20vh 8vw 10vh 8vw;
+}
+
+.page-template-contact #one .hero-text {
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+
+.page-template-contact #one .hero-text .paragraph {
+	margin-top: 50px;
+}
+
+.page-template-contact #eleven {
+	width: 100vw;
+	height: auto;
+	padding: 0 8vw 10vh 8vw;
+}
+
+.page-template-contact #eleven .grid-3 {
+	margin-top: 50px;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/

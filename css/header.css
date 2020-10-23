@@ -1,0 +1,58 @@
+/* Header
+--------------------------------------------- */
+
+.site-header {
+	position: fixed;
+	top: 6vh;
+	background-color: transparent;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
+	align-items: center;
+	font-family: 'Inter', sans-serif;
+	color: black;
+	padding: 0 8vw 6vh 8vw;
+	z-index: 1000;
+}
+
+.site-branding {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.custom-logo-link img {
+	width: 160px;
+	height: auto;
+}
+
+.main-navigation {
+	grid-column-start: 3;
+	grid-column-end: 9;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+#primary-menu {
+	display: flex;
+	flex-direction: row;
+}
+
+#primary-menu li {
+	margin-right: 2.8125rem;
+}
+
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: none;
+	position: relative;
+}
+
+.entry-header {
+	display: none;
+}
