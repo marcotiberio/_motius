@@ -130,7 +130,7 @@
 
 			<div class="section-header">
 				<h2>Related Insights</h2>
-				<a href="http://motius.local/insights/">All Insights -></a>
+				<a href="http://motiusrelaunch.flywheelstaging.com/insights/">All Insights -></a>
 			</div>
 
 			<div class="grid-3">

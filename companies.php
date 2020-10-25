@@ -73,7 +73,7 @@ get_header();
 			<h2 class="section-title">How it <span id="blueWord">Works?</span></h2>
 			<div id="scrollLine">
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/cube.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">
 					</div>
 					<div class="right" data-aos="fade-left">
 						<h2>1</h2>
@@ -85,7 +85,7 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/cube.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">
 					</div>
 					<div class="right" data-aos="fade-left">
 						<h2>2</h2>
@@ -97,7 +97,7 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/cube.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">
 					</div>
 					<div class="right" data-aos="fade-left">
 						<h2>3</h2>
@@ -109,7 +109,7 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/cube.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">
 					</div>
 					<div class="right" data-aos="fade-left">
 						<h2>4</h2>
@@ -121,7 +121,7 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/cube.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">
 					</div>
 					<div class="right" data-aos="fade-left">
 						<h2>5</h2>
@@ -135,7 +135,7 @@ get_header();
 			</div>
 		</section>
 		<h2 class="section-title-mobile">How it <span id="blueWord">Works?</span></h2>
-		<section id="threeMobile" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/scrollline.png');">
+		<section id="threeMobile" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/scrollline.png');">
 			<div id="scrollLine">
 				<div class="element" data-aos="fade-right">
 					<h2>2013</h2>
@@ -272,7 +272,7 @@ get_header();
 		<section id="eight">
 			<div class="post-carousel-header">
 				<h2>Success Stories</h2>
-				<a href="http://motius.local/success-stories/">All Cases -></a>
+				<a href="http://motiusrelaunch.flywheelstaging.com/success-stories/">All Cases -></a>
 			</div>
 			<div class="post-carousel" data-flickity='{ "wrapAround": true }'>
 			<?php 

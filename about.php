@@ -124,7 +124,7 @@ get_header();
 				<section id="nineB">
 					<div id="scrollLine">
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
 							<div class="right" data-aos="fade-left">
 								<h2>2013</h2>
@@ -136,7 +136,7 @@ get_header();
 							</div>
 						</div>
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
 							<div class="right" data-aos="fade-left">
 								<h2>2013</h2>
@@ -148,7 +148,7 @@ get_header();
 							</div>
 						</div>
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
 							<div class="right" data-aos="fade-left">
 								<h2>2013</h2>
@@ -160,7 +160,7 @@ get_header();
 							</div>
 						</div>
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
 							<div class="right" data-aos="fade-left">
 								<h2>2013</h2>
@@ -172,7 +172,7 @@ get_header();
 							</div>
 						</div>
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
 							<div class="right" data-aos="fade-left">
 								<h2>2013</h2>
@@ -200,7 +200,7 @@ get_header();
 							</li>
 							<li>
 								<div class="image">
-									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
 								</div>
 							</li>
 							<li>
@@ -215,7 +215,7 @@ get_header();
 							</li>
 							<li>
 								<div class="image">
-									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
 								</div>
 							</li>
 							<li>
@@ -230,7 +230,7 @@ get_header();
 							</li>
 							<li>
 								<div class="image">
-									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
 								</div>
 							</li>
 							<li>
@@ -245,7 +245,7 @@ get_header();
 							</li>
 							<li>
 								<div class="image">
-									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
 								</div>
 							</li>
 							<li>
@@ -260,7 +260,7 @@ get_header();
 							</li>
 							<li>
 								<div class="image">
-									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
 								</div>
 							</li>
 							<li>
@@ -275,7 +275,7 @@ get_header();
 							</li>
 							<li>
 								<div class="image">
-									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
 								</div>
 							</li>
 							<li>
@@ -290,7 +290,7 @@ get_header();
 							</li>
 							<li>
 								<div class="image">
-									<img src="http://motius.local/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
+									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
 								</div>
 							</li>
 						</ul>

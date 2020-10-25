@@ -115,7 +115,7 @@ get_header();
 		<section id="six">
 			<div class="post-carousel-header">
 				<h2>Success Stories</h2>
-				<a href="http://motius.local/success-stories/">All Cases -></a>
+				<a href="http://motiusrelaunch.flywheelstaging.com/success-stories/">All Cases -></a>
 			</div>
 			<div class="post-carousel" data-flickity='{ "wrapAround": true }'>
 			<?php 
@@ -173,7 +173,7 @@ get_header();
 		<section id="eight">
 		<div class="post-carousel-header">
 			<h2>Insights</h2>
-			<a href="http://motius.local/insights/">All Insights -></a>
+			<a href="http://motiusrelaunch.flywheelstaging.com/success-stories/">All Insights -></a>
 		</div>
 		<div class="post-carousel" data-flickity='{ "wrapAround": true }'>
 			<?php 

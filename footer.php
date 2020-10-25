@@ -175,7 +175,7 @@
 <footer id="colophon" class="site-footer">
 	<div class="primary-footer">
 		<div class="logo"><img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/logo-footer.png" alt=""
-				onclick="window.location.href='http://motius.local/'"></div>
+				onclick="window.location.href='http://motiusrelaunch.flywheelstaging.com/'"></div>
 		<?php
 				wp_nav_menu(
 					array(

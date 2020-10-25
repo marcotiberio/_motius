@@ -70,7 +70,7 @@ get_header();
 			</div>
 			<div id="scrollLine">
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline1.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline1.png');">
 					</div>
 					<div class="right" data-aos="zoom-in">
 						<h2>1</h2>
@@ -80,7 +80,7 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline2.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline2.png');">
 					</div>
 					<div class="right" data-aos="zoom-in">
 						<h2>2</h2>
@@ -90,7 +90,7 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline3.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline3.png');">
 					</div>
 					<div class="right" data-aos="zoom-in">
 						<h2>3</h2>
@@ -101,7 +101,7 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline4.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline4.png');">
 					</div>
 					<div class="right" data-aos="zoom-in">
 						<h2>4</h2>
@@ -111,7 +111,7 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline5.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline5.png');">
 					</div>
 					<div class="right" data-aos="zoom-in">
 						<h2>5</h2>
@@ -122,7 +122,7 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/timeline6.png');">
+					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline6.png');">
 					</div>
 					<div class="right" data-aos="zoom-in">
 						<h2>6</h2>
@@ -140,7 +140,7 @@ get_header();
 			</div>
 		</section>
 		<h2 class="section-title-mobile">How it <span id="blueWord">Works?</span></h2>
-		<section id="threeMobile" style="background-image: url('http://motius.local/wp-content/uploads/2020/10/scrollline.png');">
+		<section id="threeMobile" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/scrollline.png');">
 			<div id="scrollLine">
 				<div class="element" data-aos="fade-right">
 					<h2>1</h2>
@@ -232,7 +232,7 @@ get_header();
 		<section id="six">
 			<div class="post-carousel-header">
 				<h2>Success Stories</h2>
-				<a href="http://motius.local/success-stories/">All Cases -></a>
+				<a href="http://motiusrelaunch.flywheelstaging.com/success-stories/">All Cases -></a>
 			</div>
 			<div class="post-carousel" data-flickity='{ "wrapAround": true }'>
 			<?php 
