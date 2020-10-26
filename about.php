@@ -127,60 +127,59 @@ get_header();
 							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
 							<div class="right" data-aos="fade-left">
-								<h2>2013</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
+								<h3>2013</h3>
+								<p>Founding of Motius. Office in Munich and Muscat Oman</p>
 							</div>
 						</div>
 						<div class="element">
 							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
 							<div class="right" data-aos="fade-left">
-								<h2>2013</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
+								<h3>2014</h3>
+								<p>BMW as first major customer</p>
 							</div>
 						</div>
 						<div class="element">
 							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
 							<div class="right" data-aos="fade-left">
-								<h2>2013</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
+								<h3>2016</h3>
+								<p>Mai, 500 Motees in the Talent Pool</p>
 							</div>
 						</div>
 						<div class="element">
 							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
 							<div class="right" data-aos="fade-left">
-								<h2>2013</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
+								<h3>2017</h3>
+								<p>Opening of Office in Dubai and Stuttgart 150 Finished Projects</p>
 							</div>
 						</div>
 						<div class="element">
 							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
 							<div class="right" data-aos="fade-left">
-								<h2>2013</h2>
-								<h5>Kicking things off</h5>
-								<p>No matter how well defined your project idea is, we can work it out together. 
-									We can start with an existing problem, an existing product that you want to 
-									improve or just some rough ideas and requirements.
-								</p>
+								<h3>2018</h3>
+								<p>Ranked #1 Fastest growing service provider in Germany</p>
+							</div>
+						</div>
+						<div class="element">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							</div>
+							<div class="right" data-aos="fade-left">
+								<h3>2019</h3>
+								<p>50 Core Team Employees<br>
+									800 Motees in the Talent Pool<br>
+									300 finished Projects  Investment by Swiss Family Office</p>
+							</div>
+						</div>
+						<div class="element">
+							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							</div>
+							<div class="right" data-aos="fade-left">
+								<h2>2020</h2>
+								<p>FunKI Research Project<br>
+									Research Project: Plattform ?</p>
 							</div>
 						</div>
 					</div>

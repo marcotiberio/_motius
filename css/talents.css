@@ -20,6 +20,10 @@
 	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(241, 251, 253, 1) 30%);
 }
 
+.page-template-talents #two {
+	padding: 0 8vw;
+}
+
 .page-template-talents .hero-text {
 	grid-column-start: 3;
 	grid-column-end: 7;
@@ -39,17 +43,31 @@
 	border-radius: 3rem;
 	padding-top: 5%;
 	padding-left: 5%;
+
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .page-template-talents .block .header-block,
 .page-template-talents .block .paragraph-block {
-	width: 65%;
 	color: #ffffff;
 }
 
 .page-template-talents .block .header-block {
 	font-weight: bold;
 	margin-bottom: 20px;
+	grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.page-template-talents .block .paragraph-block {
+	grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .page-template-talents .two-columns-text {
@@ -115,7 +133,7 @@
 
 .page-template-talents #three {
 	display: block;
-	padding: 30vh 8vw 10vh 8vw;
+	padding: 20vh 8vw 10vh 8vw;
 }
 
 .page-template-talents #threeMobile {
@@ -158,6 +176,10 @@
 	padding-left: 5%;
 }
 
+.page-template-talents #three #scrollLine .block {
+	margin: 100px 0;
+}
+
 .page-template-talents #three #scrollLine .element .right h2,
 .page-template-talents #threeMobile #scrollLine .element .right h2 {
 	color: #D7DFEB;
@@ -167,6 +189,24 @@
 .page-template-talents #threeMobile #scrollLine .element .right h5 {
 	color: #383E4E;
 	margin: 1.5rem 0;
+}
+
+.page-template-talents #four .block {
+	margin: 50px 0;
+    width: 70%;
+    height: 300px;
+    border-radius: 3rem;
+    padding-top: 5%;
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	color: #000000;
+}
+
+.page-template-talents #four .block .header-block,
+.page-template-talents #four .block .paragraph-block {
+	color: #000000;
 }
 
 .page-template-talents #five {
@@ -264,27 +304,15 @@
 	scroll-margin-top: 10vh;
 }
 
-.page-template-talents .block {
-	margin: 50px 0;
-	width: 45%;
-	height: 300px;
-	border-radius: 3rem;
-	padding-top: 5%;
-	padding-left: 5%;
-	color: #ffffff;
-	transition: 0.5s;
-}
-
 .page-template-talents .block:hover {
 	opacity: 0.8;
 	cursor: pointer;
 }
 
 .page-template-talents .block .arrow-icon {
-	position: absolute;
-	margin-top: 5%;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-column-start: 6;
+	grid-row-start: 4;
 }
 
 .page-template-talents .block #arrow {

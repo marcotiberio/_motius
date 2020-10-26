@@ -136,6 +136,17 @@ get_header();
 						</ul>
 						</p>
 					</div>
+					<div class="left">
+					</div>
+					<div class="block" onclick="#" style="background-color: #383e4e;" data-aos="zoom-in">
+						<p class="header-block">See open positions</p>
+						<p class="paragraph-block">Join Motius to have an impact on the tech products of the future.</p>
+						<div class="arrow-icon">
+							<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
+								<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#ffffff"/>
+							</svg>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -207,7 +218,15 @@ get_header();
 							<p class="paragraph-list"><?php the_sub_field('paragraph_list'); ?></p>
 						</li>
 				<?php endwhile; ?>
-				<button id="blockButton" onclick="window.location.href='http://motiusrelaunch.flywheelstaging.com/contact/'">Contact Us -></button>
+					<div class="block" onclick="window.location.href='http://motiusrelaunch.flywheelstaging.com/contact/'" style="background-color: #B8E9F4;" data-aos="zoom-in">
+						<p class="header-block">Our Culture</p>
+						<p class="paragraph-block">Call to action to find out more about our culture copy goes here</p>
+						<div class="arrow-icon">
+							<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
+								<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#000000"/>
+							</svg>
+						</div>
+					</div>
 				</ul>
 			<?php endif; ?>
 		</section>

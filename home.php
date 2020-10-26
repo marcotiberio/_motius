@@ -100,7 +100,7 @@ get_header();
 						$icon = get_sub_field('icon');
 						$title = get_sub_field('title');
 						?>
-						<div class="flip-card carousel-cell">
+						<div class="flip-card carousel-cell" onclick="window.location.href='<?php the_sub_field('category_link'); ?>'">
 							<div class="flip-card-inner">
 								<div class="flip-card-front">
 									<img class="icon" src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />

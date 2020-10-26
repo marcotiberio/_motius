@@ -230,9 +230,13 @@
 	column-gap: 5%;
 }
 
+.page-template-about #scrollLine h3 {
+	color: #D7DFEB;
+}
+
 .page-template-about #scrollLine .element .left {
 	border-radius: 3rem;
-	height: 30vh;
+	height: 50vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-bottom: 10vh;
@@ -241,5 +245,5 @@
 .page-template-about #scrollLine .element .right {
 	border-left: 10px solid grey;
 	padding-left: 5vh;
-	padding-top: 5vh;
+	padding-top: 15vh;
 }

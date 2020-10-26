@@ -260,8 +260,8 @@
 	margin-right: 0;
 	grid-column-start: 1;
 	grid-column-end: 5;
-	grid-row-start: 2;
-	grid-row-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
 }
 
 .home .color-blocks #blockButton {
@@ -311,7 +311,7 @@
 }
 
 .home #fiveB .flip-card-front {
-    background-color: transparent;
+	background-color: transparent;
 }
 
 /* cell number */
