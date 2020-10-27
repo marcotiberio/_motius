@@ -154,7 +154,6 @@ function _motius_scripts() {
 	wp_enqueue_style( 'post-css', get_template_directory_uri() . '/css/post.css', 'all');
 	wp_enqueue_style( 'archive-css', get_template_directory_uri() . '/css/archive.css', 'all');
 	wp_enqueue_style( 'simple-text-css', get_template_directory_uri() . '/css/simple-text.css', 'all');
-	wp_enqueue_style( 'hamburger-css', get_template_directory_uri() . '/css/hamburger.css', 'all');
 	wp_enqueue_style( 'mobile-css', get_template_directory_uri() . '/css/mobile.css', 'all');
 	wp_style_add_data( '_motius-style', 'rtl', 'replace' );
 
