@@ -37,7 +37,7 @@ get_header();
 			if( $section2 ): ?>
 				<section id="two">
 					<div class="two-columns-text">
-						<h2 class="header" data-aos="fade-right">Working at <span id="blueWord">Motius</span></h2>
+						<h3 class="header" data-aos="fade-right">Working at <span id="blueWord">Motius</span></h3>
 						<p class="paragraph" data-aos="fade-left"><?php echo $section2['paragraph']; ?></p>
 					</div>
 					<div class="color-blocks">

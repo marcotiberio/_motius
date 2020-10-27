@@ -428,7 +428,7 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 5%;
-    	row-gap: 2%;
+    	row-gap: 0;
 	}
 
 	.page-template-companies .grid-3 .flip-card {
@@ -615,8 +615,47 @@
 
 	/* Talents */
 
+	.page-template-talents .section-title {
+		margin-bottom: 0;
+		width: 35%;
+	}
+
+	.page-template-talents .hero-text {
+		grid-column-start: 1;
+		grid-column-end: 9;
+	}
+
+	.page-template-talents .block {
+		margin: 50px 0;
+		width: 100%;
+		height: 40vh;
+		border-radius: 3rem;
+		padding-top: 10%;
+		padding-left: 10%;
+		color: #ffffff;
+		transition: 0.5s;
+	}
+
 	.page-template-talents #three {
 		display: none;
+	}
+
+	.page-template-talents .two-columns-text {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10vh;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.page-template-talents .two-columns-text .header {
+		font-size: 48px;
+		line-height: 52.8px;
+	}
+
+	.page-template-talents .color-blocks {
+		flex-direction: column;
+		display: flex;
 	}
 
 	.page-template-talents #threeMobile {
@@ -625,6 +664,11 @@
 		width: 100vw;
 		background-size: contain;
 		background-repeat: no-repeat;
+	}
+
+	.page-template-talents .block .arrow-icon {
+		margin-top: 20%;
+		width: 100%;
 	}
 
 	.page-template-talents #threeMobile #scrollLine .element {
@@ -649,6 +693,60 @@
 
 	.page-template-talents #threeMobile #scrollLine .element:nth-child(1) {
 		margin-top: 22vh;
+	}
+
+	.page-template-talents #four .block {
+		margin: 50px 0;
+		width: 100%;
+		height: 300px;
+		border-radius: 3rem;
+		padding-top: 5%;
+		padding-left: 5%;
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		color: #000000;
+	}
+
+	.page-template-talents .grid-3 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 0;
+	}
+
+	.page-template-talents #six {
+		padding: 0 8vw;
+	}
+
+	.page-template-talents #six .carousel-cell {
+		background-color: #E8E9E9 !important;
+		border-radius: 3rem;
+		width: 100%;
+		height: auto;
+		margin-right: 10px;
+		counter-increment: carousel-cell;
+	}
+
+	.page-template-talents #six .post-carousel-header a {
+		display: none;
+	}
+
+	.page-template-talents #seven {
+		display: grid;
+		grid-template-columns: 1fr;
+		scroll-margin-top: 10vh;
+		padding: 0 8vw;
+	}
+
+	.two-columns-text-narrow {
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 60px;
+		padding: 0;
+	}
+
+	.page-template-talents #nine {
+		padding: 10vh 0 20vh 0;
 	}
 
 	/* About */
@@ -837,7 +935,7 @@
 
 	.single article {
 		border-radius: 3rem;
-		padding: 5vh 8vw;
+		padding: 20vh 8vw 5vh 8vw;
 		display: grid;
 		grid-template-columns: repeat(8, 1fr);
 		column-gap: 20px;
@@ -862,6 +960,7 @@
 	}
 
 	.post-type-archive-insights article .event-header .excerpt {
+		display: none;
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
@@ -902,6 +1001,7 @@
 
 	.post-type-archive-insights article {
 		height: auto;
+		margin-bottom: 5vh;
 	}
 
 	.post-type-archive-insights article .event-header {
@@ -911,6 +1011,17 @@
 	}
 
 	/* Post - Insights */
+
+	.post-type-archive .post-carousel .carousel-cell {
+		width: 100%;
+		height: 100vh;
+		margin-right: 10px;
+		border-radius: 5px;
+		counter-increment: carousel-cell;
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		padding: 0;
+	}
 
 	.single article .post-thumbnail {
 		grid-column-start: 1;
