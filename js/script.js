@@ -373,6 +373,12 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#menuToggle").click(function(){
-        $("#primary-menu").toggle(100);
+        $("#mobile-menu").toggle(100);
+    });
+});
+
+$(document).ready(function(){
+    $( "#menuToggle" ).click(function() {
+        $( this ).toggleClass( "is-active" );
     });
 });

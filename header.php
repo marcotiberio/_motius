@@ -43,12 +43,12 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<div id="menuToggle">
-			<input type="checkbox" />
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
+		<button class="hamburger hamburger--squeeze" id="menuToggle" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+
 		<nav id="site-navigation" class="main-navigation">
 			<?php
 			wp_nav_menu(
@@ -59,4 +59,14 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+		<nav id="mobile-navigation" class="mobile-navigation">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'mobile-menu',
+					'menu_id'        => 'mobile-menu',
+				)
+			);
+			?>
+		</nav><!-- #mobile-navigation -->
 	</header><!-- #masthead -->

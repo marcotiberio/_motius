@@ -27,8 +27,13 @@
 }
 
 .main-navigation {
+	display: block;
 	grid-column-start: 3;
 	grid-column-end: 9;
+}
+
+.mobile-navigation {
+	display: none;
 }
 
 .main-navigation ul {
