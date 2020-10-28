@@ -154,10 +154,10 @@
 	background-repeat: no-repeat;
 }
 
-.grid-3 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+.page-template-about .grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
 }
 
 .grid-3>div {

@@ -423,6 +423,10 @@
 		padding: 10%;
 	}
 
+	.page-template-companies .flip-card-back {
+		display: none;
+	}
+
 	.page-template-companies #two {
 		width: 100vw;
 		height: auto;
@@ -467,7 +471,7 @@
 		background-repeat: no-repeat;
 	}
 
-	.page-template-companies #threeMobile #scrollLine .element {
+	.page-template-companies #threeMobile .scroll-line .element {
 		display: flex;
 		flex-direction: column;
 		margin-top: 30vh;
@@ -477,17 +481,17 @@
 		background: linear-gradient(transparent, #ffffff, transparent);
 	}
 	
-	.page-template-companies #threeMobile #scrollLine .element .left {
+	.page-template-companies #threeMobile .scroll-line .element .left {
 		border-radius: 3rem;
 		height: 30vh;
 	}
 	
-	.page-template-companies #threeBmobile #scrollLine .element .right {
+	.page-template-companies #threeBmobile .scroll-line .element .right {
 		border-left: 10px solid grey;
 		padding-left: 5%;	
 	}
 
-	.page-template-companies #threeMobile #scrollLine .element:nth-child(1) {
+	.page-template-companies #threeMobile .scroll-line .element:nth-child(1) {
 		margin-top: 22vh;
 	}
 
@@ -649,7 +653,7 @@
 		width: 100%;
 	}
 
-	.page-template-talents #threeMobile #scrollLine .element {
+	.page-template-talents #threeMobile .scroll-line .element {
 		display: flex;
 		flex-direction: column;
 		margin-top: 30vh;
@@ -659,17 +663,17 @@
 		background: linear-gradient(transparent, #ffffff, transparent);
 	}
 	
-	.page-template-talents #threeMobile #scrollLine .element .left {
+	.page-template-talents #threeMobile .scroll-line .element .left {
 		border-radius: 3rem;
 		height: 30vh;
 	}
 	
-	.page-template-talents #threeBmobile #scrollLine .element .right {
+	.page-template-talents #threeBmobile .scroll-line .element .right {
 		border-left: 10px solid grey;
 		padding-left: 5%;
 	}
 
-	.page-template-talents #threeMobile #scrollLine .element:nth-child(1) {
+	.page-template-talents #threeMobile .scroll-line .element:nth-child(1) {
 		margin-top: 22vh;
 	}
 
@@ -802,13 +806,13 @@
 		width: 100%;
 	}
 
-	.page-template-about #scrollLine .element {
+	.page-template-about .scroll-line .element {
 		display: flex !important;
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
-	.page-template-about #scrollLine .element .left {
+	.page-template-about .scroll-line .element .left {
 		border-radius: 3rem;
 		height: 30vh;
 		background-size: cover;
@@ -816,7 +820,7 @@
 		margin-bottom: 0;
 	}
 
-	.page-template-about #scrollLine .element .right {
+	.page-template-about .scroll-line .element .right {
 		border-left: none;
 		padding-left: 0;
 		padding-top: 5vh;
@@ -829,7 +833,34 @@
 		padding: 5vh 8vw;
 	}
 
-	.grid-3>div {
+	.page-template-about #scrollLine .element {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-bottom: 5vh;
+	}
+
+	.page-template-about #scrollLine .element .left {
+		border-radius: 3rem;
+		height: 50vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-bottom: 2vh;
+	}
+
+	.page-template-about #scrollLine .element .right {
+		border-left: 0;
+		padding-left: 0;
+		padding-top: 0;
+	}
+
+	.page-template-about .grid-3 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.page-template-about .grid-3>div {
 		margin: 5vh 0;
 	}
 
@@ -1028,6 +1059,28 @@
 	.page-template-contact #one .hero-text {
 		grid-column-start: 1;
 		grid-column-end: 9;
+	}
+
+	.page-template-contact #eleven .grid-3 {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.page-template-contact form input, 
+	.page-template-contact form textarea {
+		color: #383E4E;
+		border: 1px solid #E4EAEB;
+		border-radius: 1.5rem;
+		padding: 20px 36px;
+		width: calc(100vw - 16vw);
+	}
+
+	.page-template-contact form input[type="submit"] {
+		width: calc(100vw - 16vw);
+		border-radius: 1rem;
+		background-color: #28B9DA;
+		color: #ffffff;
 	}
 
 }

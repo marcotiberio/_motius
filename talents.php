@@ -68,83 +68,166 @@ get_header();
 				<button id="switchTimelineleft"><h5>The Talent Pool</h5></button>
 				<button id="switchTimelineright"><h5>The Core Team</h5></button>
 			</div>
-			<div id="scrollLine">
-				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline1.png');">
+			<div class="scroll-line-container">
+				<div class="scroll-line" id="scrollLineleft">
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline1.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>1</h2>
+							<h5>Application</h5>
+							<p>Tell us about your passion, your motivation but also about your skills, 
+							tools, frameworks and projects that you have previously worked on.</p>
+						</div>
 					</div>
-					<div class="right" data-aos="zoom-in">
-						<h2>1</h2>
-						<h5>Application</h5>
-						<p>Tell us about your passion, your motivation but also about your skills, 
-						tools, frameworks and projects that you have previously worked on.</p>
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline2.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>2</h2>
+							<h5>First Interview</h5>
+							<p>Tell us about your passion, your motivation but also about your skills, 
+							tools, frameworks and projects that you have previously worked on.</p>
+						</div>
+					</div>
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline3.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>3</h2>
+							<h5>Become a Motee</h5>
+							<p>If it’s a match for both sides, you will become part of the Motius tech community. 
+							You now have full access to our internal platform where you can see all of our 
+							projects and are proactively considered for fitting projects.</p>
+						</div>
+					</div>
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline4.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>4</h2>
+							<h5>Technical Interview</h5>
+							<p>Tell us about your passion, your motivation but also about your skills, 
+							tools, frameworks and projects that you have previously worked on.</p>
+						</div>
+					</div>
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline5.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>5</h2>
+							<h5>Become an Active Motee</h5>
+							<p>Welcome the the active part of the Talent Pool. You will now be working 
+							in a project team and create the tech products of the future. Now, you’re 
+							talent journey is really kicking off - it’s just the beginning.</p>
+						</div>
+					</div>
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline6.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>6</h2>
+							<h5>Choose your career path</h5>
+							<p>Depending on your strengths and interests you can now develop your skills 
+							and grow into the core team with different career paths:
+							<ul>
+								<li>Project Manager / Product Owner</li>
+								<li>Technical Specialist</li>
+								<li>Technical Executive</li>
+							</ul>
+							</p>
+						</div>
+						<div class="left">
+						</div>
+						<div class="block" onclick="#" style="background-color: #383e4e;" data-aos="zoom-in">
+							<p class="header-block">See open positions</p>
+							<p class="paragraph-block">Join Motius to have an impact on the tech products of the future.</p>
+							<div class="arrow-icon">
+								<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
+									<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#ffffff"/>
+								</svg>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline2.png');">
+				<div class="scroll-line" id="scrollLineright">
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline1.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>100</h2>
+							<h5>Application</h5>
+							<p>Tell us about your passion, your motivation but also about your skills, 
+							tools, frameworks and projects that you have previously worked on.</p>
+						</div>
 					</div>
-					<div class="right" data-aos="zoom-in">
-						<h2>2</h2>
-						<h5>First Interview</h5>
-						<p>Tell us about your passion, your motivation but also about your skills, 
-						tools, frameworks and projects that you have previously worked on.</p>
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline2.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>2</h2>
+							<h5>First Interview</h5>
+							<p>Tell us about your passion, your motivation but also about your skills, 
+							tools, frameworks and projects that you have previously worked on.</p>
+						</div>
 					</div>
-				</div>
-				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline3.png');">
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline3.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>3</h2>
+							<h5>Become a Motee</h5>
+							<p>If it’s a match for both sides, you will become part of the Motius tech community. 
+							You now have full access to our internal platform where you can see all of our 
+							projects and are proactively considered for fitting projects.</p>
+						</div>
 					</div>
-					<div class="right" data-aos="zoom-in">
-						<h2>3</h2>
-						<h5>Become a Motee</h5>
-						<p>If it’s a match for both sides, you will become part of the Motius tech community. 
-						You now have full access to our internal platform where you can see all of our 
-						projects and are proactively considered for fitting projects.</p>
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline4.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>4</h2>
+							<h5>Technical Interview</h5>
+							<p>Tell us about your passion, your motivation but also about your skills, 
+							tools, frameworks and projects that you have previously worked on.</p>
+						</div>
 					</div>
-				</div>
-				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline4.png');">
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline5.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>5</h2>
+							<h5>Become an Active Motee</h5>
+							<p>Welcome the the active part of the Talent Pool. You will now be working 
+							in a project team and create the tech products of the future. Now, you’re 
+							talent journey is really kicking off - it’s just the beginning.</p>
+						</div>
 					</div>
-					<div class="right" data-aos="zoom-in">
-						<h2>4</h2>
-						<h5>Technical Interview</h5>
-						<p>Tell us about your passion, your motivation but also about your skills, 
-						tools, frameworks and projects that you have previously worked on.</p>
-					</div>
-				</div>
-				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline5.png');">
-					</div>
-					<div class="right" data-aos="zoom-in">
-						<h2>5</h2>
-						<h5>Become an Active Motee</h5>
-						<p>Welcome the the active part of the Talent Pool. You will now be working 
-						in a project team and create the tech products of the future. Now, you’re 
-						talent journey is really kicking off - it’s just the beginning.</p>
-					</div>
-				</div>
-				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline6.png');">
-					</div>
-					<div class="right" data-aos="zoom-in">
-						<h2>6</h2>
-						<h5>Choose your career path</h5>
-						<p>Depending on your strengths and interests you can now develop your skills 
-						and grow into the core team with different career paths:
-						<ul>
-							<li>Project Manager / Product Owner</li>
-							<li>Technical Specialist</li>
-							<li>Technical Executive</li>
-						</ul>
-						</p>
-					</div>
-					<div class="left">
-					</div>
-					<div class="block" onclick="#" style="background-color: #383e4e;" data-aos="zoom-in">
-						<p class="header-block">See open positions</p>
-						<p class="paragraph-block">Join Motius to have an impact on the tech products of the future.</p>
-						<div class="arrow-icon">
-							<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
-								<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#ffffff"/>
-							</svg>
+					<div class="element">
+						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline6.png');">
+						</div>
+						<div class="right" data-aos="zoom-in">
+							<h2>6</h2>
+							<h5>Choose your career path</h5>
+							<p>Depending on your strengths and interests you can now develop your skills 
+							and grow into the core team with different career paths:
+							<ul>
+								<li>Project Manager / Product Owner</li>
+								<li>Technical Specialist</li>
+								<li>Technical Executive</li>
+							</ul>
+							</p>
+						</div>
+						<div class="left">
+						</div>
+						<div class="block" onclick="#" style="background-color: #383e4e;" data-aos="zoom-in">
+							<p class="header-block">See open positions</p>
+							<p class="paragraph-block">Join Motius to have an impact on the tech products of the future.</p>
+							<div class="arrow-icon">
+								<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
+									<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#ffffff"/>
+								</svg>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -152,7 +235,7 @@ get_header();
 		</section>
 		<h2 class="section-title-mobile">How it <span id="blueWord">Works?</span></h2>
 		<section id="threeMobile" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/scrollline.png');">
-			<div id="scrollLine">
+			<div class="scroll-line">
 				<div class="element" data-aos="fade-right">
 					<h2>1</h2>
 					<h5>Application</h5>

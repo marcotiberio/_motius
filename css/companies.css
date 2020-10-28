@@ -118,6 +118,10 @@
 	cursor: pointer;
 }
 
+.flip-card-front .icon {
+	height: 110px;
+}
+
 .page-template-companies .grid-3 .flip-card-front .title {
 	padding: 5% 0;
 }

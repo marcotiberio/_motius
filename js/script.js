@@ -341,14 +341,14 @@ $(document).ready(function(){
         $("#switchTimelineleft").animate({
             opacity: "1",
         }, 10);
-        $("#timelineLeft").animate({
-            opacity: "1",
+        $("#scrollLineleft").animate({
+            display: "block",
         }, 10);
         $("#switchTimelineright").animate({
             opacity: "0.2",
         }, 10);
-        $("#timelineRight").animate({
-            opacity: "0",
+        $("#scrollLineright").animate({
+            display: "none",
         }, 10);
     });
 });
@@ -358,11 +358,11 @@ $(document).ready(function(){
         $("#switchTimelineright").animate({
             opacity: "1",
         }, 10);
-        $("#timelineRight").animate({
-            opacity: "1",
+        $("#scrollLineright").animate({
+            display: "block",
         }, 10);
-        $("#timelineLeft").animate({
-            opacity: "0",
+        $("#scrollLineleft").animate({
+            display: "none",
         }, 10);
         $("#switchTimelineleft").animate({
             opacity: "0.2",

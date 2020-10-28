@@ -144,17 +144,22 @@
 	display: none;
 }
 
-.page-template-talents #three #scrollLine {
+.page-template-talents #three .scroll-line {
 	margin-top: 10vh;
 }
 
-.page-template-talents #three #scrollLine .element {
+.page-template-talents #three .scroll-line-container {
+	display: flex;
+    flex-direction: column;
+}
+
+.page-template-talents #three .scroll-line .element {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 5%;
 }
 
-.page-template-talents #three #scrollLine .element .left {
+.page-template-talents #three .scroll-line .element .left {
 	border-radius: 3rem;
 	height: 30vh;
 	background-size: contain;
@@ -162,7 +167,7 @@
 	background-position: top center;
 }
 
-.page-template-talents #three #scrollLine .element .right {
+.page-template-talents #three .scroll-line .element .right {
 	border-left: 10px solid #D7DFEB;
 	padding-left: 5%;
 }
@@ -171,22 +176,22 @@
 	border-left: 10px solid #2BBADB;
 }
 
-.page-template-talents #three #scrollLine .element .right {
+.page-template-talents #three .scroll-line .element .right {
 	border-left: 10px solid grey;
 	padding-left: 5%;
 }
 
-.page-template-talents #three #scrollLine .block {
+.page-template-talents #three .scroll-line .block {
 	margin: 100px 0;
 }
 
-.page-template-talents #three #scrollLine .element .right h2,
-.page-template-talents #threeMobile #scrollLine .element .right h2 {
+.page-template-talents #three .scroll-line .element .right h2,
+.page-template-talents #threeMobile .scroll-line .element .right h2 {
 	color: #D7DFEB;
 }
 
-.page-template-talents #three #scrollLine .element .right h5,
-.page-template-talents #threeMobile #scrollLine .element .right h5 {
+.page-template-talents #three .scroll-line .element .right h5,
+.page-template-talents #threeMobile .scroll-line .element .right h5 {
 	color: #383E4E;
 	margin: 1.5rem 0;
 }

@@ -19,6 +19,7 @@ get_header();
 					<div class="hero-text">
 						<h1 class="header"><?php echo $section1['header']; ?></h1>
 						<p class="paragraph"><?php echo $section1['paragraph']; ?></p>
+						<?php echo do_shortcode('[contact-form-7 id="2666" title="Contact Us"]'); ?>
 					</div>
 				</section>
 			<?php endif; ?>

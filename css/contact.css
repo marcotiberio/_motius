@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.page-template-contact #one {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 20px;
+	padding: 20vh 8vw 10vh 8vw;
+}
+
+.page-template-contact #one .hero-text {
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+
+.page-template-contact #one .hero-text .paragraph {
+	margin-top: 50px;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.page-template-contact #eleven {
+	width: 100vw;
+	height: auto;
+	padding: 0 8vw 10vh 8vw;
+}
+
+.page-template-contact #eleven .grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	margin-top: 50px;
+}
+
+.page-template-contact form {
+	width: 100vw;
+}
+
+.page-template-contact form p {
+	margin: 2.5vh 0;
+}
+
+.page-template-contact form input,
+.page-template-contact form textarea {
+	color: #383E4E;
+    border: 1px solid #E4EAEB;
+    border-radius: 1.5rem;
+	padding: 20px 36px;
+	width: 30vw;
+}
+
+.page-template-contact form input[type="submit"] {
+	width: 16%;
+	border-radius: 1rem;
+	background-color: #28B9DA;
+	color: #ffffff;
+}
+
+.page-template-contact .newsletter form {
+    width: auto;
+}
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
