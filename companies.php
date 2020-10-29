@@ -70,7 +70,7 @@ get_header();
 			<?php endif; ?>
 		</section>
 		<section id="three">
-			<h2 class="section-title">How it <span id="blueWord">Works?</span></h2>
+			<h2 class="section-title">How We <span id="blueWord">Work?</span></h2>
 			<div id="scrollLine">
 				<div class="element">
 					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">

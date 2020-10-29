@@ -9,7 +9,7 @@
 }
 
 .home #one {
-	padding-top: 70px;
+	padding-top: 20vh;
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-rows: 1fr 1fr;
@@ -24,14 +24,26 @@
 	background-repeat: no-repeat;
 }
 
-#heroImage {
+.hero-text {
 	grid-column-start: 3;
 	grid-column-end: 8;
 	width: 100%;
 	margin-left: 0;
 }
 
+.hero-text h1 {
+	font-size: 200px;
+	line-height: 200px;
+	letter-spacing: -8.5%;
+}
+
+.hero-text h2 {
+	font-size: 70px;
+	line-height: 70px;
+}
+
 .home #one .color-blocks {
+	margin-top: 50px;
 	margin-left: 0;
 	margin-right: 0;
 	grid-row-start: 2;
@@ -50,13 +62,15 @@
 	margin: 0 1% !important;
 	grid-column-start: 1;
 	grid-column-end: 4;
-	max-height: 300px;
+	max-height: 400px;
 	transition: 0.5s;
 }
 
 .home #one .color-blocks .left .info {
 	margin-top: 0 !important;
 	margin-left: 0 !important;
+	grid-row-start: 1;
+	grid-row-end: 3;
 }
 
 .home #one .color-blocks .left .info p{
@@ -71,13 +85,15 @@
 	margin: 0 1% !important;
 	grid-column-start: 4;
 	grid-column-end: 7;
-	max-height: 300px;
+	max-height: 400px;
 	transition: 0.5s;
 }
 
 .home #one .color-blocks .right .info {
 	margin-top: 0 !important;
 	margin-right: 0 !important;
+	grid-row-start: 1;
+	grid-row-end: 3;
 }
 
 .home #one .color-blocks .right .info p{
