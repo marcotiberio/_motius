@@ -18,19 +18,19 @@ get_header();
 	</section>
 
 	<div class="filter">
-		<a class="type all active">All</a>
-		<a class="type artificial_intelligence">Artificial Intelligence</a>
-		<a class="type augmented_and_virtual_reality">Augmented & Virtual Reality</a>
-		<a class="type internet_of_things">Internet of Things</a>
-		<a class="type chatbots">Chatbots</a>
-		<a class="type additive_manufacturing">Additive Manufacturing</a>
-		<a class="type autonomous_driving">Autonomous Driving</a>
-		<a class="type robotics">Robotics</a>
-		<a class="type user_centric_design">User Centric Design</a>
-		<a class="type app_and_web_development">App and Web Development</a>
-		<a class="type data_science">Data Science</a>
-		<a class="type blockchain">Blockchain</a>
-		<a class="type embedded_development">Embedded Development</a>
+		<a class="type all active"><span id="bulletCategory">&#8226;</span>All</a>
+		<a class="type artificial_intelligence"><span id="bulletCategory">&#8226;</span>Artificial Intelligence</a>
+		<a class="type augmented_and_virtual_reality"><span id="bulletCategory">&#8226;</span>Augmented & Virtual Reality</a>
+		<a class="type internet_of_things"><span id="bulletCategory">&#8226;</span>Internet of Things</a>
+		<a class="type chatbots"><span id="bulletCategory">&#8226;</span>Chatbots</a>
+		<a class="type additive_manufacturing"><span id="bulletCategory">&#8226;</span>Additive Manufacturing</a>
+		<a class="type autonomous_driving"><span id="bulletCategory">&#8226;</span>Autonomous Driving</a>
+		<a class="type robotics"><span id="bulletCategory">&#8226;</span>Robotics</a>
+		<a class="type user_centric_design"><span id="bulletCategory">&#8226;</span>User Centric Design</a>
+		<a class="type app_and_web_development"><span id="bulletCategory">&#8226;</span>App and Web Development</a>
+		<a class="type data_science"><span id="bulletCategory">&#8226;</span>Data Science</a>
+		<a class="type blockchain"><span id="bulletCategory">&#8226;</span>Blockchain</a>
+		<a class="type embedded_development"><span id="bulletCategory">&#8226;</span>Embedded Development</a>
 	</div>
 
 	<main id="primary" class="site-main">

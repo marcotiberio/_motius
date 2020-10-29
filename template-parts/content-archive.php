@@ -19,16 +19,18 @@
 				?>
 			</div>
 			<div class="event-header">
-				<h5 class="title">
-					<a href="<?php the_field('external_link'); ?>" target="_blank">
+				<div class="top">
+					<h5 class="title">
 						<a href="<?php the_permalink(); ?>">
 							<?php print the_title(); ?>
 						</a>
-					</a>
-				</h5>
+					</h5>
 				<p class="type"><?php the_field('type'); ?></p>
-				<p class="date"><?php echo date('M Y'); ?></p>
-				<p><?php the_field('author'); ?></p>
+				</div>
+				<div class="bottom">
+					<p class="date"><?php echo date('M Y'); ?></p>
+					<p class="date"><?php the_field('author'); ?></p>
+				</div>
 			</div>
 		</a>
 	</article><!-- #post-<?php the_ID(); ?> -->

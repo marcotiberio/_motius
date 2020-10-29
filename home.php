@@ -214,10 +214,14 @@ get_header();
 									?>
 								</div>
 								<div class="event-header">
-									<h5 class="title"><?php print the_title(); ?></h5>
-									<p class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></p>
-									<p class="date"><?php echo date('M Y'); ?></p>
-									<p class="author"><?php the_field('author'); ?></p>
+									<div class="top">
+										<h5 class="title"><?php print the_title(); ?></h5>
+										<p class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></p>
+									</div>
+									<div class="bottom">
+										<p class="date"><?php echo date('M Y'); ?></p>
+										<p class="author"><?php the_field('author'); ?></p>
+									</div>
 								</div>
 							</a>
 						</article>	

@@ -177,3 +177,6 @@
     width: 20%;
 }
 
+.single-success-stories #relatedInsights {
+	display: none;
+}

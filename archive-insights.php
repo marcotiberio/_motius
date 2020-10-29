@@ -64,9 +64,9 @@ get_header();
 	</div>
 
 	<div class="filter">
-		<a class="type all active">All</a>
-		<a class="type cheat_sheet">Cheat Sheet</a>
-		<a class="type toolbox">Toolbox</a>
+		<a class="type all active"><span id="bulletCategory">&#8226;</span>All</a>
+		<a class="type cheat_sheet"><span id="bulletCategory">&#8226;</span>Cheat Sheet</a>
+		<a class="type toolbox"><span id="bulletCategory">&#8226;</span>Toolbox</a>
 	</div>
 
 	<main id="primary" class="site-main">

@@ -143,7 +143,29 @@
 .post-type-archive-insights article .event-header {
 	grid-column-start: 4;
 	grid-column-end: 9;
-	padding: 5% 20% 10% 10%
+	padding: 5% 20% 10% 10%;
+}
+
+.post-type-archive-insights #primary article .event-header {
+	grid-column-start: 4;
+	grid-column-end: 9;
+	padding: 10% 20% 10% 10%;
+
+	height: 100%;
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.post-type-archive-insights #primary article .event-header .top  {
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.post-type-archive-insights #primary article .event-header .bottom  {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	align-self: flex-end;
 }
 
 .post-type-archive-insights .archive-grid article .event-header {
