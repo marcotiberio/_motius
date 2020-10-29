@@ -954,6 +954,49 @@
 		display: none;
 	}
 
+	.single article .testimonial {
+		margin: 5vh 0;
+	}
+
+	.single article .testimonial-card {
+		border-radius: 3rem;
+		width: 100%;
+		height: auto;
+	}
+
+	.single article .testimonial-card .inner {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.single article .testimonial-card .inner > div {
+		margin: 1.5vh 0;
+	}
+
+	.single article .testimonial-card .inner .quote {
+		padding: 10% 15%;
+	}
+
+	.single article .testimonial-card .inner .quote .testimonial-info {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.single article .testimonial-card .inner .quote .testimonial-info > div {
+		margin: 10px 0;
+	}
+
+	.single article .testimonial-card .inner .quote .testimonial-info .company {
+		display: grid;
+		place-items: flex-start;
+	}
+
+	.single article .testimonial-card .inner .quote .testimonial-info .company img {
+		width: 30%;
+	}
+
 	/* Archive - Insights */
 
 	.post-type-archive-insights article .event-cover {

@@ -156,7 +156,6 @@
 .page-template-talents #three .scroll-line .element {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 5%;
 }
 
 .page-template-talents #three .scroll-line .element .left {

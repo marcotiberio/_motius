@@ -196,7 +196,6 @@
 .page-template-companies #three #scrollLine .element {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 5%;
 }
 
 .page-template-companies #three #scrollLine .element .left {

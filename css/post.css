@@ -51,6 +51,10 @@
 	margin-left: 50px;
 }
 
+.single .client .type #bullet {
+	color: #28B9DA;
+}
+
 .single .intro p:nth-child(1) {
 	margin-block-end: 30px;
 }
@@ -115,5 +119,61 @@
 
 .single article .outro .image {
 	margin: 10vh 0;
+}
+
+/* Success Story */
+
+.single article .testimonial {
+	margin: 0 0 0 20vh;
+}
+
+.single article .testimonial-card {
+    border-radius: 3rem;
+    width: 100%;
+    height: 40vh;
+}
+
+.single article .testimonial-card .inner {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+}
+
+.single article .testimonial-card .inner .image {
+    height: 40vh;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+}
+
+.single article .testimonial-card .inner .quote {
+    background-color: #E8E9E9 !important;
+    border-radius: 3rem;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.single article .testimonial-card .inner .quote .testimonial-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+}
+
+.single article .testimonial-card .inner .quote .testimonial-info .testimonial_position {
+    color: #A6B7BD;
+}
+
+.single article .testimonial-card .inner .quote .testimonial-info .company {
+    display: grid;
+    place-items: flex-end;
+}
+
+.single article .testimonial-card .inner .quote .testimonial-info .company img {
+    width: 20%;
 }
 

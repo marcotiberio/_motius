@@ -28,7 +28,7 @@
 				<div class="client">
 					<span>Client</span> 
 					<span><?php echo $header['client']; ?></span>
-					<span class="type"><?php the_field('type'); ?></span>
+					<span class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></span>
 					<p><?php the_field('author'); ?></p>
 				</div>
 				<div class="intro">
@@ -115,6 +115,35 @@
 					<p class="paragraph"><?php echo $sublines['paragraph']; ?></p>
 				</div>
 			<?php endif; ?>
+
+		<!-- Testimonial -->
+
+		<?php
+			$testimonial = get_field('testimonial');
+			if( $testimonial ): ?>
+				<div class="testimonial">
+					<div class="testimonial-card">
+						<div class="inner">
+							<div class="image" style="background-image: url('<?php echo esc_url( $testimonial['profile_photo']['url'] ); ?>');"></div>
+							<div class="quote">
+								<?php echo $testimonial['testimonial_quote']; ?>
+								<div class="testimonial-info">
+									<div class="personal">
+										<p class="testimonial-name"><?php echo $testimonial['testimonial_name']; ?></p>
+										<p class="testimonial_position"><?php echo $testimonial['testimonial_position']; ?></p>
+									</div>
+									<div class="company">
+									<img src="<?php echo esc_url( $testimonial['testimonial_company_icon']['url'] ); ?>" alt="<?php echo esc_attr( $testimonial['testimonial_company_icon']['alt'] ); ?>" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php endif; 
+		?>
+
+		<!-- Testimonial -->
 
 		<?php
 			$outro = get_field('outro');

@@ -58,7 +58,7 @@ get_header();
 					focus on the newest technologies of any occurring tech cycle.
 					This way, we can always stay ahead.</p>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/block1.png" alt="random" width="700" height="700" />
+					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube-home-1a.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
@@ -67,7 +67,7 @@ get_header();
 					technological change. By constantly attracting the best tech talent we are able to develop 
 					cutting-edge products and innovative prototypes for companies that want to stay ahead.</p>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/block2.png" alt="random" width="700" height="700" />
+					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube-home-2a.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
@@ -75,7 +75,7 @@ get_header();
 					<p>We created a core team around key technologies to assure long-term knowledge transfer. The team is responsible 
 					for project management, lead engineering and business impact. This way, we can take full care of all your needs.</p>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/block3.png" alt="random" width="700" height="700" />
+					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube-home-3a.png" alt="random" width="700" height="700" />
 				</div>
 			</div>
 		</section>
