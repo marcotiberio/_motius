@@ -1,0 +1,250 @@
+/* MOBILE MOBILE MOBILE */
+
+
+@media screen and (min-width: 2500px) {
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	html,
+	body {
+		width: 100vw;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Header */
+
+	#primary-menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	/* Home */
+
+	.home #one {
+		padding-top: 20vh;
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.home #one .color-blocks {
+		margin-top: 50px;
+		margin-left: 0;
+		margin-right: 0;
+		grid-row-start: 2;
+		grid-row-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 8;
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		column-gap: 24px;
+	}
+
+	.home #fiveB {
+		padding: 0 0 5vh 8vw;
+	}
+
+	.home #six, .home #eight {
+		padding: 5vh 0 5vh 0;
+	}
+
+	.home #nine {
+		padding: 5vh 16vw;
+	}
+
+	.home #nine .color-blocks {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 2vw;
+	}
+
+	.home #ten {
+		height: 30vh;
+	}
+
+	/* Companies */
+
+	.page-template-companies section {
+		width: 100vw;
+		height: auto;
+		padding: 5vh 8vw;
+	}
+
+	.page-template-companies .block {
+		margin: 50px 0;
+		width: 40%;
+		height: 400px !important;
+		border-radius: 3rem;
+		padding-top: 5%;
+		padding-left: 5%;
+
+		display: grid;
+    	grid-template-columns: repeat(8, 1fr);
+    	grid-template-rows: 1fr 1fr 1fr 1fr;
+		color: #ffffff;
+		transition: 0.5s;
+	}
+
+	.page-template-companies .block .header-block {
+		font-weight: bold;
+		margin-bottom: 20px;
+		grid-column-start: 1;
+		grid-column-end: 8;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.page-template-companies .block .paragraph-block {
+		grid-column-start: 1;
+		grid-column-end: 9;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+
+	.page-template-companies .block .arrow-icon {
+		display: grid;
+		grid-column-start: 6;
+		grid-row-start: 4;
+	}
+
+	.page-template-companies .block #arrow {
+		grid-column-start: 4;
+	}
+
+	.page-template-companies .grid-3 .flip-card {
+		height: 500px;
+		background-color: transparent;
+	}
+
+	.page-template-companies #five {
+		padding: 5vh 0;
+	}
+
+	.page-template-companies #seven {
+		padding: 5vh 0 5vh 8vw;
+	}
+
+	.page-template-companies #eight {
+		padding: 5vh 0 5vh 8vw;
+	}
+
+	.page-template-companies #nine {
+		height: calc(100vh - 70px);
+		padding-top: 5vh;
+		padding-bottom: 30vh;
+	}
+
+	.page-template-companies #ten {
+		padding-bottom: 20vh;
+		padding-top: 0;
+	}
+
+	.page-template-companies #ten img {
+		width: 100%;
+	}
+
+	.page-template-companies .two-columns-text {
+		padding: 0 0 5vh 0;
+	}
+
+	/* Talents */
+
+	.page-template-talents .block {
+		margin: 50px 0;
+		width: 40%;
+		height: 400px;
+		border-radius: 3rem;
+		padding-top: 5%;
+		padding-left: 5%;
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+
+	.page-template-talents #two {
+		padding: 5vh 16vw;
+	}
+
+	.page-template-talents .two-columns-text {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 0;
+		padding-top: 0;
+    	padding-bottom: 0;
+	}
+
+	.page-template-talents #three {
+		display: block;
+		padding: 5vh 8vw;
+	}
+
+	.two-columns-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 0;
+	}
+
+	.page-template-talents #seven {
+		padding: 5vh 8vw;
+	}
+
+	.page-template-talents #seven {
+		padding: 5vh 8vw;
+	}
+
+	.page-template-talents #nine img {
+		width: 100%;
+	}
+
+	/* About */
+
+	.page-template-about #two img {
+		width: 100%;
+	}
+
+	.page-template-about .grid-3 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 4vw;
+	}
+
+	.page-template-about #eleven img {
+		width: 100%;
+	}
+
+	
+
+	/* Archive - Success Stories */
+
+	
+
+	/* Post - Success Stories */
+
+	
+
+	/* Archive - Insights */
+
+	
+
+	/* Contact */
+
+	.page-template-contact #eleven .grid-3 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 3vw;
+		margin-top: 2.5vh;
+	}
+
+	.page-template-contact #eleven .grid-3 img {
+		width: 100%;
+	}
+
+	/* Contact */
+
+
+}

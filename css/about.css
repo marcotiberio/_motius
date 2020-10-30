@@ -224,6 +224,19 @@
 	padding-bottom: 20vh;
 }
 
+.page-template-about #eleven .grid-3 .title {
+	font-size: 28px;
+	line-height: 33.6px;
+	color: #000000 !important;
+	margin-top: 2vh;
+}
+
+.page-template-about #eleven .grid-3 p {
+	font-size: 20px;
+	line-height: 32px;
+	color: #A6B7BD;
+}
+
 .page-template-about #scrollLine .element {
 	display: grid;
 	grid-template-columns: 1fr 1fr;

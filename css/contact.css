@@ -60,6 +60,20 @@
 .page-template-contact .newsletter form {
     width: auto;
 }
+
+.page-template-contact .grid-3 .title {
+	font-size: 28px;
+	line-height: 33.6px;
+	color: #000000 !important;
+	margin-top: 2vh;
+}
+
+.page-template-contact .grid-3 p {
+	font-size: 20px;
+	line-height: 32px;
+	color: #A6B7BD;
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/

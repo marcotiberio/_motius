@@ -346,13 +346,14 @@
 
 .home #six,
 .home #eight {
-	padding: 10vh 0 10vh 8vw;
+	padding: 10vh 0 10vh 0;
 }
 
 .home .post-carousel-header {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding-right: 8vw;
+	padding-left: 8vw;
 }
 
 .home .post-carousel-header a {
@@ -385,6 +386,16 @@
 
 .carousel-cell:before {
 	display: block;
+}
+
+.home #six .previous,
+.home #eight .previous {
+	margin-left: 8vw;
+}
+
+.home #six .next,
+.home #eight .next {
+	margin-left: 0;
 }
 
 .home #six article .event-cover img {

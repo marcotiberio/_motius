@@ -33,13 +33,43 @@
 
 .page-template-companies .block {
 	margin: 50px 0;
-	width: 45%;
+	width: 40%;
 	height: 300px;
 	border-radius: 3rem;
 	padding-top: 5%;
 	padding-left: 5%;
+
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 	color: #ffffff;
 	transition: 0.5s;
+}
+
+.page-template-companies .block .header-block {
+	font-weight: bold;
+	margin-bottom: 20px;
+	grid-column-start: 1;
+	grid-column-end: 8;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.page-template-companies .block .paragraph-block {
+	grid-column-start: 1;
+	grid-column-end: 8;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.page-template-companies .block .arrow-icon {
+	display: grid;
+	grid-column-start: 6;
+	grid-row-start: 4;
+}
+
+.page-template-companies .block #arrow {
+	grid-column-start: 4;
 }
 
 .page-template-companies .block:hover {
@@ -47,12 +77,12 @@
 	cursor: pointer;
 }
 
-.page-template-companies .block .header-block,
+/* .page-template-companies .block .header-block,
 .page-template-companies .block .paragraph-block {
 	width: 65%;
-}
+} */
 
-.page-template-companies .block .header-block {
+/* .page-template-companies .block .header-block {
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -66,7 +96,7 @@
 
 .page-template-companies .block #arrow {
 	grid-column-start: 4;
-}
+} */
 
 /* Flip Cards */
 

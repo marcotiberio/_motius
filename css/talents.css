@@ -105,30 +105,75 @@
 
 .page-template-talents .color-blocks .left {
 	background-color: #B8E9F4;
-	border-radius: 3rem;
-	padding: 2% 20% 5% 10%;
-	margin: 10% 0 10% 0;
+    border-radius: 3rem;
+    padding: 5%;
+    margin: 10% 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 70%;
+    height: 70%;
 }
 
 .page-template-talents .color-blocks .left .info {
-	margin-top: 30%;
-	margin-right: 10%;
+	margin-right: 0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .page-template-talents .color-blocks .right {
-	background-color: #E4EAEB;
-	border-radius: 3rem;
-	padding: 2% 20% 5% 10%;
-	margin: 10% 0 10% 0;
+	background-color: #B8E9F4;
+    border-radius: 3rem;
+    padding: 5%;
+    margin: 10% 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 70%;
+    height: 70%;
 }
 
 .page-template-talents .color-blocks .right .info {
-	margin-top: 30%;
-	margin-right: 10%;
+	margin-right: 0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .page-template-talents .color-blocks .info .paragraph {
 	margin-top: 25px;
+}
+
+.page-template-talents .color-blocks .label {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    align-self: self-start;
+}
+
+.page-template-talents .color-blocks img {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    margin-top: -30%;
+    width: 230px;
+}
+
+.page-template-talents .color-blocks #blockButton {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    height: 50px;
+    margin: 0;
+    color: #ffffff;
+    border: 0;
+    border-radius: 13px;
+    padding: 1rem;
+    outline: 0;
+    transition: 0.5s;
+    align-self: self-end;
 }
 
 .page-template-talents #three {

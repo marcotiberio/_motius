@@ -10,7 +10,7 @@
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	column-gap: 20px;
-	padding-top: 20vh;
+	padding: 20vh 8vw 0 8vw;
 }
 
 .archive #hero .hero-text {
@@ -89,7 +89,7 @@
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	column-gap: 20px;
-	padding-top: 0;
+	padding: 0;
 }
 
 .post-type-archive .post-carousel .carousel-cell {
