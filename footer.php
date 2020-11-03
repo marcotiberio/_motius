@@ -198,10 +198,8 @@
 					<!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
 					<h5>Keep up with<br>your tech friends</h5>
 					<!--Email-->
-					<input type="text" maxlength="255" name="Email" value="" placeholder="Your Email" fieldType=9
-						style="color: #666; border: 1px solid #ccc; border-radius: 15px; padding: 1rem; width: 100%; margin-top: 20px;" />
-					<button type="submit"
-						style="color: #ffffff; background-color: #28B9DA; border: 1px solid #ccc; border-radius: 10px; padding: 0.6rem; width: 100%; cursor: pointer; margin-top: 10px;"><em>Subscribe</em></button>
+					<input type="text" maxlength="255" name="Email" value="" placeholder="Your Email" fieldType=9 style="color: #666; border: 1px solid #ccc; border-radius: 15px; padding: 1rem; width: 55%; margin-top: 20px; font-size: 20px;" />
+					<button type="submit" style="color: #ffffff; background-color: #28B9DA; border: 1px solid #ccc; border-radius: 15px; padding: 1rem; width: 30%; cursor: pointer; margin-top: 20px; font-size: 20px;"><em>Subscribe</em></button>
 				</form>
 			</div>
 		</div>

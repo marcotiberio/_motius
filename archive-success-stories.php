@@ -18,19 +18,58 @@ get_header();
 	</section>
 
 	<div class="filter">
-		<a class="type all active"><span id="bulletCategory">&#8226;</span>All</a>
-		<a class="type artificial_intelligence"><span id="bulletCategory">&#8226;</span>Artificial Intelligence</a>
-		<a class="type augmented_and_virtual_reality"><span id="bulletCategory">&#8226;</span>Augmented & Virtual Reality</a>
-		<a class="type internet_of_things"><span id="bulletCategory">&#8226;</span>Internet of Things</a>
-		<a class="type chatbots"><span id="bulletCategory">&#8226;</span>Chatbots</a>
-		<a class="type additive_manufacturing"><span id="bulletCategory">&#8226;</span>Additive Manufacturing</a>
-		<a class="type autonomous_driving"><span id="bulletCategory">&#8226;</span>Autonomous Driving</a>
-		<a class="type robotics"><span id="bulletCategory">&#8226;</span>Robotics</a>
-		<a class="type user_centric_design"><span id="bulletCategory">&#8226;</span>User Centric Design</a>
-		<a class="type app_and_web_development"><span id="bulletCategory">&#8226;</span>App and Web Development</a>
-		<a class="type data_science"><span id="bulletCategory">&#8226;</span>Data Science</a>
-		<a class="type blockchain"><span id="bulletCategory">&#8226;</span>Blockchain</a>
-		<a class="type embedded_development"><span id="bulletCategory">&#8226;</span>Embedded Development</a>
+		<a class="type all active">
+			<svg class="checked" id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>All</span></a>
+		<a class="type artificial_intelligence">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>Artificial Intelligence</span></a>
+		<a class="type augmented_and_virtual_reality">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>Augmented & Virtual Reality</span></a>
+		<a class="type internet_of_things">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>Internet of Things</span></a>
+		<a class="type chatbots">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>Chatbots</span></a>
+		<a class="type additive_manufacturing">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>Additive Manufacturing</span></a>
+		<a class="type autonomous_driving">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>Autonomous Driving</span></a>
+		<a class="type robotics">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>Robotics</span></a>
+		<a class="type user_centric_design">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>User Centric Design</span></a>
+		<a class="type app_and_web_development">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>App and Web Development</span></a>
+		<a class="type data_science">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>Data Science</span></a>
+		<a class="type blockchain">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>Blockchain</span></a>
+		<a class="type embedded_development">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg><span>Embedded Development</span></a>
 	</div>
 
 	<main id="primary" class="site-main">
@@ -47,7 +86,7 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content-archive', get_post_type('success-stories') );
+				get_template_part( 'template-parts/content-archive-success-stories', get_post_type('success-stories') );
 
 			endwhile;
 

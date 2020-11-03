@@ -50,14 +50,28 @@ get_header();
 						<div class="flip-card-inner">
 							<div class="flip-card-front">
 								<img class="icon" src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
-								<p class="title"><?php the_sub_field('title'); ?></p>
+								<p class="title"><span id="bullet">&#8226;</span><?php the_sub_field('title'); ?></p>
 							</div>
 							<div class="flip-card-back">
-								<p class="title"><?php the_sub_field('title'); ?></p>
+								<p class="title"><span id="bullet" color="#28B9DA">&#8226;</span><?php the_sub_field('title'); ?></p>
 								<ul>
-									<li><?php the_sub_field('bullet_point1'); ?></li>
-									<li><?php the_sub_field('bullet_point2'); ?></li>
-									<li><?php the_sub_field('bullet_point3'); ?></li>
+									<li><span>
+											<svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+												<path d="M17.7188 9.25C17.7188 7.70312 17.2969 6.22656 16.5234 4.89062C15.75 3.55469 14.6953 2.5 13.3594 1.72656C12.0234 0.953125 10.5469 0.53125 9 0.53125C7.41797 0.53125 5.97656 0.953125 4.64062 1.72656C3.30469 2.5 2.21484 3.55469 1.44141 4.89062C0.667969 6.22656 0.28125 7.70312 0.28125 9.25C0.28125 10.832 0.667969 12.2734 1.44141 13.6094C2.21484 14.9453 3.30469 16.0352 4.64062 16.8086C5.97656 17.582 7.41797 17.9688 9 17.9688C10.5469 17.9688 12.0234 17.582 13.3594 16.8086C14.6953 16.0352 15.75 14.9453 16.5234 13.6094C17.2969 12.2734 17.7188 10.832 17.7188 9.25ZM7.98047 13.8555C7.875 13.9961 7.73438 14.0312 7.59375 14.0312C7.41797 14.0312 7.27734 13.9961 7.20703 13.8555L3.55078 10.1992C3.41016 10.1289 3.375 9.98828 3.375 9.8125C3.375 9.67188 3.41016 9.53125 3.55078 9.42578L4.32422 8.61719C4.42969 8.51172 4.57031 8.44141 4.71094 8.44141C4.85156 8.44141 4.99219 8.51172 5.13281 8.61719L7.59375 11.0781L12.8672 5.80469C12.9727 5.69922 13.1133 5.62891 13.2539 5.62891C13.3945 5.62891 13.5352 5.69922 13.6758 5.80469L14.4492 6.61328C14.5547 6.71875 14.625 6.85938 14.625 7C14.625 7.17578 14.5547 7.31641 14.4492 7.38672L7.98047 13.8555Z" fill="#383E4E"/>
+											</svg>
+										</span>
+										<?php the_sub_field('bullet_point1'); ?>
+									</li>
+									<li><span>
+											<svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+												<path d="M17.7188 9.25C17.7188 7.70312 17.2969 6.22656 16.5234 4.89062C15.75 3.55469 14.6953 2.5 13.3594 1.72656C12.0234 0.953125 10.5469 0.53125 9 0.53125C7.41797 0.53125 5.97656 0.953125 4.64062 1.72656C3.30469 2.5 2.21484 3.55469 1.44141 4.89062C0.667969 6.22656 0.28125 7.70312 0.28125 9.25C0.28125 10.832 0.667969 12.2734 1.44141 13.6094C2.21484 14.9453 3.30469 16.0352 4.64062 16.8086C5.97656 17.582 7.41797 17.9688 9 17.9688C10.5469 17.9688 12.0234 17.582 13.3594 16.8086C14.6953 16.0352 15.75 14.9453 16.5234 13.6094C17.2969 12.2734 17.7188 10.832 17.7188 9.25ZM7.98047 13.8555C7.875 13.9961 7.73438 14.0312 7.59375 14.0312C7.41797 14.0312 7.27734 13.9961 7.20703 13.8555L3.55078 10.1992C3.41016 10.1289 3.375 9.98828 3.375 9.8125C3.375 9.67188 3.41016 9.53125 3.55078 9.42578L4.32422 8.61719C4.42969 8.51172 4.57031 8.44141 4.71094 8.44141C4.85156 8.44141 4.99219 8.51172 5.13281 8.61719L7.59375 11.0781L12.8672 5.80469C12.9727 5.69922 13.1133 5.62891 13.2539 5.62891C13.3945 5.62891 13.5352 5.69922 13.6758 5.80469L14.4492 6.61328C14.5547 6.71875 14.625 6.85938 14.625 7C14.625 7.17578 14.5547 7.31641 14.4492 7.38672L7.98047 13.8555Z" fill="#383E4E"/>
+											</svg>
+										</span><?php the_sub_field('bullet_point2'); ?></li>
+									<li><span>
+											<svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+												<path d="M17.7188 9.25C17.7188 7.70312 17.2969 6.22656 16.5234 4.89062C15.75 3.55469 14.6953 2.5 13.3594 1.72656C12.0234 0.953125 10.5469 0.53125 9 0.53125C7.41797 0.53125 5.97656 0.953125 4.64062 1.72656C3.30469 2.5 2.21484 3.55469 1.44141 4.89062C0.667969 6.22656 0.28125 7.70312 0.28125 9.25C0.28125 10.832 0.667969 12.2734 1.44141 13.6094C2.21484 14.9453 3.30469 16.0352 4.64062 16.8086C5.97656 17.582 7.41797 17.9688 9 17.9688C10.5469 17.9688 12.0234 17.582 13.3594 16.8086C14.6953 16.0352 15.75 14.9453 16.5234 13.6094C17.2969 12.2734 17.7188 10.832 17.7188 9.25ZM7.98047 13.8555C7.875 13.9961 7.73438 14.0312 7.59375 14.0312C7.41797 14.0312 7.27734 13.9961 7.20703 13.8555L3.55078 10.1992C3.41016 10.1289 3.375 9.98828 3.375 9.8125C3.375 9.67188 3.41016 9.53125 3.55078 9.42578L4.32422 8.61719C4.42969 8.51172 4.57031 8.44141 4.71094 8.44141C4.85156 8.44141 4.99219 8.51172 5.13281 8.61719L7.59375 11.0781L12.8672 5.80469C12.9727 5.69922 13.1133 5.62891 13.2539 5.62891C13.3945 5.62891 13.5352 5.69922 13.6758 5.80469L14.4492 6.61328C14.5547 6.71875 14.625 6.85938 14.625 7C14.625 7.17578 14.5547 7.31641 14.4492 7.38672L7.98047 13.8555Z" fill="#383E4E"/>
+											</svg>
+										</span><?php the_sub_field('bullet_point3'); ?></li>
 								</ul>
 								<svg id="arrow" width="54" height="43" viewBox="0 0 54 43" fill="none">
 									<path d="M32.1807 0L29.1772 3.00353L45.2675 19.3084H0V23.5992H45.2675L29.1772 39.9041L32.1807 42.9076L53.6345 21.4538L32.1807 0Z" fill="#383E4E"/>
@@ -73,9 +87,9 @@ get_header();
 			<h2 class="section-title">How We <span id="blueWord">Work?</span></h2>
 			<div id="scrollLine">
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">
+					<div class="left" data-aos="zoom-in" style="background-image: url('http://motius.local/wp-content/uploads/2020/11/timeline-companies1.png');">
 					</div>
-					<div class="right" data-aos="fade-left">
+					<div class="right" data-aos="zoom-left">
 						<h2>1</h2>
 						<h5>Kicking things off</h5>
 						<p>No matter how well defined your project idea is, we can work it out together. 
@@ -85,9 +99,9 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">
+					<div class="left" data-aos="zoom-in" style="background-image: url('http://motius.local/wp-content/uploads/2020/11/timeline-companies2.png');">
 					</div>
-					<div class="right" data-aos="fade-left">
+					<div class="right" data-aos="zoom-left">
 						<h2>2</h2>
 						<h5>Thinking Together</h5>
 						<p>No matter how well defined your project idea is, we can work it out together. 
@@ -97,9 +111,9 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">
+					<div class="left" data-aos="zoom-in" style="background-image: url('http://motius.local/wp-content/uploads/2020/11/timeline-companies3.png');">
 					</div>
-					<div class="right" data-aos="fade-left">
+					<div class="right" data-aos="zoom-left">
 						<h2>3</h2>
 						<h5>Team Matching</h5>
 						<p>No matter how well defined your project idea is, we can work it out together. 
@@ -109,9 +123,9 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">
+					<div class="left" data-aos="zoom-in" style="background-image: url('http://motius.local/wp-content/uploads/2020/11/timeline-companies4.png');">
 					</div>
-					<div class="right" data-aos="fade-left">
+					<div class="right" data-aos="zoom-left">
 						<h2>4</h2>
 						<h5>Innovation &Agile Development</h5>
 						<p>No matter how well defined your project idea is, we can work it out together. 
@@ -121,9 +135,9 @@ get_header();
 					</div>
 				</div>
 				<div class="element">
-					<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube.png');">
+					<div class="left" data-aos="zoom-in" style="background-image: url('http://motius.local/wp-content/uploads/2020/11/timeline-companies5.png');">
 					</div>
-					<div class="right" data-aos="fade-left">
+					<div class="right" data-aos="zoom-left">
 						<h2>5</h2>
 						<h5>Implementation & Support</h5>
 						<p>No matter how well defined your project idea is, we can work it out together. 
@@ -252,7 +266,7 @@ get_header();
 							<div class="inner">
 								<div class="image" style="background-image: url(<?php echo esc_url( $image['url'] ); ?>);"></div>
 								<div class="quote">
-									<?php the_sub_field('quote'); ?>
+									<p><?php the_sub_field('quote'); ?></p>
 									<div class="testimonial-info">
 										<div class="personal">
 											<p class="testimonial-name"><?php the_sub_field('testimonial_name'); ?></p>
@@ -300,7 +314,7 @@ get_header();
 									?>
 								</div>
 								<div class="event-header">
-								<p class="type"><?php the_field('type'); ?></p>
+								<p class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></p>
 									<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
 								</div>
 							</a>
@@ -329,15 +343,29 @@ get_header();
 					</div>
 				</section>
 			<?php endif; ?>
-		<?php
+			<?php
 			$section10 = get_field('section10', 11);
 			if( $section10 ): ?>
 				<section id="ten">
-					<div class="two-columns-text">
-						<h2 class="header"><?php echo $section10['header']; ?></h2>
-						<p class="paragraph"><?php echo $section10['paragraph']; ?></p>
+					<h2 class="section-title" data-aos="fade-right">We strive for lasting impact</h2>
+					<div class="grid-4">
+						<div class="top-left" data-aos="flip-up" data-aos-delay="0">
+							<h1 class="number"><?php echo $section10['top_left_number']; ?></h1>
+							<p class="text"><?php echo $section10['top_left_text']; ?></h1>
+						</div>
+						<div class="top-right" data-aos="flip-up" data-aos-delay="400">
+							<h1 class="number"><?php echo $section10['top_right_number']; ?></h1>
+							<p class="text"><?php echo $section10['top_right_text']; ?></h1>
+						</div>
+						<div class="bottom-left" data-aos="flip-up" data-aos-delay="600">
+							<h1 class="number"><?php echo $section10['bottom_left_number']; ?></h1>
+							<p class="text"><?php echo $section10['bottom_left_text']; ?></h1>
+						</div>
+						<div class="bottom-right" data-aos="flip-up" data-aos-delay="1000">
+							<h1 class="number"><?php echo $section10['bottom_right_number']; ?></h1>
+							<p class="text"><?php echo $section10['bottom_right_text']; ?></h1>
+						</div>
 					</div>
-					<img src="<?php echo esc_url( $section10['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" />
 				</section>
 			<?php endif; ?>
 

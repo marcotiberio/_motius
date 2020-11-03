@@ -75,30 +75,30 @@ get_header();
 				</div>
 				<div class="point">
 					<article>
-					<h3>Re-inventing <span id="blueWord">R&D</span> to stay ahead</h3>
+					<h2>Re-inventing <span id="blueWord">R&D</span> to stay ahead</h2>
 					<p>We believe the rate of technological change is only increasing. Therefore we created our unique 
 					fluid structure to bring together the best tech talent and experienced leaders allowing us to 
 					focus on the newest technologies of any occurring tech cycle.
 					This way, we can always stay ahead.</p>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube-home-1a.png" alt="random" width="700" height="700" />
+					<img src="http://motius.local/wp-content/uploads/2020/11/home-cube-1.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>Our <span id="blueWord">talent pool</span> brings the newest tech know-how</h3>
+					<h2>Our <span id="blueWord">talent pool</span> brings the newest tech know-how</h2>
 					<p>Our fluid structure with a built-in turnover rate of 3-5 years is the key to keep up with rapid 
 					technological change. By constantly attracting the best tech talent we are able to develop 
 					cutting-edge products and innovative prototypes for companies that want to stay ahead.</p>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube-home-2a.png" alt="random" width="700" height="700" />
+					<img src="http://motius.local/wp-content/uploads/2020/11/home-cube-2.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>The core team ensures high quality and <span id="blueWord">long term experience</span></h3>
+					<h2>The core team ensures high quality and <span id="blueWord">long term experience</span></h2>
 					<p>We created a core team around key technologies to assure long-term knowledge transfer. The team is responsible 
 					for project management, lead engineering and business impact. This way, we can take full care of all your needs.</p>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/cube-home-3a.png" alt="random" width="700" height="700" />
+					<img src="http://motius.local/wp-content/uploads/2020/11/home-cube-3.png" alt="random" width="700" height="700" />
 				</div>
 			</div>
 		</section>
@@ -257,8 +257,8 @@ get_header();
 									<input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
 									<p></p>
 									<!--Email-->
-									<input type="text" maxlength="255" name="Email" value="" placeholder="Your Email" fieldType=9 style="color: #666; border: 1px solid #ccc; border-radius: 15px; padding: 1rem; width: 100%; margin-top: 20px;" />
-									<button type="submit" style="color: #ffffff; background-color: #28B9DA; border: 1px solid #ccc; border-radius: 10px; padding: 0.6rem; width: 100%; cursor: pointer; margin-top: 10px;"><em>Subscribe</em></button>
+									<input type="text" maxlength="255" name="Email" value="" placeholder="Your Email" fieldType=9 style="color: #666; border: 1px solid #ccc; border-radius: 15px; padding: 1rem; width: 45%; margin-top: 20px; font-size: 20px;" />
+									<button type="submit" style="color: #ffffff; background-color: #28B9DA; border: 1px solid #ccc; border-radius: 15px; padding: 1rem; width: 20%; cursor: pointer; margin-top: 20px; font-size: 20px;"><em>Subscribe</em></button>
 								</form>
 							</div>
 						</div>

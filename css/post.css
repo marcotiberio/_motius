@@ -46,6 +46,28 @@
 	margin-top: 50px;
 }
 
+.single .client span {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.post-type-archive-insights .type {
+	margin-top: 50px;
+}
+
+.post-type-archive-insights #hero .type #bullet {
+	font-size: 28px;
+	line-height: 30px;
+	vertical-align: sub;
+	color: #28B9DA;
+	opacity: 0.6;
+}
+
+.post-type-archive-insights .type span {
+	font-size: 18px;
+	line-height: 30px;
+}
+
 .single .client .type {
 	text-transform: capitalize;
 	margin-left: 50px;
@@ -179,4 +201,25 @@
 
 .single-success-stories #relatedInsights {
 	display: none;
+}
+
+#relatedInsights .event-header .bottom {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: flex-end;
+}
+
+#relatedInsights .event-header h5 a {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 28px;
+    line-height: 22px;
+}
+
+#relatedInsights .event-header .top .type, 
+#relatedInsights .event-header .bottom p {
+    margin-top: 1rem;
+    color: #383E4E;
+    opacity: 0.6;
+    font-size: 18px;
+    line-height: 30px;
 }

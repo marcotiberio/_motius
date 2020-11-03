@@ -20,16 +20,16 @@
 			</div>
 			<div class="event-header">
 				<div class="top">
-					<h5 class="title">
+					<p class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></p>
+					<h5 class="title" style="font-size: 20px; line-height: 24px;">
 						<a href="<?php the_permalink(); ?>">
 							<?php print the_title(); ?>
 						</a>
 					</h5>
-				<p class="type"><?php the_field('type'); ?></p>
 				</div>
 				<div class="bottom">
 					<p class="date"><?php echo date('M Y'); ?></p>
-					<p class="date"><?php the_field('author'); ?></p>
+					<p class="author"><?php the_field('author'); ?></p>
 				</div>
 			</div>
 		</a>

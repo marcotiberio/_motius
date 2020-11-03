@@ -2,6 +2,10 @@
 # Companies
 --------------------------------------------------------------*/
 
+.page-template-companies {
+	overflow-x: hidden;
+}
+
 .page-template-companies .site-header {
 	background-color: transparent;
 }
@@ -27,14 +31,14 @@
 
 .page-template-companies #one .paragraph {
 	margin-top: 50px;
-	font-size: 20px;
-	line-height: 32px;
+	/* font-size: 20px;
+	line-height: 32px; */
 }
 
 .page-template-companies .block {
 	margin: 50px 0;
-	width: 40%;
-	height: 300px;
+    width: 50%;
+    height: 350px;
 	border-radius: 3rem;
 	padding-top: 5%;
 	padding-left: 5%;
@@ -116,7 +120,7 @@
 }
 
 .page-template-companies .grid-3 .flip-card {
-	height: 300px;
+	height: 450px;
 	background-color: transparent;
 }
 
@@ -186,16 +190,22 @@
 }
 
 .flip-card-back ul li {
-	padding-left: 0;
 	text-decoration: none !important;
+	margin-bottom: 20px;
+
+	display: flex;
+	flex-direction: row;
 }
 
-.flip-card-back ul li::before {
+.flip-card-back ul li span {
+	margin-right: 10px;
+}
+
+/* .flip-card-back ul li::before {
 	content: "✓";
-	/* Insert content that looks like bullets */
 	padding-right: 8px;
 	color: #000000;
-}
+} */
 
 .flip-card-back #arrow {
 	position: absolute;
@@ -221,12 +231,12 @@
 }
 
 .page-template-companies #three #scrollLine {
-	margin-top: 5vh;
+	margin-top: 10vh;
 }
 
 .page-template-companies #three #scrollLine .element {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1.5fr;
 }
 
 .page-template-companies #three #scrollLine .element .left {
@@ -235,11 +245,11 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: top center;
-	margin-bottom: 5vh;
+	margin-bottom: 0;
 }
 
 .page-template-companies #three #scrollLine .element .right {
-	border-left: 10px solid grey;
+	border-left: 2px solid #D7DFEB;
 	padding-left: 5%;
 }
 
@@ -251,7 +261,7 @@
 .page-template-companies #three #scrollLine .element .right h5,
 .page-template-companies #threeMobile #scrollLine .element .right h5 {
 	color: #383E4E;
-	margin: 2rem 0;
+	margin: 0.5rem 0;
 }
 
 
@@ -365,7 +375,7 @@
 }
 
 .page-template-companies #seven {
-	padding: 10vh 0 10vh 8vw;
+	padding: 10vh 0;
 }
 
 .page-template-companies #seven .carousel-cell {
@@ -420,14 +430,20 @@
 	color: #A6B7BD;
 }
 
+.page-template-companies #seven .previous, 
+.page-template-companies #seven .previous {
+	margin-left: 8vw;
+}
+
 .page-template-companies #eight {
-	padding: 10vh 0 10vh 8vw;
+	padding: 10vh 0;
 }
 
 .page-template-companies #eight .post-carousel-header {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding-right: 8vw;
+	padding-left: 8vw;
 }
 
 .page-template-companies #eight .post-carousel-header a {
@@ -435,6 +451,12 @@
 	place-items: center;
 	padding-left: 50%;
 	color: #28B9DA;
+}
+
+.page-template-companies #eight .event-header .type {
+    margin-bottom: 1.5rem;
+    color: #383E4E;
+    opacity: 0.6;
 }
 
 .page-template-companies #eight .carousel-cell {
@@ -457,6 +479,11 @@
 
 .page-template-companies #eight article .event-header {
 	padding: 5% 20% 10% 10%;
+}
+
+.page-template-companies #eight .previous, 
+.page-template-companies #eight .previous {
+	margin-left: 8vw;
 }
 
 .page-template-companies #nine {
@@ -517,6 +544,8 @@
 	grid-row-start: 3;
 	outline: 0;
 	transition: 0.5s;
+
+	font-size: 20px;
 }
 
 .two-columns .image #blockButton:hover {
@@ -527,4 +556,35 @@
 
 .page-template-companies #ten {
 	padding-bottom: 20vh;
+}
+
+.page-template-companies #ten .grid-4 {
+	margin: 10vh 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+	column-gap: 5vw;
+	row-gap: 10vh;
+}
+
+.page-template-companies #ten .grid-4 div{
+	border-radius: 25px;
+	height: 30vh;
+	padding: 10%;
+}
+
+.page-template-companies #ten .grid-4 .top-left {
+	background-color: #F5F9FA;
+}
+
+.page-template-companies #ten .grid-4 .top-right {
+	background-color: #E4EAEB;
+}
+
+.page-template-companies #ten .grid-4 .bottom-left {
+	background-color: #F1FBFD;
+}
+
+.page-template-companies #ten .grid-4 .bottom-right {
+	background-color: #F5F9FA;
 }

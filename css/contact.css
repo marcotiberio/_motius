@@ -2,6 +2,10 @@
 # Contact
 --------------------------------------------------------------*/
 
+.page-template-contact {
+	overflow-x: hidden;
+}
+
 .page-template-contact #one {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
@@ -16,8 +20,8 @@
 
 .page-template-contact #one .hero-text .paragraph {
 	margin-top: 50px;
-	font-size: 20px;
-	line-height: 30px;
+	/* font-size: 20px;
+	line-height: 30px; */
 }
 
 .page-template-contact #eleven {

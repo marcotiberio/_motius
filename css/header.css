@@ -2,7 +2,7 @@
 --------------------------------------------- */
 
 .site-header {
-	position: fixed;
+	position: absolute;
 	top: 6vh;
 	background-color: transparent;
 	width: 100vw;

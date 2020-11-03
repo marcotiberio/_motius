@@ -48,7 +48,7 @@ get_header();
 								<h3 class="header"><?php echo $section2['header_left']; ?></h3>
 								<p class="paragraph"><?php echo $section2['paragraph_left']; ?></p>
 							</div>
-							<button id="blockButton" onclick="window.location.href='<?php echo $section2['button_left_link']; ?>'">Apply Now</button>
+							<button id="blockButton" onclick="window.location.href='<?php echo $section2['button_left_link']; ?>'">Apply Now -></button>
 						</div>
 						<div class="right" data-aos="fade-left" data-aos-anchor-placement="top-bottom">
 							<img src="<?php echo esc_url( $section2['image_right']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image_right']['alt'] ); ?>" />
@@ -57,7 +57,7 @@ get_header();
 								<h3 class="header"><?php echo $section2['header_right']; ?></h3>
 								<p class="paragraph"><?php echo $section2['paragraph_right']; ?></p>
 							</div>
-							<button id="blockButton" onclick="window.location.href='<?php echo $section2['button_right_link']; ?>'">Apply Now</button>
+							<button id="blockButton" onclick="window.location.href='<?php echo $section2['button_right_link']; ?>'">Apply Now -></button>
 						</div>
 					</div>
 				</section>
@@ -71,9 +71,9 @@ get_header();
 			<div class="scroll-line-container">
 				<div class="scroll-line" id="scrollLineleft">
 					<div class="element">
-						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline1.png');">
+						<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline1.png');">
 						</div>
-						<div class="right" data-aos="zoom-in">
+						<div class="right" data-aos="zoom-left">
 							<h2>1</h2>
 							<h5>Application</h5>
 							<p>Tell us about your passion, your motivation but also about your skills, 
@@ -81,9 +81,9 @@ get_header();
 						</div>
 					</div>
 					<div class="element">
-						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline2.png');">
+						<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline2.png');">
 						</div>
-						<div class="right" data-aos="zoom-in">
+						<div class="right" data-aos="zoom-left">
 							<h2>2</h2>
 							<h5>First Interview</h5>
 							<p>Tell us about your passion, your motivation but also about your skills, 
@@ -91,9 +91,9 @@ get_header();
 						</div>
 					</div>
 					<div class="element">
-						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline3.png');">
+						<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline3.png');">
 						</div>
-						<div class="right" data-aos="zoom-in">
+						<div class="right" data-aos="zoom-left">
 							<h2>3</h2>
 							<h5>Become a Motee</h5>
 							<p>If it’s a match for both sides, you will become part of the Motius tech community. 
@@ -102,9 +102,9 @@ get_header();
 						</div>
 					</div>
 					<div class="element">
-						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline4.png');">
+						<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline4.png');">
 						</div>
-						<div class="right" data-aos="zoom-in">
+						<div class="right" data-aos="zoom-left">
 							<h2>4</h2>
 							<h5>Technical Interview</h5>
 							<p>Tell us about your passion, your motivation but also about your skills, 
@@ -112,9 +112,9 @@ get_header();
 						</div>
 					</div>
 					<div class="element">
-						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline5.png');">
+						<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline5.png');">
 						</div>
-						<div class="right" data-aos="zoom-in">
+						<div class="right" data-aos="zoom-left">
 							<h2>5</h2>
 							<h5>Become an Active Motee</h5>
 							<p>Welcome the the active part of the Talent Pool. You will now be working 
@@ -123,9 +123,9 @@ get_header();
 						</div>
 					</div>
 					<div class="element">
-						<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline6.png');">
+						<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/timeline6.png');">
 						</div>
-						<div class="right" data-aos="zoom-in">
+						<div class="right" data-aos="zoom-left">
 							<h2>6</h2>
 							<h5>Choose your career path</h5>
 							<p>Depending on your strengths and interests you can now develop your skills 
@@ -362,7 +362,7 @@ get_header();
 									?>
 								</div>
 								<div class="event-header">
-								<p class="type"><?php the_field('type'); ?></p>
+								<p class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></p>
 									<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
 								</div>
 							</a>

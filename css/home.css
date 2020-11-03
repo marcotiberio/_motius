@@ -2,6 +2,10 @@
 # Home
 --------------------------------------------------------------*/
 
+.home {
+	overflow-x: hidden;
+}
+
 .home section {
 	width: 100vw;
 	height: auto;
@@ -63,38 +67,17 @@
     column-gap: 24px;
 }
 
-.home #one .color-blocks .left {
-	background-color: #B8E9F4;
-	border-radius: 3rem;
-	padding: 10% 14% 10% 12% !important;
-	margin: 0 1% !important;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	max-height: 400px;
-	transition: 0.5s;
-}
-
 .home #one .color-blocks .left .info {
 	margin-top: 0 !important;
 	margin-left: 0 !important;
 	grid-row-start: 1;
 	grid-row-end: 3;
+	grid-column-start: 1;
+    grid-column-end: 5;
 }
 
 .home #one .color-blocks .left .info p{
 	margin-bottom: 1.2rem;
-}
-
-.home #one .color-blocks .right {
-	background-color: #FFFFFF;
-	border: 1px solid #000000;
-	border-radius: 3rem;
-	padding: 10% 14% 10% 12% !important;
-	margin: 0 1% !important;
-	grid-column-start: 4;
-	grid-column-end: 7;
-	max-height: 400px;
-	transition: 0.5s;
 }
 
 .home #one .color-blocks .right .info {
@@ -102,6 +85,8 @@
 	margin-right: 0 !important;
 	grid-row-start: 1;
 	grid-row-end: 3;
+	grid-column-start: 1;
+    grid-column-end: 5;
 }
 
 .home #one .color-blocks .right .info p{
@@ -113,7 +98,7 @@
     display: grid;
 	grid-template-columns: 1fr;
 	grid-column-start: 4;
-	grid-row-start: 3;
+	grid-row-start: 4;
 }
 
 .home #one .color-blocks .left:hover,
@@ -242,28 +227,37 @@
 	margin-top: 25px;
 }
 
-.home .color-blocks .left {
+.home #one .color-blocks .left {
 	background-color: #B8E9F4;
     border-radius: 3rem;
-    padding: 5%;
-    margin: 10% 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	max-height: 70%;
-	height: 70%;
-}
-
-.home .color-blocks .right {
-	background-color: #E4EAEB;
-	border-radius: 3rem;
-	padding: 5%;
-	margin: 10% 0;
+    padding: 10% 14% 10% 12% !important;
+	margin: 0 1% !important;
+	grid-column-start: 1;
+	grid-column-end: 4;
 	display: grid;
     grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(3, 1fr);
-	max-height: 70%;
-	height: 70%;
+	width: 100%;
+	max-height: 450px;
+	height: 300px;
+	transition: 0.5s;
+}
+
+.home #one .color-blocks .right {
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	border-radius: 3rem;
+	padding: 10% 14% 10% 12% !important;
+	margin: 0 1% !important;
+	grid-column-start: 4;
+	grid-column-end: 7;
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	width: 100%;
+	max-height: 450px;
+	height: 300px;
+	transition: 0.5s;
 }
 
 .home .color-blocks img {
@@ -275,6 +269,7 @@
 }
 
 .home .color-blocks .label {
+	font-size: 20px;
 	grid-column-start: 1;
 	grid-row-start: 1;
 	align-self: self-start;
@@ -283,14 +278,14 @@
 .home .color-blocks .info {
 	margin-right: 0;
 	grid-column-start: 1;
-	grid-column-end: 5;
+	grid-column-end: 4;
 	grid-row-start: 2;
 	grid-row-end: 3;
 }
 
 .home .color-blocks #blockButton {
 	grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
 	grid-row-start: 3;
 	height: 50px;
 	margin: 0;
@@ -431,11 +426,14 @@
 
 .home article .event-header .type {
 	margin-bottom: 1.5rem;
+	color: #383E4E;
+	opacity: 0.6;
+
 }
 
 .home #eight article .event-header {
 	height: 100%;
-	padding: 5% 20% 10% 10%;
+	padding: 10% 20% 10% 10%;
 	/* display: flex;
 	flex-direction: column; */
     display: grid;
@@ -452,11 +450,14 @@
 	line-height: 24px;
 }
 
-.home #eight article .event-header .title,
 .home #eight article .event-header .type,
 .home #eight article .event-header .date,
 .home #eight article .event-header .author {
 	margin: 0;
+	color: #383E4E;
+	opacity: 0.6;
+	font-size: 18px;
+	line-height: 30px;
 }
 
 .home article .event-header .category {
@@ -485,7 +486,31 @@
 .home #nine .color-blocks {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 24px;
+    column-gap: 10vh;
+}
+
+.home .color-blocks .left {
+    background-color: #B8E9F4;
+    border-radius: 3rem;
+    padding: 5%;
+    margin: 10% 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 60%;
+    height: 60%;
+}
+
+.home .color-blocks .right {
+    background-color: #E4EAEB;
+    border-radius: 3rem;
+    padding: 5%;
+    margin: 10% 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 60%;
+    height: 60%;
 }
 
 .home #ten {

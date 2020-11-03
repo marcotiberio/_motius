@@ -2,6 +2,11 @@
 # About
 --------------------------------------------------------------*/
 
+.page-template-about {
+	overflow-x: hidden;
+}
+
+
 .page-template-about .site-header {
 	background-color: transparent;
 }
@@ -27,8 +32,8 @@
 
 .page-template-about .paragraph {
 	margin-top: 50px;
-	font-size: 20px;
-	line-height: 32px;
+	/* font-size: 20px;
+	line-height: 32px; */
 }
 
 .page-template-about #blockScroll {
@@ -204,7 +209,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding-top: 0;
-	padding-bottom: 5vh;
+	padding-bottom: 10vh;
 }
 
 .page-template-about #nine .paragraph {
@@ -218,6 +223,22 @@
 
 .page-template-about #nineBmobile {
 	display: none;
+}
+
+.page-template-about #ten .grid-6 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	row-gap: 10vh;
+}
+
+.page-template-about #ten .grid-6 h1 {
+	color: #383E4E;
+}
+
+.page-template-about #ten .grid-6 p {
+	color: #737883;
+	width: 35%;
 }
 
 .page-template-about #eleven {
@@ -256,7 +277,7 @@
 }
 
 .page-template-about #scrollLine .element .right {
-	border-left: 10px solid grey;
+	border-left: 2px solid #D7DFEB;
 	padding-left: 5vh;
 	padding-top: 15vh;
 }

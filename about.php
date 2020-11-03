@@ -124,49 +124,49 @@ get_header();
 				<section id="nineB">
 					<div id="scrollLine">
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
-							<div class="right" data-aos="fade-left">
+							<div class="right" data-aos="zoom-left">
 								<h3>2013</h3>
 								<p>Founding of Motius. Office in Munich and Muscat Oman</p>
 							</div>
 						</div>
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
-							<div class="right" data-aos="fade-left">
+							<div class="right" data-aos="zoom-left">
 								<h3>2014</h3>
 								<p>BMW as first major customer</p>
 							</div>
 						</div>
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
-							<div class="right" data-aos="fade-left">
+							<div class="right" data-aos="zoom-left">
 								<h3>2016</h3>
 								<p>Mai, 500 Motees in the Talent Pool</p>
 							</div>
 						</div>
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
-							<div class="right" data-aos="fade-left">
+							<div class="right" data-aos="zoom-left">
 								<h3>2017</h3>
 								<p>Opening of Office in Dubai and Stuttgart 150 Finished Projects</p>
 							</div>
 						</div>
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
-							<div class="right" data-aos="fade-left">
+							<div class="right" data-aos="zoom-left">
 								<h3>2018</h3>
 								<p>Ranked #1 Fastest growing service provider in Germany</p>
 							</div>
 						</div>
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
-							<div class="right" data-aos="fade-left">
+							<div class="right" data-aos="zoom-left">
 								<h3>2019</h3>
 								<p>50 Core Team Employees<br>
 									800 Motees in the Talent Pool<br>
@@ -174,10 +174,10 @@ get_header();
 							</div>
 						</div>
 						<div class="element">
-							<div class="left" data-aos="fade-right" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
 							</div>
-							<div class="right" data-aos="fade-left">
-								<h2>2020</h2>
+							<div class="right" data-aos="zoom-left">
+								<h3>2020</h3>
 								<p>FunKI Research Project<br>
 									Research Project: Plattform ?</p>
 							</div>
@@ -301,7 +301,32 @@ get_header();
 			if( $section10 ): ?>
 				<section id="ten">
 					<h2 class="section-title" data-aos="fade-right"><span id="blueWord">Motius</span> <br>in Numbers</h2>
-					<img src="<?php echo esc_url( $section10['image']['url'] ); ?>" alt="<?php echo esc_attr( $section10['image']['alt'] ); ?>" data-aos="fade-left" />
+					<div class="grid-6">
+						<div class="top-left" data-aos="flip-up" data-aos-delay="0">
+							<h1 class="number"><?php echo $section10['top_left_number']; ?></h1>
+							<p class="text"><?php echo $section10['top_left_text']; ?></h1>
+						</div>
+						<div class="top-center" data-aos="flip-up" data-aos-delay="200">
+							<h1 class="number"><?php echo $section10['top_center_number']; ?></h1>
+							<p class="text"><?php echo $section10['top_center_text']; ?></h1>
+						</div>
+						<div class="top-right" data-aos="flip-up" data-aos-delay="400">
+							<h1 class="number"><?php echo $section10['top_right_number']; ?></h1>
+							<p class="text"><?php echo $section10['top_right_text']; ?></h1>
+						</div>
+						<div class="bottom-left" data-aos="flip-up" data-aos-delay="600">
+							<h1 class="number"><?php echo $section10['bottom_left_number']; ?></h1>
+							<p class="text"><?php echo $section10['bottom_left_text']; ?></h1>
+						</div>
+						<div class="bottom-center" data-aos="flip-up" data-aos-delay="800">
+							<h1 class="number"><?php echo $section10['bottom_center_number']; ?></h1>
+							<p class="text"><?php echo $section10['bottom_center_text']; ?></h1>
+						</div>
+						<div class="bottom-right" data-aos="flip-up" data-aos-delay="1000">
+							<h1 class="number"><?php echo $section10['bottom_right_number']; ?></h1>
+							<p class="text"><?php echo $section10['bottom_right_text']; ?></h1>
+						</div>
+					</div>
 				</section>
 			<?php endif; ?>
 		<section id="eleven">

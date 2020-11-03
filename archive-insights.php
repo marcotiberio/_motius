@@ -32,6 +32,10 @@ get_header();
 						<div class="event-cover" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; background-position: center;"></div>
 						<div class="event-header">
 							<a href="<?php the_permalink(); ?>"><h2 class="title"><?php print the_title(); ?></h2></a>
+							<div class="type">
+								<span id="bullet">&#8226;</span>
+								<span><?php the_field('type'); ?></span>
+							</div>
 							<div class="excerpt"><?php the_excerpt(); ?></div>
 							<p class="date"><?php echo date('M Y'); ?></p>
 							<p><?php the_field('author'); ?></p>
@@ -64,9 +68,18 @@ get_header();
 	</div>
 
 	<div class="filter">
-		<a class="type all active"><span id="bulletCategory">&#8226;</span>All</a>
-		<a class="type cheat_sheet"><span id="bulletCategory">&#8226;</span>Cheat Sheet</a>
-		<a class="type toolbox"><span id="bulletCategory">&#8226;</span>Toolbox</a>
+		<a class="type all active">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg>All</a>
+		<a class="type cheat_sheet">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg>Cheat Sheet</a>
+		<a class="type toolbox">
+			<svg id="checkbox" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="11.5" stroke="#A6B7BD"/>
+			</svg>Toolbox</a>
 	</div>
 
 	<main id="primary" class="site-main">
@@ -83,7 +96,7 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content-archive', get_post_type('insights') );
+				get_template_part( 'template-parts/content-archive-insights', get_post_type('insights') );
 
 			endwhile;
 
@@ -113,8 +126,8 @@ get_header();
 									<input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
 									<p></p>
 									<!--Email-->
-									<input type="text" maxlength="255" name="Email" value="" placeholder="Your Email" fieldType=9 style="color: #666; border: 1px solid #ccc; border-radius: 15px; padding: 1rem; width: 100%; margin-top: 20px;" />
-									<button type="submit" style="color: #ffffff; background-color: #28B9DA; border: 1px solid #ccc; border-radius: 10px; padding: 0.6rem; width: 100%; cursor: pointer; margin-top: 10px;"><em>Subscribe</em></button>
+									<input type="text" maxlength="255" name="Email" value="" placeholder="Your Email" fieldType=9 style="color: #666; border: 1px solid #ccc; border-radius: 15px; padding: 1rem; width: 50%; margin-top: 20px;" />
+									<button type="submit" style="color: #ffffff; background-color: #28B9DA; border: 1px solid #ccc; border-radius: 10px; padding: 0.6rem; width: 50%; cursor: pointer; margin-top: 10px;"><em>Subscribe</em></button>
 								</form>
 							</div>
 						</div>

@@ -26,9 +26,16 @@ p {
 	margin-block-start: 0;
 }
 
+p {
+	margin: 0;
+	margin-block-start: 0;
+	font-size: 20px;
+	line-height: 32px;
+}
+
 h1 {
-	font-size: 4.375rem;
-	line-height: 4.375rem;
+	font-size: 70px;
+	line-height: 70px;
 }
 
 h2 {
@@ -50,6 +57,7 @@ h5 {
 	line-height: 33.6px;
 	font-weight: normal;
 	color: #000000;
+	font-family: 'Inter', sans-serif !important;
 }
 
 .event-header h5 {
@@ -88,6 +96,34 @@ textarea {
 	opacity: 0.8;
 }
 
+#checkbox {
+	margin-right: 16px;
+	opacity: 0.8;
+}
+
+.checked {
+	fill: #2BBADB;
+}
+
+.previous svg path{
+	d: path("M8.60916 16.4741L9.71405 15.3692L3.795 9.37126L20.4473 9.37126L20.4473 7.79285L3.795 7.79285L9.71405 1.79487L8.60917 0.689985L0.717097 8.58205L8.60916 16.4741Z");
+	transform: scale(5) !important;
+	color: #000000 !important;
+}
+
+.next svg path{
+	d: path("M12.5549 0.974365L11.45 2.07925L17.3691 8.07723H0.716797V9.65564H17.3691L11.45 15.6536L12.5549 16.7585L20.447 8.86643L12.5549 0.974365Z");
+	transform: scale(5) !important;
+	color: #000000 !important;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+	position: absolute !important;
+	left: 35% !important;
+	top: 30% !important;
+	width: 15px !important;
+	height: auto !important;
+}
 /* Links
 --------------------------------------------- */
 a {
