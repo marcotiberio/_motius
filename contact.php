@@ -34,7 +34,7 @@ get_header();
 					$title = get_sub_field('title');
 					$subtitle = get_sub_field('subtitle');
 					?>
-					<div class="card">
+					<div class="card" data-aos="flip-up">
 						<img class="profile-photo" src="<?php echo esc_url( $photo['url'] ); ?>" alt="<?php echo esc_attr( $photo['alt'] ); ?>" />
 						<p class="title"><?php the_sub_field('title'); ?></p>
 						<p class="subtitle"><?php the_sub_field('subtitle'); ?></p>

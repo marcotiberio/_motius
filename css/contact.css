@@ -27,7 +27,7 @@
 .page-template-contact #eleven {
 	width: 100vw;
 	height: auto;
-	padding: 0 8vw 10vh 8vw;
+	padding: 0 8vw 5vh 8vw;
 }
 
 .page-template-contact #eleven .grid-3 {
@@ -49,14 +49,25 @@
 .page-template-contact form textarea {
 	color: #383E4E;
     border: 1px solid #E4EAEB;
-    border-radius: 1.5rem;
+    border-radius: 22px;
 	padding: 20px 36px;
 	width: 30vw;
+	outline: 0;
+}
+
+.page-template-contact form input:focus,
+.page-template-contact form textarea:focus {
+	color: #383E4E;
+    border: 1px solid #28B9DA !important;
+    border-radius: 22px;
+	padding: 20px 36px;
+	width: 30vw;
+	outline: 0;
 }
 
 .page-template-contact form input[type="submit"] {
 	width: 16%;
-	border-radius: 1rem;
+	border-radius: 13px;
 	background-color: #28B9DA;
 	color: #ffffff;
 }
@@ -78,6 +89,30 @@
 	color: #A6B7BD;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+.page-template-contact .grid-3 .profile-photo {
+	border-radius: 30px;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: transparent;
+    color: #5CCC8F;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+   	border-color: transparent;
+		color: #FF0000;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 5em 0em 1em;
+    padding: 0.2em 0;
+    border: none;
+}
+
+.wpcf7-not-valid-tip {
+    color: #FF0000;
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+    margin-top: 0.5em;
+}

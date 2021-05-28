@@ -23,7 +23,11 @@
 			</div>
 			<div class="bottom">
 				<p class="date"><?php the_time( 'M Y' ); ?></p>
-				<p class="author"><?php the_field('author'); ?></p>
+					<p class="author">
+					<?php if( get_field('author') ): ?>
+						<?php the_field('author'); ?>
+					<?php endif; ?>
+				</p>
 			</div>
 		</div>
 	</article><!-- #post-<?php the_ID(); ?> -->

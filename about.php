@@ -27,9 +27,12 @@ get_header();
 			if( $section2 ): ?>
 				<section id="two">
 					<img src="<?php echo esc_url( $section2['image']['url'] ); ?>" alt="<?php echo esc_attr( $section2['image']['alt'] ); ?>" />
+					<div class="text">
+						<?php echo $section2['text']; ?>
+					</div>
 				</section>
 			<?php endif; ?>
-			<section id="blockScroll">
+		<section id="blockScroll">
 			<div class="wrapper">
 				<div class="indicators">
 					<div class="indicator"></div>
@@ -40,48 +43,33 @@ get_header();
 				</div>
 				<div class="point">
 					<article>
-					<h3>Our Core <br><span id="blueWord">Values</span></h3>
-					<p>The Motius core values are serving as a steering wheel for everything that we do. 
-						They shape our brand, our interaction in within the team, our decisions and our day-to-day life. 
-						They are deeply rooted at the core of our culture.</p>
+						<?php the_field('our_core_values'); ?>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle1.png" alt="random" width="700" height="700" />
+					<img src="/wp-content/uploads/2020/12/cake1-1.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>We <br><span id="blueWord">Enable</span></h3>
-					<p>Life at Motius is about enabling others. All of our actions, projects, and activities have the 
-						main objective to enable people. We enable techies to have the biggest possible impact on the world. 
-						We enable companies to master new technologies.</p>
+						<?php the_field('we_enable'); ?>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle2.png" alt="random" width="700" height="700" />
+					<img src="/wp-content/uploads/2020/12/cake2-1.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>We <br><span id="blueWord">Create</span></h3>
-					<p>We love to build impactful things and have a hands-on mindset towards everything we do. 
-						Good concepts are important, but as we wantto create impact, developing products and 
-						implementing ideas is what we strive for.</p>
+						<?php the_field('we_create'); ?>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle3.png" alt="random" width="700" height="700" />
+					<img src="/wp-content/uploads/2020/12/cake3-1.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>We are <br><span id="blueWord">Curious</span></h3>
-					<p>That‘s why we are constantly exploring what happens around us. This curiosity doesn‘t stop at 
-						the immediate task. We often look outside of our daily tasks and don‘t shy away from learning 
-						new skills. We’re coloring outside of the box.</p>
+						<?php the_field('we_are_curious'); ?>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle4.png" alt="random" width="700" height="700" />
+					<img src="/wp-content/uploads/2020/12/cake4-1.png" alt="random" width="700" height="700" />
 				</div>
 				<div class="point">
 					<article>
-					<h3>We are <br><span id="blueWord">Community-driven</span></h3>
-					<p>That‘s why we support each other – by collaboratively creating stuff, sharing our knowledge to 
-						help people explore new fields or just supporting people wherever we can. Our integrity and 
-						diverse community is an essential part of the Motius culture.</p>
+						<?php the_field('we_are_community_driven'); ?>
 					</article>
-					<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/circle5.png" alt="random" width="700" height="700" />
+					<img src="/wp-content/uploads/2020/12/cake5-1.png" alt="random" width="700" height="700" />
 				</div>
 			</div>
 		</section>
@@ -93,7 +81,7 @@ get_header();
 				</section>
 			<?php endif; ?>
 		<section id="eight">
-			<h3 class="section-title">Our <br><span id="blueWord">Founding Team</span></h3>
+			<h3 class="section-title"><?php the_field('section8_title'); ?></h3>
 			<?php if( have_rows('section8') ): ?>
 				<div class="grid-5">
 				<?php while( have_rows('section8') ): the_row(); 
@@ -117,212 +105,66 @@ get_header();
 			if( $section9 ): ?>
 				<section id="nine">
 					<div class="two-columns-text">
-						<h2 class="header">The <span id="blueWord">Motius</span> <br>Story</h2>
+						<h2 class="header"><?php echo $section9['title']; ?></h2>
 						<p class="paragraph"><?php echo $section9['paragraph']; ?></p>
 					</div>
 				</section>
 				<section id="nineB">
 					<div id="scrollLine">
-						<div class="element">
-							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
+
+						<?php if( have_rows('section9b') ): ?>
+							<?php while( have_rows('section9b') ): the_row(); 
+
+								// Load sub field value.
+								$image = get_sub_field('image');
+								$year = get_sub_field('year');
+								$text = get_sub_field('text');
+								?>
+							
+							<div class="element aboutTimeline">
+								<div class="left" style="background-image: url('<?php echo esc_url( $image['url'] ); ?>');">
+								</div>					
+								<div class="right">
+									<svg class="blueDot" version="1.0" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" style="enable-background:new 0 0 10 10;" xml:space="preserve"><circle class="svgDot" cx="5" cy="5" r="5"/></svg>
+									<div class="textBlock">
+										<h3><?php the_sub_field('year'); ?></h3>
+										<p><?php the_sub_field('text'); ?></p>
+									</div>					
+								</div>
 							</div>
-							<div class="right" data-aos="zoom-left">
-								<h3>2013</h3>
-								<p>Founding of Motius. Office in Munich and Muscat Oman</p>
-							</div>
-						</div>
-						<div class="element">
-							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
-							</div>
-							<div class="right" data-aos="zoom-left">
-								<h3>2014</h3>
-								<p>BMW as first major customer</p>
-							</div>
-						</div>
-						<div class="element">
-							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
-							</div>
-							<div class="right" data-aos="zoom-left">
-								<h3>2016</h3>
-								<p>Mai, 500 Motees in the Talent Pool</p>
-							</div>
-						</div>
-						<div class="element">
-							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
-							</div>
-							<div class="right" data-aos="zoom-left">
-								<h3>2017</h3>
-								<p>Opening of Office in Dubai and Stuttgart 150 Finished Projects</p>
-							</div>
-						</div>
-						<div class="element">
-							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
-							</div>
-							<div class="right" data-aos="zoom-left">
-								<h3>2018</h3>
-								<p>Ranked #1 Fastest growing service provider in Germany</p>
-							</div>
-						</div>
-						<div class="element">
-							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
-							</div>
-							<div class="right" data-aos="zoom-left">
-								<h3>2019</h3>
-								<p>50 Core Team Employees<br>
-									800 Motees in the Talent Pool<br>
-									300 finished Projects  Investment by Swiss Family Office</p>
-							</div>
-						</div>
-						<div class="element">
-							<div class="left" data-aos="zoom-in" style="background-image: url('http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg');">
-							</div>
-							<div class="right" data-aos="zoom-left">
-								<h3>2020</h3>
-								<p>FunKI Research Project<br>
-									Research Project: Plattform ?</p>
-							</div>
-						</div>
+
+							<?php endwhile; ?>
+						<?php endif; ?>
 					</div>
 				</section>
-				<!-- <section id="nineB">
-					<div class="timeline">
-						<ul>
-							<li>
-								<div>
-									<h2>2013</h2>
-									<h5>Kicking things off</h5>
-									<p>No matter how well defined your project idea is, we can work it out together. 
-										We can start with an existing problem, an existing product that you want to 
-										improve or just some rough ideas and requirements.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="image">
-									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div>
-									<h2>2014</h2>
-									<h5>Kicking things off</h5>
-									<p>No matter how well defined your project idea is, we can work it out together. 
-										We can start with an existing problem, an existing product that you want to 
-										improve or just some rough ideas and requirements.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="image">
-									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div>
-									<h2>2016</h2>
-									<h5>Kicking things off</h5>
-									<p>No matter how well defined your project idea is, we can work it out together. 
-										We can start with an existing problem, an existing product that you want to 
-										improve or just some rough ideas and requirements.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="image">
-									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div>
-									<h2>2017</h2>
-									<h5>Kicking things off</h5>
-									<p>No matter how well defined your project idea is, we can work it out together. 
-										We can start with an existing problem, an existing product that you want to 
-										improve or just some rough ideas and requirements.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="image">
-									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div>
-									<h2>2018</h2>
-									<h5>Kicking things off</h5>
-									<p>No matter how well defined your project idea is, we can work it out together. 
-										We can start with an existing problem, an existing product that you want to 
-										improve or just some rough ideas and requirements.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="image">
-									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div>
-									<h2>2019</h2>
-									<h5>Kicking things off</h5>
-									<p>No matter how well defined your project idea is, we can work it out together. 
-										We can start with an existing problem, an existing product that you want to 
-										improve or just some rough ideas and requirements.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="image">
-									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div>
-									<h2>2020</h2>
-									<h5>Kicking things off</h5>
-									<p>No matter how well defined your project idea is, we can work it out together. 
-										We can start with an existing problem, an existing product that you want to 
-										improve or just some rough ideas and requirements.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="image">
-									<img src="http://motiusrelaunch.flywheelstaging.com/wp-content/uploads/2020/10/Screen-Shot-2020-08-08-at-22.08-1.jpg" alt="">
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section> -->
 			<?php endif; ?>
 		<?php
 			$section10 = get_field('section10');
 			if( $section10 ): ?>
-				<section id="ten">
-					<h2 class="section-title" data-aos="fade-right"><span id="blueWord">Motius</span> <br>in Numbers</h2>
+				<section id="ten" class="animated fadeInRight duration1 eds-on-scroll">
+					<h2 class="section-title"><?php echo $section10['title']; ?></h2>
 					<div class="grid-6">
-						<div class="top-left" data-aos="flip-up" data-aos-delay="0">
+						<div class="top-left">
 							<h1 class="number"><?php echo $section10['top_left_number']; ?></h1>
 							<p class="text"><?php echo $section10['top_left_text']; ?></h1>
 						</div>
-						<div class="top-center" data-aos="flip-up" data-aos-delay="200">
+						<div class="top-center">
 							<h1 class="number"><?php echo $section10['top_center_number']; ?></h1>
 							<p class="text"><?php echo $section10['top_center_text']; ?></h1>
 						</div>
-						<div class="top-right" data-aos="flip-up" data-aos-delay="400">
+						<div class="top-right">
 							<h1 class="number"><?php echo $section10['top_right_number']; ?></h1>
 							<p class="text"><?php echo $section10['top_right_text']; ?></h1>
 						</div>
-						<div class="bottom-left" data-aos="flip-up" data-aos-delay="600">
+						<div class="bottom-left">
 							<h1 class="number"><?php echo $section10['bottom_left_number']; ?></h1>
 							<p class="text"><?php echo $section10['bottom_left_text']; ?></h1>
 						</div>
-						<div class="bottom-center" data-aos="flip-up" data-aos-delay="800">
+						<div class="bottom-center">
 							<h1 class="number"><?php echo $section10['bottom_center_number']; ?></h1>
 							<p class="text"><?php echo $section10['bottom_center_text']; ?></h1>
 						</div>
-						<div class="bottom-right" data-aos="flip-up" data-aos-delay="1000">
+						<div class="bottom-right">
 							<h1 class="number"><?php echo $section10['bottom_right_number']; ?></h1>
 							<p class="text"><?php echo $section10['bottom_right_text']; ?></h1>
 						</div>
@@ -330,7 +172,7 @@ get_header();
 				</section>
 			<?php endif; ?>
 		<section id="eleven">
-			<h3 class="section-title" data-aos="fade-right">Offices</h3>
+			<h2 class="section-title animated fadeInRight duration1 eds-on-scroll"><?php the_field('section11_title'); ?></h2>
 			<?php if( have_rows('section11') ): ?>
 				<div class="grid-3">
 				<?php while( have_rows('section11') ): the_row(); 
@@ -340,7 +182,7 @@ get_header();
 					$title = get_sub_field('title');
 					$subtitle = get_sub_field('subtitle');
 					?>
-					<div class="card" data-aos="flip-up">
+					<div class="card">
 						<img class="profile-photo" src="<?php echo esc_url( $photo['url'] ); ?>" alt="<?php echo esc_attr( $photo['alt'] ); ?>" />
 						<p class="title"><?php the_sub_field('title'); ?></p>
 						<p class="subtitle"><?php the_sub_field('subtitle'); ?></p>
@@ -361,7 +203,6 @@ get_header();
 		var items = document.querySelectorAll(".timeline li");
 
 		// check if an element is in viewport
-		// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
 		function isElementInViewport(el) {
 		var rect = el.getBoundingClientRect();
 		return (

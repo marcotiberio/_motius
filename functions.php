@@ -156,8 +156,10 @@ function _motius_scripts() {
 	wp_enqueue_style( 'archive-css', get_template_directory_uri() . '/css/archive.css', 'all');
 	wp_enqueue_style( 'simple-text-css', get_template_directory_uri() . '/css/simple-text.css', 'all');
 	wp_enqueue_style( 'contact-css', get_template_directory_uri() . '/css/contact.css', 'all');
-	wp_enqueue_style( 'wide-screen-css', get_template_directory_uri() . '/css/wide-screen.css', 'all');
+	wp_enqueue_style( 'hover-states-css', get_template_directory_uri() . '/css/hover-states.css', 'all');
 	wp_enqueue_style( 'mobile-css', get_template_directory_uri() . '/css/mobile.css', 'all');
+	// wp_enqueue_style( 'tablet-css', get_template_directory_uri() . '/css/tablet.css', 'all');
+	// wp_enqueue_style( 'wide-screen-css', get_template_directory_uri() . '/css/wide-screen.css', 'all');
 	wp_style_add_data( '_motius-style', 'rtl', 'replace' );
 
 	wp_deregister_script( 'jquery' );
@@ -170,6 +172,8 @@ function _motius_scripts() {
 	
 	wp_enqueue_script( '_motius-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( '_motius-script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20151215', true );
+	wp_enqueue_script( '_motius-filters', get_template_directory_uri() . '/js/filters.js', array( 'jquery' ), '20151215', true );
+	wp_enqueue_script( '_motius-animations', get_template_directory_uri() . '/js/animations.js', array( 'jquery' ), '20151215', true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -252,7 +256,7 @@ function custom_post_type_successstories() {
 			// Features this CPT supports in Post Editor
 			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'custom-fields', ),
 			// You can associate this CPT with a taxonomy or custom taxonomy. 
-			'taxonomies'  => array( 'category' ),
+			'taxonomies'  => array( 'topics', 'category' ),
 			/* A hierarchical CPT is like Pages and can have
 			* Parent and child items. A non-hierarchical CPT
 			* is like Posts.
@@ -317,7 +321,7 @@ function custom_post_type_insights() {
 			// Features this CPT supports in Post Editor
 			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'custom-fields', ),
 			// You can associate this CPT with a taxonomy or custom taxonomy. 
-			'taxonomies'          => array('topics', 'category' ),
+			'taxonomies'          => array( 'topics', 'category' ),
 			/* A hierarchical CPT is like Pages and can have
 			* Parent and child items. A non-hierarchical CPT
 			* is like Posts.
@@ -349,3 +353,69 @@ function custom_post_type_insights() {
 	*/
 	 
 	add_action( 'init', 'custom_post_type_insights', 0 );
+
+
+/*
+* Creating a function to create our Reference Projects
+*/
+ 
+function custom_post_type_referenceprojects() {
+ 
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Reference Projects', 'Post Type General Name', '_motius' ),
+			'singular_name'       => _x( 'Reference Project', 'Post Type Singular Name', '_motius' ),
+			'menu_name'           => __( 'Reference Projects', '_motius' ),
+			'parent_item_colon'   => __( 'Parent Reference Project', '_motius' ),
+			'all_items'           => __( 'All Reference Projects', '_motius' ),
+			'view_item'           => __( 'View Reference Project', '_motius' ),
+			'add_new_item'        => __( 'Add New Reference Project', '_motius' ),
+			'add_new'             => __( 'Add New', '_motius' ),
+			'edit_item'           => __( 'Edit Reference Project', '_motius' ),
+			'update_item'         => __( 'Update Reference Project', '_motius' ),
+			'search_items'        => __( 'Search Reference Project', '_motius' ),
+			'not_found'           => __( 'Not Found', '_motius' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', '_motius' ),
+		);
+		 
+	// Set other options for Custom Post Type
+		 
+		$args = array(
+			'label'               => __( 'reference-projects', '_motius' ),
+			'description'         => __( 'Reference Projects news and reviews', '_motius' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array( 'topics', 'category' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/ 
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+	 
+		);
+		 
+		// Registering your Custom Post Type
+		register_post_type( 'reference-projects', $args );
+	 
+	}
+	 
+	/* Hook into the 'init' action so that the function
+	* Containing our post type registration is not 
+	* unnecessarily executed. 
+	*/
+	 
+	add_action( 'init', 'custom_post_type_referenceprojects', 0 );

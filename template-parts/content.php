@@ -9,9 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="<?php the_field('tag'); ?>" id="post-<?php the_ID(); ?>">
 	<header class="entry-header">
-		<p class="date"><?php echo date('M Y'); ?></p>
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -26,10 +25,13 @@
 			$header = get_field('header');
 			if( $header ): ?>
 				<div class="client">
-					<span>Client</span> 
-					<span><?php echo $header['client']; ?></span>
+					<?php if( $header['client'] ): ?>
+						<span>Client</span> 
+						<span class="client-inner"><?php echo $header['client']; ?></span>
+					<?php endif; ?>
 					<span class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></span>
-					<p><?php the_field('author'); ?></p>
+					<p class="date"><?php the_time( 'M Y' ); ?>,</p>
+					<p class="author"><?php the_field('author'); ?></p>
 				</div>
 				<div class="intro">
 					<?php echo $header['intro']; ?>
@@ -40,150 +42,50 @@
 	<?php _motius_post_thumbnail(); ?>
 
 	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', '_motius' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_motius' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-		<?php
-			$main = get_field('main');
-			if( $main ): ?>
-				<div class="column-3">
-					<div class="column">
-						<h3 class="header"><?php echo $main['header1']; ?></h3>
-						<p class="paragraph"><?php echo $main['paragraph1']; ?></p>
-					</div>
-					<div class="column">
-						<img src="<?php echo esc_url( $main['image']['url'] ); ?>" alt="<?php echo esc_attr( $main['image']['alt'] ); ?>" />
-						<h3 class="header"><?php echo $main['header2']; ?></h3>
-						<p class="paragraph"><?php echo $main['paragraph2']; ?></p>
-					</div>
-					<div class="column">
-						<h3 class="header"><?php echo $main['header3']; ?></h3>
-						<p class="paragraph"><?php echo $main['paragraph3']; ?></p>
-					</div>
-				</div>
-			<?php endif; ?>
+		<div class="main-section-insights">
+			<?php
+			the_content(
+			);
+			?>
+		</div>
 
-		<?php
-			$category = get_field('category');
-			if( $category ): ?>
-			<h3 class="tag"><?php the_tags(); ?></h3>
-				<div class="column-4">
-					<div class="column">
-						<h5 class="header"><?php echo $category['header1']; ?></h5>
-						<p class="paragraph"><?php echo $category['paragraph1']; ?></p>
-					</div>
-					<div class="column">
-						<h5 class="header"><?php echo $category['header2']; ?></h5>
-						<p class="paragraph"><?php echo $category['paragraph2']; ?></p>
-					</div>
-					<div class="column">
-						<h5 class="header"><?php echo $category['header3']; ?></h5>
-						<p class="paragraph"><?php echo $category['paragraph3']; ?></p>
-					</div>
-					<div class="column">
-						<h5 class="header"><?php echo $category['header4']; ?></h5>
-						<p class="paragraph"><?php echo $category['paragraph4']; ?></p>
-					</div>
-				</div>
-			<?php endif; ?>
 
-		<?php
-			$sublines = get_field('sublines');
-			if( $sublines ): ?>
-				<div class="sublines">
-					<h5 class="header"><?php echo $sublines['header']; ?></h5>
-					<p class="paragraph"><?php echo $sublines['paragraph']; ?></p>
-				</div>
-			<?php endif; ?>
+		<div class="main-section-success-stories">
+			<?php
+			the_content(
+			);
+			?>
+		</div>
 
-		<!-- Testimonial -->
+		<div class="main-section-reference-projects">
+			<?php
+			the_content(
+			);
+			?>
+		</div>
 
-		<?php
-			$testimonial = get_field('testimonial');
-			if( $testimonial ): ?>
-				<div class="testimonial">
-					<div class="testimonial-card">
-						<div class="inner">
-							<div class="image" style="background-image: url('<?php echo esc_url( $testimonial['profile_photo']['url'] ); ?>');"></div>
-							<div class="quote">
-								<?php echo $testimonial['testimonial_quote']; ?>
-								<div class="testimonial-info">
-									<div class="personal">
-										<p class="testimonial-name"><?php echo $testimonial['testimonial_name']; ?></p>
-										<p class="testimonial_position"><?php echo $testimonial['testimonial_position']; ?></p>
-									</div>
-									<div class="company">
-									<img src="<?php echo esc_url( $testimonial['testimonial_company_icon']['url'] ); ?>" alt="<?php echo esc_attr( $testimonial['testimonial_company_icon']['alt'] ); ?>" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php endif; 
-		?>
 
-		<!-- Testimonial -->
-
-		<?php
-			$outro = get_field('outro');
-			if( $outro ): ?>
-				<div class="outro">
-					<p class="paragraph"><?php echo $outro['paragraph1']; ?></p>
-					<img class="image" src="<?php echo esc_url( $outro['image']['url'] ); ?>" alt="<?php echo esc_attr( $outro['image']['alt'] ); ?>" />
-					<p class="paragraph"><?php echo $outro['paragraph2']; ?></p>
-				</div>
-			<?php endif; ?>
+		<div class="main-section-press">
+			<?php
+			the_content(
+			);
+			?>
+		</div>
 
 		<section id="relatedInsights">
 
 			<div class="section-header">
 				<h2>Related Insights</h2>
-				<a href="http://motiusrelaunch.flywheelstaging.com/insights/">All Insights -></a>
+				<a href="/insights/">All Insights</a>
 			</div>
 
 			<div class="grid-3">
 				<?php 
 					$args = array(
 						'post_type' => 'insights',
-						'tax_query' => array(
-							'relation' => 'OR',
-							array(
-								'taxonomy' => 'category',
-								'field'    => 'slug',
-								'terms'    => array( 'toolbox' ),
-							),
-							array(
-								'taxonomy' => 'category',
-								'field'    => 'slug',
-								'terms'    => array( 'cheat-sheet' ),
-							),
-							array(
-								'taxonomy' => 'category',
-								'field'    => 'slug',
-								'terms'    => array( 'our-blog' ),
-							),
-						),
+						'meta_key'		=> 'tag',
+						'meta_value'	=> get_field('tag'),
 						'post_status' => 'publish',
 						'orderby' => 'date',
 						'order' => 'DESC',
@@ -196,19 +98,20 @@
 						while ( $arr_posts->have_posts() ) :
 							$arr_posts->the_post();
 							?>
-							<article id="post-<?php the_ID(); ?>" style="background-color:<?php the_field('background_color'); ?>" <?php post_class(); ?>>
-									<div class="event-header">
-										<div class="top">
-											<a href="<?php the_permalink(); ?>"><h5 class="title"><?php print the_title(); ?></h5></a>
-											<p class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></p>
-										</div>
-										<div class="bottom">
-											<p class="date"><?php echo date('M Y'); ?></p>
-											<p><?php the_field('author'); ?></p>
-										</div>
+							<a href="<?php the_permalink(); ?>">
+							<article class="article-centrale <?php the_field('value'); ?> <?php the_field('tag'); ?>" id="post-<?php the_ID(); ?>" style="background-color:<?php the_field('background_color'); ?>">
+								<div class="event-header">
+									<div class="top">
+										<h5 class="title"><?php print the_title(); ?></h5>
+										<p class="type"><span id="bullet">&#8226;</span><?php the_field('type'); ?></p>
 									</div>
-								</a>
-							</article>	
+									<div class="bottom">
+										<p class="date"><?php the_time( 'M Y' ); ?></p>
+										<p><?php the_field('author'); ?></p>
+									</div>
+								</div>
+							</article>
+							</a>
 							<?php
 						endwhile;
 					endif; 

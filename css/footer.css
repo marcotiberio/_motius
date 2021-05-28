@@ -7,7 +7,11 @@
 	background-color: #ffffff;
 	width: 100vw;
 	border-top: 1px solid rgba(24, 34, 28, .15);
-	margin-bottom: 100px;
+	padding-bottom: 100px;
+}
+
+.site-footer .logo img:hover{
+	cursor: pointer;
 }
 
 .site-footer .primary-footer {
@@ -31,6 +35,12 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+}
+
+.site-footer ul {
+	list-style: none !important;
+	margin: 0;
+	padding-left: 0;
 }
 
 #footer-menu li {
@@ -69,4 +79,63 @@
 #secondary-footer-menu li:nth-child(5),
 #secondary-footer-menu li:nth-child(6) {
 	margin-right: 20px;
+}
+
+.site-footer .secondary-footer li:nth-child(4) a,
+.site-footer .secondary-footer li:nth-child(5) a,
+.site-footer .secondary-footer li:nth-child(6) a {
+	opacity: 1;
+}
+
+.site-footer .contact-form input[type="text"] {
+	color: #666;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px 20px 20px 36px;
+    width: 45%;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.site-footer .contact-form button[type="submit"] {
+	color: #ffffff;
+    background-color: #28B9DA;
+    border: 0;
+    border-radius: 15px;
+    padding: 20px 16px 20px 16px;
+    width: 30% !important;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.site-footer form input,
+.site-footer form textarea {
+	color: #383E4E;
+    border: 1px solid #E4EAEB;
+    border-radius: 22px;
+	padding: 20px 36px;
+	width: 30vw;
+	outline: 0;
+}
+
+.site-footer form input:focus,
+.site-footer form textarea:focus {
+	color: #383E4E;
+    border: 1px solid #28B9DA !important;
+    border-radius: 22px;
+	padding: 20px 36px;
+	width: 30vw;
+	outline: 0;
+}
+
+.site-footer form input[type="submit"] {
+	width: 16%;
+	border-radius: 13px;
+	background-color: #28B9DA;
+	color: #ffffff;
+}
+
+.secondary-footer li img {
+	height: 70% !important;
 }

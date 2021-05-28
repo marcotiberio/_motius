@@ -1,10 +1,26 @@
 /* Header
 --------------------------------------------- */
 
+html:lang(en-US) #menu-item-3851 {
+	display: none;
+}
+
+html:lang(de-DE) #menu-item-3850 {
+	display: none;
+}
+
+html:lang(en-US) #menu-item-3354 {
+	display: none;
+}
+
+html:lang(de-DE) #menu-item-3353 {
+	display: none;
+}
+
 .site-header {
-	position: absolute;
-	top: 6vh;
-	background-color: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100vw;
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
@@ -12,8 +28,33 @@
 	align-items: center;
 	font-family: 'Inter', sans-serif;
 	color: black;
-	padding: 0 8vw 6vh 8vw;
-	z-index: 1000;
+	padding: 6vh 8vw 6vh 8vw;
+	z-index: 5000;
+	transition: all 0.5s ease-in-out;
+}
+
+.site-header-normal {
+	background-color: transparent;
+	top: 0;
+}
+
+.site-header-up {
+	top: -20vh;
+}
+
+.site-header-down {
+	background-color: #ffffff;
+}
+
+.transparent {
+	background-color: transparent !important;
+}
+
+.page-template-companies .site-header-down,
+.page-template-talents .site-header-down,
+.page-template-about .site-header-down,
+.page-template-companies .post-type-archive {
+	background-color: #ffffff;
 }
 
 .site-branding {
@@ -27,9 +68,15 @@
 }
 
 .main-navigation {
-	display: block;
+	/* display: block;
 	grid-column-start: 3;
-	grid-column-end: 9;
+	grid-column-end: 9; */
+
+	display: flex;
+    grid-column-start: 3;
+    grid-column-end: 9;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .mobile-navigation {
@@ -38,7 +85,7 @@
 
 .main-navigation ul {
 	display: none;
-	list-style: none;
+	list-style: none !important;
 	margin: 0;
 	padding-left: 0;
 }
@@ -46,10 +93,15 @@
 #primary-menu {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 #primary-menu li {
 	margin-right: 2.8125rem;
+}
+
+#primary-menu .menu-item-object-language_switcher {
+	opacity: 0.5;
 }
 
 .menu-toggle,

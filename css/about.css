@@ -6,15 +6,18 @@
 	overflow-x: hidden;
 }
 
+.page-template-about ul {
+	margin-inline-start: 1rem;
+}
 
-.page-template-about .site-header {
-	background-color: transparent;
+.page-template-about .main-navigation ul {
+    margin-inline-start: 0;
 }
 
 .page-template-about section {
 	width: 100vw;
 	height: auto;
-	padding: 10vh 8vw;
+	padding: 0 8vw;
 }
 
 .page-template-about #one {
@@ -31,9 +34,35 @@
 }
 
 .page-template-about .paragraph {
-	margin-top: 50px;
-	/* font-size: 20px;
-	line-height: 32px; */
+	margin-top: 5vh;
+}
+
+.page-template-about #two {
+	padding: 2vh 2vw;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: auto;
+	column-gap: 25px;
+}
+
+.page-template-about #two img {
+	border-radius: 30px;
+	width: 100%;
+	grid-column-start: 1;
+	grid-column-end: 9;
+	grid-row-start: 1;
+	grid-row-end: 5;
+}
+
+.page-template-about #two .text {
+	grid-column-start: 5;
+	grid-column-end: 8;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+.page-template-about #two .text h2 {
+	margin-bottom: 40px;
 }
 
 .page-template-about #blockScroll {
@@ -41,12 +70,39 @@
 	padding: 0 8vw;
 }
 
-.page-template-about #two {
-	padding: 2vh 2vw;
+.page-template-about #blockScroll .wrapper {
+	height: 100vh;
+	width: 100%;
 }
 
-.page-template-about #two img {
-	border-radius: 3rem;
+.page-template-about #blockScroll .point {
+	height: 100vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 25px;
+}
+
+.page-template-about .point article {
+	/*flex-basis: 60%;
+    margin-right: 10%; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.page-template-about .point article h2 {
+    margin-bottom: 40px;
+}
+
+.page-template-about .point img {
+	/* flex-basis: 80%;
+	max-width: 60vw;
+	margin-right: 0;
+	height: auto; */
+	grid-column-start: 5;
+	grid-column-end: 9;
+	width: 100%;
 }
 
 .page-template-about #three,
@@ -97,16 +153,22 @@
 }
 
 .page-template-about #six {
-	padding: 2vh 0;
+	padding: 0 0 10vh 0;
 }
 
 .page-template-about #six img {
-	border-radius: 3rem;
+	border-radius: 30px;
+	display: grid;
+	place-items: center;
+	margin: 0 auto;
+	width: 110vw;
+    max-width: 1920px;
+    margin-left: -5vw;
 }
 
 /* Bounce */
 
-.page-template-about #six img {
+/* .page-template-about #six img {
 	width: 110%;
 	max-width: 110%;
 	animation-duration: 50s;
@@ -135,7 +197,7 @@
 	100% {
 		transform: translateX(0);
 	}
-}
+} */
 
 /* Bounce */
 
@@ -167,6 +229,7 @@
 
 .grid-3>div {
 	margin: 1%;
+	white-space: normal;
 }
 
 .grid-5 {
@@ -180,8 +243,13 @@
 	width: 18%;
 }
 
+.grid-5 .card p {
+	text-align: center;
+}
+
 .grid-5 .photo {
 	border-radius: 50%;
+	width: 100%;
 }
 
 .grid-5 .subtitle {
@@ -193,7 +261,7 @@
 }
 
 .page-template-about .section-title {
-	margin-bottom: 4.375rem;
+	padding-bottom: 10vh;
 }
 
 .page-template-about .card .position {
@@ -201,15 +269,16 @@
 }
 
 .page-template-about #nine {
-	/* height: calc(100vh - 70px); */
-	padding: 0 8vw 0 8vw;
+	/* height: calc(100vh - 16vw); */
+	margin: 0 auto;
 }
 
 .page-template-about #nine .two-columns-text {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding-top: 0;
-	padding-bottom: 10vh;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 25px;
+    padding-top: 0;
+    padding-bottom: 10vh;
 }
 
 .page-template-about #nine .paragraph {
@@ -218,11 +287,33 @@
 }
 
 .page-template-about #nineB {
-	padding: 0 8vw 10vh 8vw;
+	padding: 0 8vw 5vh 8vw;
 }
+
+.page-template-about #nineB #scrollLine{
+	margin: 15vh auto;
+	max-width: 1680px;
+}
+
+.page-template-about #nineB #scrollLine ul{
+	list-style-type: none;
+}
+
+.page-template-about #scrollLine ul li::before {
+	content: "\2022";
+	color: #28B9DA;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+  }
 
 .page-template-about #nineBmobile {
 	display: none;
+}
+
+.page-template-about #ten {
+	padding: 0 8vw 5vh 8vw;
 }
 
 .page-template-about #ten .grid-6 {
@@ -234,15 +325,21 @@
 
 .page-template-about #ten .grid-6 h1 {
 	color: #383E4E;
+	font-size: 100px;
+    line-height: 100px;
+    font-weight: 500;
 }
 
 .page-template-about #ten .grid-6 p {
 	color: #737883;
-	width: 35%;
+	width: 50%;
+	font-size: 28px;
+	line-height: 33.6px;
 }
 
 .page-template-about #eleven {
-	padding-bottom: 20vh;
+	padding-top: 10vh;
+	padding-bottom: 15vh;
 }
 
 .page-template-about #eleven .grid-3 .title {
@@ -258,26 +355,80 @@
 	color: #A6B7BD;
 }
 
+/* About Timeline */
+
 .page-template-about #scrollLine .element {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	column-gap: 5%;
-}
-
-.page-template-about #scrollLine h3 {
-	color: #D7DFEB;
+	grid-template-columns: repeat(8, 1fr);
+	column-gap: 25px;
 }
 
 .page-template-about #scrollLine .element .left {
-	border-radius: 3rem;
-	height: 50vh;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	opacity: 0;
+	border-radius: 30px;
+	height: 35vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-bottom: 10vh;
 }
 
 .page-template-about #scrollLine .element .right {
-	border-left: 2px solid #D7DFEB;
-	padding-left: 5vh;
-	padding-top: 15vh;
+	width: 100%;
+	background-image: linear-gradient(to bottom, #D7DFEB, #D7DFEB);
+	grid-column-start: 4;
+	grid-column-end: 9;
+	padding-left: 3px;
+	margin-left: 10%;
+}
+
+.page-template-about #scrollLine .element:nth-last-child(1) .right {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #D7DFEB, #D7DFEB);
+    grid-column-start: 4;
+    grid-column-end: 9;
+    padding-left: 0;
+    margin-left: 10%;
+}
+
+.page-template-about #scrollLine .element:nth-last-child(1) .blueDot {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    transform: translate(-6.5px, 0);
+}
+
+.animatedline  {
+	background-color: lightgrey;
+	width: 10px;
+	height: 100%;
+	float: left;
+}
+
+.page-template-about #scrollLine .textBlock {
+	height: 100%;
+	background-color: white;
+	padding-left: 10%;
+}
+
+.page-template-about #scrollLine .textBlock h3 {
+	color: #D7DFEB;
+	margin-bottom: 32px;
+}
+
+.page-template-about #scrollLine .blueDot {
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	transform: translate(-9px, 0);
+}
+
+.svgDot {
+	fill: #ffffff;
+	stroke: #D7DFEB;
+}
+
+.textAppear {
+	opacity: 0.1;
 }

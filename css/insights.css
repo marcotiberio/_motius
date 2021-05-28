@@ -23,7 +23,7 @@ main {
 h1,
 p {
 	margin: 0;
-	margin-block-start: 0;
+	/* margin-block-start: 0; */
 }
 
 h1 {
@@ -277,11 +277,11 @@ li:hover {
 	margin: 10vh 0;
 	height: 80vh;
 	width: 3px;
-	display: none;
+	display: block;
 	flex-direction: column;
 	justify-content: space-between;
 	position: absolute;
-	display: none !important;
+	display: block !important;
 }
 
 .indicator {
@@ -1184,7 +1184,7 @@ li:hover {
 }
 
 .page-template-talents .two-columns-text .header {
-	font-size: 100px;
+	font-size: 80px;
 	line-height: 100px;
 	margin-right: 25%;
 }
@@ -1383,7 +1383,7 @@ li:hover {
 	display: block;
 }
 
-.page-template-talents #seven {
+.page-template-talents #jobs {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	scroll-margin-top: 10vh;
@@ -1754,6 +1754,7 @@ li:hover {
 
 .single article .post-thumbnail img {
 	border-radius: 3rem;
+	width: 100%;
 }
 
 .column-3 {
@@ -1850,7 +1851,8 @@ li:hover {
 	height: auto;
 }
 
-.post-type-archive-success-stories article .event-header .date {
+.post-type-archive-success-stories article .event-header .date,
+.post-type-archive-reference-projects article .event-header .date {
 	display: none;
 }
 
@@ -1870,7 +1872,8 @@ li:hover {
 	height: 40vh;
 }
 
-.post-type-archive-success-stories article .event-header {
+.post-type-archive-success-stories article .event-header,
+.post-type-archive-reference-projects article .event-header {
 	grid-column-start: 4;
 	grid-column-end: 9;
 	padding: 5% 20% 10% 10%
@@ -1919,7 +1922,8 @@ li:hover {
 	height: auto;
 }
 
-.post-type-archive-success-stories article .event-cover img {
+.post-type-archive-success-stories article .event-cover img,
+.post-type-archive-reference-projects article .event-cover img {
 	padding-top: 0;
 	padding-left: 0;
 	padding-right: 0;

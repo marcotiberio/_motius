@@ -2,8 +2,16 @@
 # Simple Text
 --------------------------------------------------------------*/
 
-.page-template-simple-text section {
+.page-template-simple-text .site-main {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: auto;
 	padding: 20vh 8vw 10vh 8vw;
+}
+
+.page-template-simple-text section {
+	grid-column-start: 1;
+	grid-column-end: 7;
 }
 
 .page-template-simple-text .entry-title {
