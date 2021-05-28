@@ -65,17 +65,6 @@ get_header();
 		<?php echo do_shortcode('[ajax_load_more id="ourblog" loading_style="white" post_type="insights" category="our-blog" category__not_in="16,14" posts_per_page="3" pause="false" scroll="false" button_label="Load more" button_loading_label="Loading more..." button_done_label="Nothing left"]'); ?>
 	</div>
 
-
-	<?php
-		$section_medium = get_field('section_medium', 3681);
-		if( $section_medium ): ?>
-			<section class="medium">
-				<strong><?php echo $section_medium['title']; ?></strong>
-				<p class="paragraph"><?php echo $section_medium['text']; ?></p>
-				<a href="https://medium.com/motius-de" target="_blank">Read more -></a>
-			</section>
-	<?php endif; ?>
-
 	<div class="section-title">
 		<h3>Resources</h3>
 	</div>

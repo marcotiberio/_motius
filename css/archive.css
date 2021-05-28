@@ -209,7 +209,7 @@
 .alm-btn-wrap {
 	display: block;
 	text-align: center;
-	padding: 5vh 8vw 10vh 8vw !important;
+	padding: 5vh 8vw 0 8vw !important;
 	position: relative;
 }
 
