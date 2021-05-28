@@ -426,11 +426,14 @@ p {
 	margin-bottom: 1.5em;
 }
 
-dfn,
+dfn {
+	font-style: normal;
+}
+
 cite,
 em,
 i {
-	font-style: normal;
+	font-style: italic;
 }
 
 blockquote {
