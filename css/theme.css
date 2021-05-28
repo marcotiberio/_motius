@@ -405,7 +405,7 @@ article .event-cover {
 }
 
 .swiper-slide {
-	width: 84vw !important;
+	/* width: 84vw !important; */
 	height: 60vh !important;
 	margin-right: 0;
 	display: grid;
@@ -520,13 +520,13 @@ article .event-cover {
 	display: none;
 }
 
-.swiper-slide-active {
+/* .swiper-slide-active {
 	opacity: 1 !important;
 }
 
 .swiper-slide-next {
 	opacity: 0 !important;
-}
+} */
 
 /*--------------------------------------------------------------
 # Elements

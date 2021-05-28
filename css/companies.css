@@ -311,7 +311,7 @@
 }
 
 .page-template-companies #fiveB {
-	padding: 0 8vw 55px 8vw;
+	padding-bottom: 10vh;
 }
 
 .page-template-companies #six {
@@ -453,7 +453,7 @@
 
 .page-template-companies #fiveB .swiper-container {
     width: 100vw !important;
-    height: 20vh !important;
+    height: 30vh !important;
     grid-column-start: 1;
     grid-column-end: 13;
 }
@@ -461,19 +461,30 @@
 .page-template-companies #fiveB .swiper-slide {
 	margin: 0;
 	padding: 0;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
 	background-color: #ffffff;
-
-	width: calc(100vw - 16vw) !important;
+	
 	height: auto !important;
 }
 
-.page-template-companies #fiveB .swiper-slide>img {
+.page-template-companies #fiveB .swiper-slide img {
 	margin: 2%;
-	height: 40px;
+	display: block;
+	width: 100%;
+	height: 100px;
+	object-fit: contain;
 	background-color: #ffffff;
 }
 

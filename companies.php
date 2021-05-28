@@ -171,20 +171,10 @@ get_header();
 							<?php while( have_rows('clients_container', 2) ): the_row(); 
 
 								// Load sub field value.
-								$logo1 = get_sub_field('logo1');
-								$logo2 = get_sub_field('logo2');
-								$logo3 = get_sub_field('logo3');
-								$logo4 = get_sub_field('logo4');
-								$logo5 = get_sub_field('logo5');
-								$logo6 = get_sub_field('logo6');
+								$logo = get_sub_field('logo');
 								?>
 								<div class="swiper-slide">
-									<img src="<?php echo esc_url( $logo1['url'] ); ?>" alt="<?php echo esc_attr( $logo1['alt'] ); ?>" />
-									<img src="<?php echo esc_url( $logo2['url'] ); ?>" alt="<?php echo esc_attr( $logo2['alt'] ); ?>" />
-									<img src="<?php echo esc_url( $logo3['url'] ); ?>" alt="<?php echo esc_attr( $logo3['alt'] ); ?>" />
-									<img src="<?php echo esc_url( $logo4['url'] ); ?>" alt="<?php echo esc_attr( $logo4['alt'] ); ?>" />
-									<img src="<?php echo esc_url( $logo5['url'] ); ?>" alt="<?php echo esc_attr( $logo5['alt'] ); ?>" />
-									<img src="<?php echo esc_url( $logo6['url'] ); ?>" alt="<?php echo esc_attr( $logo6['alt'] ); ?>" />
+									<img src="<?php echo esc_url( $logo['url'] ); ?>" alt="<?php echo esc_attr( $logo['alt'] ); ?>" />
 								</div>
 								
 							<?php endwhile; ?>

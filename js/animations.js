@@ -188,41 +188,25 @@ $(window).on("scroll", function() {
 // Swiper Clients Home
 
 var swiper = new Swiper('.home .swiper-container', {
-    spaceBetween: 30,
-    effect: 'fade',
-    centeredSlides: true,
-    autoplay: {
+  slidesPerView: 5,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
     delay: 4000,
     disableOnInteraction: false,
-    },
-    pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    },
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
+  }
 });
 
 // Swiper Clients Companies
 
 var swiper = new Swiper('.page-template-companies .swiper-container', {
-    spaceBetween: 30,
-    effect: 'fade',
-    centeredSlides: true,
-    autoplay: {
+  slidesPerView: 5,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
     delay: 4000,
     disableOnInteraction: false,
-    },
-    pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    },
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
+  }
 });
 
 
