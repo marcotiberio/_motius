@@ -188,8 +188,22 @@ $(window).on("scroll", function() {
 // Swiper Clients Home
 
 var swiper = new Swiper('.home .swiper-container', {
-  slidesPerView: 5,
+  slidesPerView: 2,
   spaceBetween: 20,
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+  },
   loop: true,
   autoplay: {
     delay: 4000,
@@ -200,8 +214,22 @@ var swiper = new Swiper('.home .swiper-container', {
 // Swiper Clients Companies
 
 var swiper = new Swiper('.page-template-companies .swiper-container', {
-  slidesPerView: 5,
+  slidesPerView: 2,
   spaceBetween: 20,
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+  },
   loop: true,
   autoplay: {
     delay: 4000,
