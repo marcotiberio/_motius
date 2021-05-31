@@ -205,8 +205,11 @@ var swiper = new Swiper('.home .swiper-container', {
     },
   },
   loop: true,
+  freeMode: true,
+  speed: 25000,
+  freeModeMomentum: false,
   autoplay: {
-    delay: 3000,
+    delay: 1,
     disableOnInteraction: false,
   }
 });
@@ -231,8 +234,11 @@ var swiper = new Swiper('.page-template-companies .swiper-container', {
     },
   },
   loop: true,
+  freeMode: true,
+  speed: 25000,
+  freeModeMomentum: false,
   autoplay: {
-    delay: 3000,
+    delay: 1,
     disableOnInteraction: false,
   }
 });
