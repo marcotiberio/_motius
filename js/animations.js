@@ -206,7 +206,7 @@ var swiper = new Swiper('.home .swiper-container', {
   },
   loop: true,
   autoplay: {
-    delay: 4000,
+    delay: 3000,
     disableOnInteraction: false,
   }
 });
@@ -232,7 +232,7 @@ var swiper = new Swiper('.page-template-companies .swiper-container', {
   },
   loop: true,
   autoplay: {
-    delay: 4000,
+    delay: 3000,
     disableOnInteraction: false,
   }
 });

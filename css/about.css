@@ -228,8 +228,18 @@
 }
 
 .grid-3>div {
+	align-items: center;
+	display: flex;
+    flex-flow: column wrap;
+    justify-content: stretch;
 	margin: 1%;
 	white-space: normal;
+
+}
+
+.grid-3 div img {
+	height: 60%;
+
 }
 
 .grid-5 {
