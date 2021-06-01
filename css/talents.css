@@ -666,7 +666,7 @@
 }
 
 .page-template-talents .textBlock h5 {
-	color: #D7DFEB;
+	color: #000;
 	margin-top: 32px;
 	margin-bottom: 32px;
 }
@@ -765,8 +765,12 @@
 	padding-left: 5%;
 }
 
-.textBlock h2 {
-	color: #D7DFEB;
+#scrollLineLeft .textBlock h2 {
+	color: #28b9da;
+}
+
+#scrollLineRight .textBlock h2 {
+	color: #6c7380;
 }
 
 .page-template-talents .blueDot {

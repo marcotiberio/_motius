@@ -415,15 +415,15 @@ function ScrollTriggerTimeline2() {
               }
           });
 
-          tl2.to(el.querySelectorAll('.svgDot'), {fill: "#28B9DA", stroke: "transparent", duration: 1, ease: "power3.in"})
+          tl2.to(el.querySelectorAll('.svgDot'), {fill: "#6c7380", stroke: "transparent", duration: 1, ease: "power3.in"})
           tl2.to(el.querySelectorAll('.left'), {opacity: 1, duration: 1, ease: "none"}) 
-          tl2.to(el.querySelectorAll('h3'), {color: "#D7DFEB", duration: 1, ease: "none"}, "-=1") 
+          tl2.to(el.querySelectorAll('h3'), {color: "#6c7380", duration: 1, ease: "none"}, "-=1") 
           tl2.to(el.querySelectorAll('.textAppear'), {opacity: 1, duration: 1, ease: "none"}, "-=1")
               if ($(window).width() > 414 && $(window).height() > 414) { 
-                  tl2.to(el.querySelectorAll('.right'), {backgroundImage: "linear-gradient(to bottom, #28B9DA, #D7DFEB)", duration: 1, ease: "none"}, "-=1")
+                  tl2.to(el.querySelectorAll('.right'), {backgroundImage: "linear-gradient(to bottom, #6c7380, #D7DFEB)", duration: 1, ease: "none"}, "-=1")
               }            
               if ($(window).width() > 414 && $(window).height() > 414) { 
-                  tl2.to(el.querySelectorAll('.right'), {backgroundImage: "linear-gradient(to bottom, #28B9DA, #28B9DA)", duration: 1, ease: "none"}) 
+                  tl2.to(el.querySelectorAll('.right'), {backgroundImage: "linear-gradient(to bottom, #6c7380, #6c7380)", duration: 1, ease: "none"}) 
               }
   });
 }
