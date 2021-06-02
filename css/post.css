@@ -8,7 +8,7 @@
 
 .single-success-stories p, 
 .single-insights p {
-	margin-block-start: 32px;
+	margin-block-start: 30px;
 }
 
 .single article {
@@ -48,7 +48,7 @@
 
 .single .client {
 	text-transform: capitalize;
-	margin-top: 50px;
+	margin-top: 0;
 }
 
 .single .client span {

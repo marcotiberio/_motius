@@ -273,6 +273,7 @@
 .post-type-archive-insights #hero article {
 	border-radius: 0;
 	background-color: #F5F9FA !important;
+	width: 85% !important;
 }
 
 .post-type-archive-success-stories article .event-header,
@@ -576,7 +577,7 @@
 }
 
 .single-insights .client .date {
-	margin-block-start: 50px;
+	margin-block-start: 30px;
 }
 
 .single-insights #relatedInsights,
