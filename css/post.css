@@ -33,6 +33,7 @@
 .single article .entry-content {
 	grid-column-start: 1;
 	grid-column-end: 9;
+	padding: 0 5%;
 }
 
 .single .intro {
