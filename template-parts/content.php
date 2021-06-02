@@ -39,8 +39,6 @@
 			<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php _motius_post_thumbnail(); ?>
-
 	<div class="entry-content">
 
 		<div class="main-section-insights">
