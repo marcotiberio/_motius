@@ -229,12 +229,11 @@
 
 .grid-3>div {
 	align-items: center;
-	display: flex;
-    flex-flow: column wrap;
-    justify-content: stretch;
-	margin: 1%;
-	white-space: normal;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1%;
+    white-space: normal;
 }
 
 .grid-3 div img {
