@@ -210,7 +210,7 @@ get_header();
 						<?php
 							$howwework_button = get_field('howwework_button');
 							if( $howwework_button ): ?>
-								<a class="block" href="/about/" style="background-color: #B8E9F4;">
+								<a class="block" href="/about/#eight" style="background-color: #B8E9F4;">
 									<p class="header-block"><?php echo $howwework_button['header_block']; ?></p>
 									<p class="paragraph-block"><?php echo $howwework_button['paragraph_block']; ?></p>
 									<div class="arrow-icon">
